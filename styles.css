@@ -43,6 +43,27 @@ body {
     }
 }
 
+/* Style for the container holding both header and contact sections */
+.header-container {
+    display: flex; /* Enables flex layout */
+    justify-content: space-between; /* Spaces items apart as much as possible */
+    align-items: start; /* Aligns items to the top */
+}
+
+/* Make sure the profile picture and other details in the header are stacked vertically */
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligns items to the left */
+}
+
+/* Styles to make sure the contact section stays compact */
+#contact {
+    display: flex;
+    flex-direction: column;
+    align-items: start; /* Aligns items to the left, though it's on the right side of the page */
+}
+
 #certifications p::before {
     content: ""; /* default value; we'll override it per class */
     display: inline-block;
