@@ -43,6 +43,24 @@ body {
     }
 }
 
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the content to the left */
+}
+
+#contact {
+    margin-left: auto; /* Pushes the contact section to the right */
+    align-self: flex-start; /* Aligns the contact section to the top */
+}
+
+
 #certifications p::before {
     content: ""; /* default value; we'll override it per class */
     display: inline-block;
