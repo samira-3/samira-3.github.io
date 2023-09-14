@@ -43,33 +43,15 @@ body {
     }
 }
 
-li {
-    padding-left: 20px; /* Space for the logo and a small gap */
-    list-style-type: none; /* To remove the default bullet point */
+.cert-logo {
+    width: 50px; /* Or any other desired size */
+    height: auto; 
+    margin-right: 10px; /* Space between the logo and the text */
+    vertical-align: middle; /* Aligns the image with the middle of the text */
 }
 
-p.google:before {
-    content: "";
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Adjust as per your logo dimensions */
-    height: 20px;
-    background-image: url('google_cert.png');
-    background-size: cover;
-    padding-left: 40px; /* Space for the logo and a small gap */
-}
-
-p.codepath:before {
-    content: "";
-    position: relative;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 20px; /* Adjust as per your logo dimensions */
-    height: 20px;
-    background-image: url('codepath_logo.png');
-    background-size: cover;
-    padding-left: 40px; /* Space for the logo and a small gap */
+.certification-item {
+    display: flex; /* Make the logo and the text align horizontally */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 10px; /* Space between each certification */
 }
