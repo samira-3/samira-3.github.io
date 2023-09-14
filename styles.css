@@ -55,10 +55,10 @@ body {
 }
 
 .google::before {
-    background-image: url('path_to_google_logo.png');
+    background-image: url('google_cert.png');
 }
 
 .codepath::before {
-    background-image: url('path_to_codepath_logo.png');
+    background-image: url('codepath_logo.png');
 }
 
