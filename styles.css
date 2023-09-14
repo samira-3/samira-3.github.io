@@ -43,13 +43,7 @@ body {
     }
 }
 
-li {
-    position: relative;
-    padding-left: 40px; /* Space for the logo and a small gap */
-    list-style-type: none; /* To remove the default bullet point */
-}
-
-li.google:before {
+p.google:before {
     content: "";
     position: absolute;
     left: 0;
@@ -59,9 +53,10 @@ li.google:before {
     height: 20px;
     background-image: url('google_cert.png');
     background-size: cover;
+    padding-left: 40px; /* Space for the logo and a small gap */
 }
 
-li.codepath:before {
+p.codepath:before {
     content: "";
     position: absolute;
     left: 0;
@@ -71,4 +66,5 @@ li.codepath:before {
     height: 20px;
     background-image: url('codepath_logo.png');
     background-size: cover;
+    padding-left: 40px; /* Space for the logo and a small gap */
 }
