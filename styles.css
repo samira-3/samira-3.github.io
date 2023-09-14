@@ -43,6 +43,12 @@ body {
     }
 }
 
+li {
+    position: relative;
+    padding-left: 20px; /* Space for the logo and a small gap */
+    list-style-type: none; /* To remove the default bullet point */
+}
+
 p.google:before {
     content: "";
     position: absolute;
