@@ -43,25 +43,29 @@ body {
     }
 }
 
-/* Style for the container holding both header and contact sections */
-.header-container {
-    display: flex; /* Enables flex layout */
-    justify-content: space-between; /* Spaces items apart as much as possible */
-    align-items: start; /* Aligns items to the top */
+/* Container setup */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-/* Make sure the profile picture and other details in the header are stacked vertically */
-header {
+/* Top section with profile and contact details */
+.top-section {
     display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligns items to the left */
+    justify-content: space-between; /* Places children at opposite ends */
+    align-items: flex-start; /* Aligns children at the top */
 }
 
-/* Styles to make sure the contact section stays compact */
-#contact {
-    display: flex;
-    flex-direction: column;
-    align-items: start; /* Aligns items to the left, though it's on the right side of the page */
+/* Style for profile details section */
+.profile-section {
+    flex: 2; /* Takes up more space */
+    padding-right: 20px; /* Optional spacing between the sections */
+}
+
+/* Style for contact details */
+.contact-section {
+    flex: 1; /* Takes up less space than profile */
+    text-align: right; /* Aligns text to the right */
 }
 
 #certifications p::before {
