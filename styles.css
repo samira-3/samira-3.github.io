@@ -1,21 +1,30 @@
 body {
     font-family: Arial, sans-serif;
-    line-height: 1.6;
-    padding: 20px;
+    background-image: url('profile-pic.jpg');
+    background-size: cover;
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 5px;
 }
 
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
     text-align: center;
 }
 
-a {
-    color: #0077cc;
-    text-decoration: none;
+#profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
 }
 
-a:hover {
-    text-decoration: underline;
+a {
+    color: cyan;
+    text-decoration: none;
 }
