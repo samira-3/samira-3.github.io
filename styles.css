@@ -55,8 +55,8 @@ li.google:before {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px; /* Adjust as per your logo dimensions */
-    height: 30px;
+    width: 20px; /* Adjust as per your logo dimensions */
+    height: 20px;
     background-image: url('google_cert.png');
     background-size: cover;
 }
@@ -67,8 +67,8 @@ li.codepath:before {
     left: 0;
     top: 50%;
     transform: translateY(-50%);
-    width: 30px; /* Adjust as per your logo dimensions */
-    height: 30px;
+    width: 20px; /* Adjust as per your logo dimensions */
+    height: 20px;
     background-image: url('codepath_logo.png');
     background-size: cover;
 }
