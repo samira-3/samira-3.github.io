@@ -43,29 +43,21 @@ body {
     }
 }
 
-/* Container setup */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Top section with profile and contact details */
-.top-section {
+.header-container {
     display: flex;
-    justify-content: space-between; /* Places children at opposite ends */
-    align-items: flex-start; /* Aligns children at the top */
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Style for profile details section */
-.profile-section {
-    flex: 2; /* Takes up more space */
-    padding-right: 20px; /* Optional spacing between the sections */
+.header-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the content to the left */
 }
 
-/* Style for contact details */
-.contact-section {
-    flex: 1; /* Takes up less space than profile */
-    text-align: right; /* Aligns text to the right */
+#contact {
+    margin-left: auto; /* Pushes the contact section to the right */
+    align-self: flex-start; /* Aligns the contact section to the top */
 }
 
 #certifications p::before {
