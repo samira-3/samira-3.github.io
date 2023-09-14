@@ -42,3 +42,33 @@ body {
         background-position: center center;
     }
 }
+
+li {
+    position: relative;
+    padding-left: 40px; /* Space for the logo and a small gap */
+    list-style-type: none; /* To remove the default bullet point */
+}
+
+li.google:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust as per your logo dimensions */
+    height: 30px;
+    background-image: url('google_cert.png');
+    background-size: cover;
+}
+
+li.codepath:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 30px; /* Adjust as per your logo dimensions */
+    height: 30px;
+    background-image: url('codepath_logo.png');
+    background-size: cover;
+}
