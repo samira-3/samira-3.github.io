@@ -44,14 +44,13 @@ body {
 }
 
 li {
-    position: relative;
     padding-left: 20px; /* Space for the logo and a small gap */
     list-style-type: none; /* To remove the default bullet point */
 }
 
 p.google:before {
     content: "";
-    position: absolute;
+    position: relative;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
@@ -64,7 +63,7 @@ p.google:before {
 
 p.codepath:before {
     content: "";
-    position: absolute;
+    position: relative;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
