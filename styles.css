@@ -41,34 +41,32 @@
     margin-right: 10px; /* space between logo and text */
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: New Times Roman, sans-serif;
+.info-box {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px; /* Or any preferred square size */
+    height: 300px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.7);
+    overflow: hidden;
 }
 
-#education {
-    position: absolute; /* Absolute positioning */
-    top: 10px; /* 10px from the top */
-    left: 10px; /* 10px from the left */
-    width: 300px; /* Box width */
-    height: 300px; /* Box height */
-    border: 2px solid black; /* Box border */
-    background-color: white; /* Box background color */
-    overflow: hidden; /* Prevent content spillover */
-}
-
-.school-header {
+.toggle-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #000;
+    color: #FFF;
+    border: none;
     cursor: pointer;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
 }
 
-.school-details {
-    display: none; /* Hidden by default */
+.info-content {
+    display: none;
+    grid-template-columns: 1fr 1fr; /* 2x2 grid */
+    gap: 10px;
     padding: 10px;
-    height: 250px; /* Allow for some header space */
-    overflow-y: scroll; /* Scroll if content exceeds this height */
 }
 
 .logo {
