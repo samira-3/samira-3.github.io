@@ -55,7 +55,7 @@ details {
     border: 1px solid #ccc;
     border-radius: 4px;
     padding: 1rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     cursor: pointer;
 }
 
@@ -80,7 +80,7 @@ details[open] summary::before {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 5px;
 }
 
@@ -104,7 +104,7 @@ a {
 }
 
 .job {
-    background-color: rgba(255, 255, 255, 0.1);  /* optional: give each job a slightly opaque background */
+    background-color: rgba(255, 255, 255, 0.8);  /* optional: give each job a slightly opaque background */
     padding: 10px;
     border-radius: 5px;  /* rounding the corners */
     box-shadow: 0 4px 8px rgba(225, 225, 225, 0.1);  /* optional: add a shadow effect */
