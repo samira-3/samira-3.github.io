@@ -22,3 +22,12 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 });
+
+function toggleInfoBox() {
+    const content = document.querySelector('.info-content');
+    if (content.style.display === 'none' || content.style.display === '') {
+        content.style.display = 'grid';
+    } else {
+        content.style.display = 'none';
+    }
+}
