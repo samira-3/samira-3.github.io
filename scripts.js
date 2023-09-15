@@ -8,15 +8,16 @@ document.querySelectorAll('a').forEach(link => {
 });
 
 document.addEventListener("DOMContentLoaded", function() {
-    const headers = document.querySelectorAll(".job-header");
-    
-    headers.forEach(header => {
-        header.addEventListener("click", function() {
+    const jobHeaders = document.querySelectorAll('.job-header');
+
+    jobHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            console.log('Header clicked');  // Test if this is being logged
             const details = this.nextElementSibling;
-            if (details.style.display === "none" || !details.style.display) {
-                details.style.display = "block";
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
             } else {
-                details.style.display = "none";
+                details.style.display = 'none';
             }
         });
     });
