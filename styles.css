@@ -48,29 +48,24 @@ body {
     color: white;
 }
 
-.job {
-    border: 1px solid white;
-    margin-bottom: 20px;
-    box-shadow: 0 1px 0 white;
-    padding: 16px;
-    background-color: #e0e0e0;
-    cursor: pointer;
-}
-
-.job-header {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
-    cursor: pointer;
+..grid-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
     gap: 16px; /* Gap between the boxes */
 }
 
+.box {
+    padding: 16px;
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
 .job-details {
-    display: none;
-    padding: 10px;
+    display: none; /* Hidden by default */
     margin-top: 8px;
     background-color: #f5f5f5;
+    padding: 8px;
 }
 
 .container {
