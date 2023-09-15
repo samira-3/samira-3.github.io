@@ -83,6 +83,8 @@ body {
 
 .job-details {
     display: none;
+    border: 1px solid black;
+    padding: 10px;
 }
 
 .container {
