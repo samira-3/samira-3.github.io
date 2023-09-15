@@ -98,10 +98,19 @@ a {
 
 .job-grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* space between grid items */
+    margin-bottom: 20px; /* space below the grid for other content */
 }
+
+.job {
+    background-color: rgba(255, 255, 255, 0.8);  /* optional: give each job a slightly opaque background */
+    padding: 10px;
+    border-radius: 5px;  /* rounding the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* optional: add a shadow effect */
+    overflow: hidden;  /* if any child element overflows, hide it */
+}
+
 
 body {
     /* path to your image might be different based on your project structure */
