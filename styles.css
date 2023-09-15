@@ -52,9 +52,6 @@ body {
     border: 1px solid white;
     margin-bottom: 20px;
     border-radius: 5px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr; /* 3 equal-width columns */
-    gap: 20px; /* Space between grid items */
 }
 
 .job-header {
