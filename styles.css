@@ -52,6 +52,9 @@ body {
     border: 1px solid white;
     margin-bottom: 20px;
     border-radius: 5px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* 3 equal-width columns */
+    gap: 20px; /* Space between grid items */
 }
 
 .job-header {
@@ -60,13 +63,6 @@ body {
     box-shadow: 0 1px 0 white;
     cursor: pointer;
     transition: all 0.3s; /* Smooth transition for expanding and collapsing */
-}
-
-/* Create a container that holds the grid of boxes */
-.container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 equal-width columns */
-    gap: 20px; /* Space between grid items */
 }
 
 }
