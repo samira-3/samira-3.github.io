@@ -7,11 +7,17 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
-function toggleJobDetails(element) {
-    const details = element.nextElementSibling;
-    if(details.style.display === 'none' || details.style.display === '') {
-        details.style.display = 'block';
-    } else {
-        details.style.display = 'none';
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const headers = document.querySelectorAll(".job-header");
+    
+    headers.forEach(header => {
+        header.addEventListener("click", function() {
+            const details = this.nextElementSibling;
+            if (details.style.display === "none" || !details.style.display) {
+                details.style.display = "block";
+            } else {
+                details.style.display = "none";
+            }
+        });
+    });
+});
