@@ -50,37 +50,29 @@ body {
     color: white;
 }
 
-details {
-    margin: 1rem 0;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    padding: 1rem;
-    background-color: rgba(255, 255, 255, 0.8);
+.job {
+    border: 1px solid white;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.job-header {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
+    border-bottom: 1px solid white;
 }
 
-summary {
-    font-weight: bold;
-}
-
-summary::-webkit-details-marker { 
-    display: none; /* Hide the default arrow in Chrome, Safari */
-}
-
-summary::before {
-    content: '▶';
-    padding-right: 8px;
-}
-
-details[open] summary::before {
-    content: '▼';
+.job-details {
+    display: none;
+    padding: 10px;
 }
 
 .container {
     max-width: 800px;
     margin: 2rem auto;
     padding: 2rem;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
 }
 
@@ -96,19 +88,6 @@ a {
     text-decoration: none;
 }
 
-.job-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;  /* space between grid items */
-    margin-bottom: 20px; /* space below the grid for other content */
-}
-
-.job {
-    background-color: rgba(255, 255, 255, 0.8);  /* optional: give each job a slightly opaque background */
-    padding: 10px;
-    border-radius: 5px;  /* rounding the corners */
-    box-shadow: 0 4px 8px rgba(225, 225, 225, 0.1);  /* optional: add a shadow effect */
-    overflow: hidden;  /* if any child element overflows, hide it */
 }
 
 body {
