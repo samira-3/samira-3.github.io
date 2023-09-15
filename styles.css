@@ -55,22 +55,15 @@ body {
 }
 
 .job-header {
-    padding: 16px;
-    background-color: #e0e0e0;
-    box-shadow: 0 1px 0 white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    transition: all 0.3s; /* Smooth transition for expanding and collapsing */
+    border-bottom: 1px solid white;
 }
 
-}
-
-/* The job description details are hidden by default */
 .job-details {
     display: none;
-    padding: 8px;
-    background-color: #f5f5f5;
-    box-shadow: 0 1px 0 white;
-    margin-top: 10px;
+    padding: 10px;
 }
 
 .container {
