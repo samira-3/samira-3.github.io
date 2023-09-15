@@ -52,18 +52,16 @@ body {
 
 .job-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* three columns */
-    gap: 20px; /* spacing between each job box */
-    margin-top: 20px;
-    width: 100%; /* or a specific value like 900px */
+    grid-template-columns: repeat(3, 1fr); /* This ensures 3 columns */
+    gap: 10px; /* Adjust this for the spacing you want between boxes */
+    width: 100%; /* Ensuring the container takes up the full width */
 }
 
 .job {
-    background: rgba(255, 255, 255, 0.1);  /* added a slight background to each job for better readability */
-    padding: 15px; /* spacing inside each job box */
-    border-radius: 5px; /* rounded corners for each job */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* a subtle shadow for a lifted appearance */
-    max-width: calc(33.33% - 20px); /* assuming a 20px gap; adjust accordingly */
+    background-color: #e0e0e0; /* Just to make the boxes visible */
+    padding: 20px;
+    text-align: center;
+    font-size: 24px;
 }
 
 details {
