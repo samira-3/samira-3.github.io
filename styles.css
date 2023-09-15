@@ -15,7 +15,6 @@
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
-
 #certifications p::before {
     content: ""; /* default value; we'll override it per class */
     display: inline-block;
@@ -41,7 +40,6 @@
     vertical-align: middle;
     margin-right: 10px; /* space between logo and text */
 }
-
 
 body {
     font-family: New Times Roman, sans-serif;
@@ -86,8 +84,6 @@ body {
 a {
     color: blue;
     text-decoration: none;
-}
-
 }
 
 body {
