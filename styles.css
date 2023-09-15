@@ -111,7 +111,6 @@ a {
     overflow: hidden;  /* if any child element overflows, hide it */
 }
 
-
 body {
     /* path to your image might be different based on your project structure */
     background-image: url('space-cyber.jpg'); 
