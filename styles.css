@@ -1,8 +1,66 @@
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Aligns the content to the left */
+}
+
+#contact {
+    margin-left: auto; /* Pushes the contact section to the right */
+    align-self: flex-start; /* Aligns the contact section to the top */
+}
+
+
+#certifications p::before {
+    content: ""; /* default value; we'll override it per class */
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px; /* space between logo and text */
+    width: 20px; /* width of the logo */
+    height: 20px; /* height of the logo */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.google::before {
+    background-image: url('google_cert.png');
+}
+
+.codepath::before {
+    background-image: url('codepath_logo.png');
+}
+
+.logo {
+    width: 30px; /* or the width you want */
+    height: 30px; /* or the height you want */
+    vertical-align: middle;
+    margin-right: 10px; /* space between logo and text */
+}
+
 body {
     font-family: New Times Roman, sans-serif;
     background-image: url('pic.jpg');
     background-size: cover;
     color: white;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* three columns */
+    gap: 20px; /* spacing between each job box */
+    margin-top: 20px;
+}
+
+.job {
+    background: rgba(255, 255, 255, 0.1);  /* added a slight background to each job for better readability */
+    padding: 15px; /* spacing inside each job box */
+    border-radius: 5px; /* rounded corners for each job */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* a subtle shadow for a lifted appearance */
 }
 
 details {
@@ -63,48 +121,4 @@ body {
     body {
         background-position: center center;
     }
-}
-
-.header-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header-details {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start; /* Aligns the content to the left */
-}
-
-#contact {
-    margin-left: auto; /* Pushes the contact section to the right */
-    align-self: flex-start; /* Aligns the contact section to the top */
-}
-
-
-#certifications p::before {
-    content: ""; /* default value; we'll override it per class */
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px; /* space between logo and text */
-    width: 20px; /* width of the logo */
-    height: 20px; /* height of the logo */
-    background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.google::before {
-    background-image: url('google_cert.png');
-}
-
-.codepath::before {
-    background-image: url('codepath_logo.png');
-}
-
-.logo {
-    width: 30px; /* or the width you want */
-    height: 30px; /* or the height you want */
-    vertical-align: middle;
-    margin-right: 10px; /* space between logo and text */
 }
