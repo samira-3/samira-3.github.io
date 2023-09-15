@@ -78,8 +78,8 @@ details[open] summary::before {
 
 .container {
     max-width: 800px;
-    margin: 1rem auto;
-    padding: 1rem;
+    margin: 2rem auto;
+    padding: 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
 }
@@ -96,16 +96,19 @@ a {
     text-decoration: none;
 }
 
-.job-grid {
+.grid-container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* For 2 columns */
-    grid-template-rows: repeat(3, 1fr); /* For 3 rows, though this isn't strictly necessary as rows will auto-form */
-    gap: 10px;
-    margin-bottom: 5px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;  /* space between grid items */
+    margin-bottom: 20px; /* space below the grid for other content */
 }
 
 .job {
-    background-color: rgba(0, 0, 0, 0.6);
+    background-color: rgba(255, 255, 255, 0.8);  /* optional: give each job a slightly opaque background */
+    padding: 10px;
+    border-radius: 5px;  /* rounding the corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* optional: add a shadow effect */
+    overflow: hidden;  /* if any child element overflows, hide it */
 }
 
 body {
