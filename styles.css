@@ -41,7 +41,7 @@
     margin-right: 10px; /* space between logo and text */
 }
 
-.info-box {
+.school {
     position: fixed;
     top: 10px;
     right: 10px;
@@ -52,7 +52,7 @@
     overflow: hidden;
 }
 
-.toggle-button {
+.school-header {
     position: absolute;
     top: 5px;
     right: 5px;
@@ -62,7 +62,7 @@
     cursor: pointer;
 }
 
-.info-content {
+.school-details{
     display: none;
     grid-template-columns: 1fr 1fr; /* 2x2 grid */
     gap: 10px;
