@@ -23,11 +23,18 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function toggleSchoolDetails() {
-    const content = document.querySelector('.info-content');
-    if (content.style.display === 'none' || content.style.display === '') {
-        content.style.display = 'grid';
-    } else {
-        content.style.display = 'none';
-    }
-}
+document.addEventListener("DOMContentLoaded", function() {
+    const schoolHeaders = document.querySelectorAll('.school-header');
+
+    schoolHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            console.log('Header clicked');  // Test if this is being logged
+            const details = this.nextElementSibling;
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        });
+    });
+});
