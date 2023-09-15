@@ -43,8 +43,8 @@
 
 .school {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 0px;
+    grid-template-columns: 1fr;
+    gap: 10px;
 }
 
 .school-header {
