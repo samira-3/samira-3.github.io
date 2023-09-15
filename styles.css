@@ -55,10 +55,11 @@ body {
 }
 
 .job-header {
-    padding: 10px;
-    background-color: rgba(0, 0, 0, 0.8);
+    padding: 16px;
+    background-color: #e0e0e0;
+    box-shadow: 0 1px 0 white;
     cursor: pointer;
-    border-bottom: 1px solid white;
+    transition: all 0.3s; /* Smooth transition for expanding and collapsing */
 }
 
 /* Create a container that holds the grid of boxes */
@@ -68,13 +69,6 @@ body {
     gap: 20px; /* Space between grid items */
 }
 
-/* Adjustments for the box */
-.box {
-    padding: 16px;
-    background-color: #e0e0e0;
-    box-shadow: 0 1px 0 white;
-    cursor: pointer;
-    transition: all 0.3s; /* Smooth transition for expanding and collapsing */
 }
 
 /* The job description details are hidden by default */
