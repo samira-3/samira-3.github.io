@@ -51,7 +51,7 @@ body {
 .job {
     border: 1px solid white;
     margin-bottom: 20px;
-    border-radius: 5px;
+    box-shadow: 0 1px 0 white;
     padding: 16px;
     background-color: #e0e0e0;
     cursor: pointer;
@@ -61,7 +61,6 @@ body {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
-    box-shadow: 0 1px 0 white;
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Creates 3 equal columns */
     gap: 16px; /* Gap between the boxes */
