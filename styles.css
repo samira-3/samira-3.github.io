@@ -1,3 +1,16 @@
+#profile-pic {
+    width: 150px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+
+a {
+    color: blue;
+    text-decoration: none;
+}
+
+
 .header-container {
     display: flex;
     justify-content: space-between;
@@ -100,18 +113,6 @@ body {
     padding: 2rem;
     background-color: rgba(0, 0, 0, 0.6);
     border-radius: 5px;
-}
-
-#profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    margin: 0 auto;
-}
-
-a {
-    color: blue;
-    text-decoration: none;
 }
 
 body {
