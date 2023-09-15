@@ -52,16 +52,13 @@ body {
 
 .job-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* three columns */
-    gap: 20px; /* spacing between each job box */
+    grid-template-columns: repeat(2, 1fr);  // Change from 3 to 2 columns
+    gap: 20px;
     margin-top: 20px;
 }
 
 .job {
-    background: rgba(255, 255, 255, 0.1);  /* added a slight background to each job for better readability */
-    padding: 15px; /* spacing inside each job box */
-    border-radius: 5px; /* rounded corners for each job */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* a subtle shadow for a lifted appearance */
+    overflow: auto;  // Add scrollbars if content is too big
 }
 
 details {
@@ -123,8 +120,8 @@ body {
         background-position: center center;
     }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     .job-grid {
-        grid-template-columns: 1fr; /* single column */
+        grid-template-columns: 1fr;  // Single column on small screens
     }
 }
