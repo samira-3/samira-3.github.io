@@ -73,9 +73,12 @@ body {
 }
 
 .job {
-    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    /*border: 1px solid white;
     margin-bottom: 10px;
-    border-radius: 5px;
+    border-radius: 5px;*/
 }
 
 .job-header {
