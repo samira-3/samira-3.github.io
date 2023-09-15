@@ -101,7 +101,7 @@ a {
     grid-template-columns: repeat(2, 1fr); /* For 2 columns */
     grid-template-rows: repeat(3, 1fr); /* For 3 rows, though this isn't strictly necessary as rows will auto-form */
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 5px;
 }
 
 .job {
