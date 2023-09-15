@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-function toggleInfoBox() {
+function toggleSchoolDetails() {
     const content = document.querySelector('.info-content');
     if (content.style.display === 'none' || content.style.display === '') {
         content.style.display = 'grid';
