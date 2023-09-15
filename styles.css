@@ -48,7 +48,7 @@ body {
     color: white;
 }
 
-/*.job {
+.job {
     border: 1px solid white;
     margin-bottom: 20px;
     border-radius: 5px;
@@ -64,29 +64,6 @@ body {
 .job-details {
     display: none;
     padding: 10px;
-}*/
-
-.job {
-    display: flex;
-    justify-content: space-between;
-}
-
-.job-header {
-    flex: 1;
-    margin: 10px;
-    cursor: pointer;
-    position: relative;
-}
-
-.job-details {
-    display: none;
-    position: absolute;
-    top: 50%;
-    left: 0;
-    width: 50%;
-    background-color: #f9f9f9;
-    padding: 10px;
-    border: 1px solid #ccc;
 }
 
 .container {
