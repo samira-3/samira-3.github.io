@@ -50,20 +50,6 @@ body {
     color: white;
 }
 
-.job-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    gap: 20px;
-    margin-top: 20px;
-    border: 5px solid red; /* Temporarily see the grid container */
-}
-
-.job {
-    overflow: hidden;
-    border: 3px solid blue; /* Temporarily see each job item */
-}
-
 details {
     margin: 1rem 0;
     border: 1px solid #ccc;
@@ -108,6 +94,20 @@ details[open] summary::before {
 a {
     color: cyan;
     text-decoration: none;
+}
+
+.job-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+    border: 5px solid red; /* Temporarily see the grid container */
+}
+
+.job {
+    overflow: hidden;
+    border: 3px solid blue; /* Temporarily see each job item */
 }
 
 body {
