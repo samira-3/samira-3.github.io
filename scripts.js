@@ -7,7 +7,6 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
-<script>
 function toggleJobDetails(element) {
     const details = element.nextElementSibling;
     if(details.style.display === 'none' || details.style.display === '') {
@@ -16,4 +15,3 @@ function toggleJobDetails(element) {
         details.style.display = 'none';
     }
 }
-</script>
