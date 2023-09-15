@@ -52,13 +52,19 @@ body {
 
 .job-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);  // Change from 3 to 2 columns
+    grid-template-columns: repeat(3, 1fr); /* three columns */
     gap: 20px;
     margin-top: 20px;
 }
 
 .job {
-    overflow: auto;  // Add scrollbars if content is too big
+    overflow: auto;  // This will add scrollbars if content is too big
+}
+
+@media only screen and (max-width: 600px) {
+    .job-grid {
+        grid-template-columns: repeat(2, 1fr);  // Two columns on small screens
+    }
 }
 
 details {
@@ -118,10 +124,5 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         background-position: center center;
-    }
-}
-@media only screen and (max-width: 600px) {
-    .job-grid {
-        grid-template-columns: 1fr;  // Single column on small screens
     }
 }
