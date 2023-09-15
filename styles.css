@@ -67,14 +67,13 @@ body {
 }*/
 
 .job {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
 }
 
 .job-header {
-    width: calc(33.33% - 10px); /* One third minus gap */
-    height: 150px;
+   height: 150px;
     border: 1px solid black;
     display: flex;
     justify-content: center;
