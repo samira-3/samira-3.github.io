@@ -6,3 +6,14 @@ document.querySelectorAll('a').forEach(link => {
         this.style.color = 'cyan';
     });
 });
+
+<script>
+function toggleJobDetails(element) {
+    const details = element.nextElementSibling;
+    if(details.style.display === 'none' || details.style.display === '') {
+        details.style.display = 'block';
+    } else {
+        details.style.display = 'none';
+    }
+}
+</script>
