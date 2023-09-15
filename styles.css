@@ -42,6 +42,42 @@
 }
 
 body {
+    margin: 0;
+    padding: 0;
+    font-family: New Times Roman, sans-serif;
+}
+
+#education {
+    position: absolute; /* Absolute positioning */
+    top: 10px; /* 10px from the top */
+    left: 10px; /* 10px from the left */
+    width: 300px; /* Box width */
+    height: 300px; /* Box height */
+    border: 2px solid black; /* Box border */
+    background-color: white; /* Box background color */
+    overflow: hidden; /* Prevent content spillover */
+}
+
+.school-header {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.school-details {
+    display: none; /* Hidden by default */
+    padding: 10px;
+    height: 250px; /* Allow for some header space */
+    overflow-y: scroll; /* Scroll if content exceeds this height */
+}
+
+.logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+body {
     font-family: New Times Roman, sans-serif;
     background-image: url('pic.jpg');
     background-size: cover;
