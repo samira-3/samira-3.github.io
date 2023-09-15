@@ -69,25 +69,26 @@ body {
 .job {
     display: flex;
     justify-content: space-between;
-    width: 10%;
-    max-width: 60px;
-    margin: 0 auto;
 }
 
 .job-header {
     flex: 1;
-    margin: 0 10px;
-    height: 15px;
-    background-color: #ccc;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: 1px solid black;
+    padding: 20px;
+    margin: 10px;
     cursor: pointer;
+    position: relative;
 }
 
 .job-details {
     display: none;
-    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border: 1px solid #ccc;
 }
 
 .container {
