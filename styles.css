@@ -67,24 +67,27 @@ body {
 }*/
 
 .job {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 .job-header {
-   height: 150px;
-    border: 1px solid black;
+    flex: 1;
+    margin: 0 10px;
+    height: 150px;
+    background-color: #ccc;
     display: flex;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
     cursor: pointer;
 }
 
 .job-details {
     display: none;
-    border: 1px solid black;
-    padding: 10px;
+    text-align: center;
 }
 
 .container {
