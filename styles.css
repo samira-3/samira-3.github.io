@@ -96,7 +96,7 @@ a {
     text-decoration: none;
 }
 
-.grid-container {
+.job-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;  /* space between grid items */
