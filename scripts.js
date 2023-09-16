@@ -11,16 +11,16 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Hover to toggle all school details
-    const hoverElementSchool = document.querySelector('.show-school-details');
+    const hoverElementSchool = document.querySelector('.school');
+    const schoolDetails = document.querySelectorAll('.school-header + *');
+
     if(hoverElementSchool) {
         hoverElementSchool.addEventListener('mouseover', function() {
-            const schoolDetails = document.querySelectorAll('.school-header + *');
             schoolDetails.forEach(details => {
                 details.style.display = 'block';
             });
         });
         hoverElementSchool.addEventListener('mouseout', function() {
-            const schoolDetails = document.querySelectorAll('.school-header + *');
             schoolDetails.forEach(details => {
                 details.style.display = 'none';
             });
@@ -28,16 +28,16 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Hover to toggle all job details
-    const hoverElementJob = document.querySelector('.show-job-details');
+    const hoverElementJob = document.querySelector('.job-box');
+    const jobDetails = document.querySelectorAll('.job-header + *');
+
     if(hoverElementJob) {
         hoverElementJob.addEventListener('mouseover', function() {
-            const jobDetails = document.querySelectorAll('.job-header + *');
             jobDetails.forEach(details => {
                 details.style.display = 'block';
             });
         });
         hoverElementJob.addEventListener('mouseout', function() {
-            const jobDetails = document.querySelectorAll('.job-header + *');
             jobDetails.forEach(details => {
                 details.style.display = 'none';
             });
