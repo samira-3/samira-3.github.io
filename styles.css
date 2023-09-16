@@ -118,18 +118,6 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
 }
-
-.job-header {
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-    cursor: pointer;
-    border-bottom: 1px solid white;
-}
-
-.job-details {
-    display: none;
-    padding: 10px;
-}
 */
 
 /* Make the job boxes into circles */
@@ -153,6 +141,18 @@ body {
     display: flex;
     flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
     justify-content: space-between; /* Distribute the job boxes evenly */
+}
+
+.job-header {
+    padding: 10px;
+    background-color: rgba(95, 166, 92, 0.67);
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.job-details {
+    display: none;
+    padding: 10px;
 }
 
 .container {
