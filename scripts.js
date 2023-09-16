@@ -7,6 +7,16 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
+function toggleSchoolDetails(element) {
+    const schoolDetails = element.nextElementSibling;
+
+    if (schoolDetails.classList.contains("show")) {
+        schoolDetails.classList.remove("show");
+    } else {
+        schoolDetails.classList.add("show");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const jobHeaders = document.querySelectorAll('.job-header');
 
@@ -23,7 +33,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
     const schoolHeaders = document.querySelectorAll('.school-header');
 
     schoolHeaders.forEach(header => {
@@ -37,4 +47,4 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     });
-});
+});*/
