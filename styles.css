@@ -4,6 +4,11 @@
     border-radius: 50%;
 }
 
+img {
+   max-width: 100%;
+   height: auto;
+}
+
 a {
     color: blue;
     text-decoration: none;
@@ -133,6 +138,21 @@ body {
     border-radius: 5px;
 }
 
+.container {
+   width: 100%;
+   max-width: 1200px;
+   margin: 0 auto;
+}
+
+.grid {
+   display: flex;
+   flex-wrap: wrap;
+}
+
+.grid-item {
+   flex: 1;  /* Flex items will adjust their width based on available space */
+}
+
 body {
     font-family: New Times Roman, sans-serif;
     background-color: #eda468; 
@@ -148,4 +168,19 @@ body {
         background-position: center center;
         background-color: #f5b878;
     }
+}
+
+/* For desktops and large screens */
+@media (min-width: 601px) {
+   /* Add styles for desktops and large screens here */
+}
+
+/* For tablets */
+@media (min-width: 401px) and (max-width: 600px) {
+   /* Add styles for tablets here */
+}
+
+/* For mobile devices */
+@media (max-width: 400px) {
+   /* Add styles for mobile devices here */
 }
