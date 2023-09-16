@@ -72,7 +72,7 @@ a {
 }
 
 .school-details{
-    display: none;
+    display: block;
     padding: 10px;
 }
 
@@ -159,8 +159,12 @@ body {
 }
 
 .job-details {
-    display: none;
+    display: block;
     padding: 10px;
+}
+
+.visible {
+    display: block !important;
 }
 
 .container {
