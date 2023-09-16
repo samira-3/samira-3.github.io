@@ -65,7 +65,7 @@ h4, h6 {
 
 .school-header {
     padding: 10px;
-    background-color: rgba(16, 110, 36, 0.8);
+    background-color: rgba(51, 118, 47, 0.8);
     cursor: pointer;
     border-bottom: 1px solid white;
 }
@@ -115,7 +115,7 @@ body {
 
 .job-header {
     padding: 10px;
-    background-color: rgba(16, 110, 36, 0.8);
+    background-color: rgba(51, 118, 47, 0.8);
     cursor: pointer;
     border-bottom: 1px solid white;
 }
