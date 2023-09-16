@@ -155,7 +155,7 @@ body {
 
 .job-header h5, .job-header h6 {
     text-align: center;  /* Centers the text */
-    margin: 5px 0;       /* Adds some vertical spacing between elements */
+    margin: 10px 0;       /* Adds some vertical spacing between elements */
 }
 
 .job-details {
