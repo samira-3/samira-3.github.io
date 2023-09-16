@@ -128,6 +128,11 @@ body {
     height: 250px;          /* Should be equal to the width for a perfect circle */
     margin: 15px;           /* Give it some spacing */
     transition: all 0.3s;   /* Optional: smooth transition for hover effects */
+    display: flex;
+    flex-direction: column; /* stacks children vertically */
+    justify-content: center; /* center children horizontally */
+    align-items: center; /* center children vertically */
+    text-align: center; /* centers the inline content like text */
 }
 
 /* Hover effect to show there's more details when hovered (optional) */
