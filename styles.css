@@ -72,17 +72,11 @@ a {
 }
 
 .school-details{
-    display: block;
+    display: none;
     padding: 10px;
 }
 
 /*
-.school-header {
-    padding: 10px;
-    background-color: rgba(242, 202, 1, 0.8);
-    cursor: pointer;
-    border-bottom: 1px solid white;
-}
 .school-details {
     background-color: #515451;
     border: 1px solid #827d7d;
@@ -165,7 +159,7 @@ body {
 }
 
 .job-details {
-    display: block;
+    display: none;
     padding: 10px;
 }
 
