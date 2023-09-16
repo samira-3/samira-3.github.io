@@ -33,11 +33,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // A function to toggle the display of details
 function toggleDetails(detailsElement) {
-    console.log("Toggling details"); // Add this for debugging
+    console.log("Element to toggle:", detailsElement);
+    
     if (detailsElement.style.display === 'none' || detailsElement.style.display === '') {
+        console.log("Setting display to block");
         detailsElement.style.display = 'block';
     } else {
+        console.log("Setting display to none");
         detailsElement.style.display = 'none';
+    }
+}
+
+function toggleDetails(detailsElement) {
+    if (detailsElement.classList.contains('visible')) {
+        detailsElement.classList.remove('visible');
+    } else {
+        detailsElement.classList.add('visible');
     }
 }
 
