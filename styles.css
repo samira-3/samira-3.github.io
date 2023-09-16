@@ -59,7 +59,7 @@ a {
 }
 
 .school {
-    display: grid;
+    display: block;
     grid-template-columns: 1fr;
     gap: 10px;
 }
@@ -140,7 +140,7 @@ body {
 
 /* Make the job boxes three in a row */
 .job-container {
-    display: flex;
+    display: block;
     flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
     justify-content: space-between; /* Distribute the job boxes evenly */
 }
