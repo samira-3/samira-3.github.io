@@ -168,11 +168,8 @@ body {
     left: 0;    /* aligns to the left edge of the circle */
     background-color: rgba(95, 166, 92, 0.67);
     width: 200px; /* adjust as needed */
+    z-index: 10;
 }
-
-/*.hidden {
-    display: none;
-}*/
 
 .container {
     max-width: 700px;
