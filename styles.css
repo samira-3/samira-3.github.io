@@ -80,8 +80,8 @@ a {
 }
 
 .school-details.show {
-    display: block;
     max-height: 1000px; /* This can be any large enough value */
+    max-width: 1000px;
     opacity: 1;
 }
 
