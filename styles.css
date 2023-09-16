@@ -11,6 +11,7 @@ a {
 
 .header-container {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
@@ -71,7 +72,6 @@ a {
 }*/
 
 .school-details {
-    padding: 10px;
     background-color: #515451;
     border: 1px solid #827d7d;
     opacity: 0;
