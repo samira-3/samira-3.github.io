@@ -114,7 +114,7 @@ body {
 .job-box {
     background-color: rgba(95, 166, 92, 0.67);
     border-radius: 50%;     /* Makes the div circular */
-    /*overflow: hidden;       /* Ensures content inside doesn't spill out of the circle */
+    overflow: hidden;       /* Ensures content inside doesn't spill out of the circle */
     width: 350px;           /* Set the diameter of the circle, you can adjust as needed */
     height: 350px;          /* Should be equal to the width for a perfect circle */
     margin: 15px;           /* Give it some spacing */
