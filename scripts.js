@@ -7,7 +7,23 @@ document.querySelectorAll('a').forEach(link => {
     });
 });
 
-function toggleSchoolDetails(element) {
+document.addEventListener("DOMContentLoaded", function() {
+    const schoolHeaders = document.querySelectorAll('.school-header');
+
+    schoolHeaders.forEach(header => {
+        header.addEventListener('click', function() {
+            console.log('Header clicked');  // Test if this is being logged
+            const details = this.nextElementSibling;
+            if (details.style.display === 'none' || details.style.display === '') {
+                details.style.display = 'block';
+            } else {
+                details.style.display = 'none';
+            }
+        });
+    });
+});
+
+/*function toggleSchoolDetails(element) {
     const schoolDetails = element.nextElementSibling;
 
     if (schoolDetails.classList.contains("show")) {
@@ -15,7 +31,7 @@ function toggleSchoolDetails(element) {
     } else {
         schoolDetails.classList.add("show");
     }
-}
+}*/
 
 document.addEventListener("DOMContentLoaded", function() {
     const jobHeaders = document.querySelectorAll('.job-header');
@@ -33,18 +49,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-/*document.addEventListener("DOMContentLoaded", function() {
-    const schoolHeaders = document.querySelectorAll('.school-header');
-
-    schoolHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            console.log('Header clicked');  // Test if this is being logged
-            const details = this.nextElementSibling;
-            if (details.style.display === 'none' || details.style.display === '') {
-                details.style.display = 'block';
-            } else {
-                details.style.display = 'none';
-            }
-        });
-    });
-});*/
