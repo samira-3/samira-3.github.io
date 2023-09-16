@@ -163,10 +163,6 @@ body {
     padding: 10px;
 }
 
-.visible {
-    display: block !important;
-}
-
 .container {
     max-width: 800px;
     margin: 2rem auto;
