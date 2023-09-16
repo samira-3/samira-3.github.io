@@ -73,8 +73,6 @@ a {
 
 .school-details {
     transition: max-height 0.5s ease-in-out, opacity 0.3s ease-in-out;
-    transform: scale(0,0); /* Starts from no height and no width */
-    transform-origin: top left; /* Ensures the content grows from the top-left corner */
     max-height: 0;
     opacity: 0;
     overflow: hidden;
