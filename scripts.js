@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Hide all details on page load
+   /* // Hide all details on page load
     document.querySelectorAll('.job-details, .school-details').forEach(detail => {
         detail.classList.add('hidden');
     });
@@ -41,7 +41,25 @@ function toggleDetails(detailsElement) {
     } else {
         detailsElement.classList.add('hidden');
     }
-}
+}*/
+
+// Hover to toggle all school details
+const hoverElement = document.querySelector('.show-school-details');
+if(hoverElement) {  // Make sure the element exists before adding event listeners
+    hoverElement.addEventListener('mouseover', function() {
+        const schoolDetails = document.querySelectorAll('.school-header + *');
+        school;Details.forEach(details => {
+            details.style.display = 'block';
+        });
+    });
+    hoverElement.addEventListener('mouseout', function() {
+        const schoolDetails = document.querySelectorAll('.school-header + *');
+        schoolDetails.forEach(details => {
+            details.style.display = 'none';
+        });
+     });
+   }
+});
 
 // Hover to toggle all job details
 const hoverElement = document.querySelector('.show-job-details');
