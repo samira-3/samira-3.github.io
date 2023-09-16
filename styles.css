@@ -207,8 +207,8 @@ body {
 @media (min-width: 601px) {
    /* Add styles for desktops and large screens here */
     .job-box {
-        width: 100px;
-        height: 100px;
+        width: 200px;
+        height: 200px;
     }
 }
 
