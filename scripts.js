@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     jobHeaders.forEach(header => {
         header.addEventListener('click', function() {
-            console.log('Header clicked');  // Test if this is being logged
+           /* console.log('Header clicked');  *// Test if this is being logged
             const details = this.nextElementSibling;
             if (details.style.display === 'none' || details.style.display === '') {
                 details.style.display = 'block';
