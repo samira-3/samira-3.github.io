@@ -13,7 +13,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 10px;
 }
 
 .header-details {
@@ -73,8 +73,8 @@ a {
 
 .school-details {
     padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #e0e0e0;
+    background-color: #515451;
+    border: 1px solid #827d7d;
     opacity: 0;
     overflow: hidden;
     transform: scale(0,0);
@@ -84,6 +84,7 @@ a {
 
 .school-details.show {
     transform: scale(1,1); /* Returns to normal size */
+    opacity: 1;
 }
 
 .logo {
