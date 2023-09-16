@@ -92,15 +92,12 @@ a {
     transform: scale(0,0);
     transform-origin: top left;
     transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
-}*/
 
 .school-details.show {
-    transform: scale(0,0);
-    transform-origin: top left;
-    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
     transform: scale(1,1); /* Returns to normal size */
     opacity: 1;
 }
+}*/
 
 .logo {
     width: 30px;
