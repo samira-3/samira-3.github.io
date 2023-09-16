@@ -1,7 +1,7 @@
 #profile-pic {
     width: 200px;
     height: 220px;
-    border-radius: 50%;
+    border-radius: 60%;
 }
 
 a {
@@ -11,7 +11,6 @@ a {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 10px;
 }
