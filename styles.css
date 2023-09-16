@@ -71,13 +71,13 @@ a {
     padding: 10px;
 }
 
-/*.school-header {
+/*
+.school-header {
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border-bottom: 1px solid white;
 }
-
 .school-details {
     background-color: #515451;
     border: 1px solid #827d7d;
@@ -90,7 +90,8 @@ a {
 .school-details.show {
     transform: scale(1,1); /* Returns to normal size */
     opacity: 1;
-}*/
+} 
+*/
 
 body {
     font-family: New Times Roman, sans-serif;
@@ -141,5 +142,6 @@ body {
 @media only screen and (max-width: 600px) {
     body {
         background-position: center center;
+        background-color: #e6b995;
     }
 }
