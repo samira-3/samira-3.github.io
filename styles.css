@@ -72,7 +72,7 @@ a {
 }
 
 .school-details{
-    display: block;
+    display: none;
     padding: 10px;
 }
 
@@ -159,7 +159,7 @@ body {
 }
 
 .job-details {
-    display: block;
+    display: none;
     padding: 10px;
 }
 
