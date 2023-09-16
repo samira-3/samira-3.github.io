@@ -24,6 +24,13 @@ a {
     text-decoration: none;
 }
 
+/* Responsive Breakpoint */
+@media only screen and (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+    }
+}
+
 /*.header-container {
     display: flex;
     justify-content: space-between;
