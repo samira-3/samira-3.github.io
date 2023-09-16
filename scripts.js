@@ -1,12 +1,18 @@
 document.addEventListener("DOMContentLoaded", function() {
+
     // Link color change
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('mouseover', function() {
             this.style.color = 'yellow';
         });
         link.addEventListener('mouseout', function() {
-            this.style.color = 'cyan';
+            this.style.color = 'green';
         });
+    });
+
+    // Hide all details on page load
+    document.querySelectorAll('.job-details, .school-details').forEach(detail => {
+        detail.classList.add('hidden');
     });
 
     // School header toggling
@@ -18,8 +24,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-
-    
     // Job header toggling
     const jobHeaders = document.querySelectorAll('.job-header');
     jobHeaders.forEach(header => {
@@ -31,34 +35,13 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 });
 
-// A function to toggle the display of details
 function toggleDetails(detailsElement) {
-    console.log("Element to toggle:", detailsElement);
-    
-    if (detailsElement.style.display === 'none' || detailsElement.style.display === '') {
-        console.log("Setting display to block");
-        detailsElement.style.display = 'block';
+    if (detailsElement.classList.contains('hidden')) {
+        detailsElement.classList.remove('hidden');
     } else {
-        console.log("Setting display to none");
-        detailsElement.style.display = 'none';
+        detailsElement.classList.add('hidden');
     }
 }
-
-function toggleDetails(detailsElement) {
-    if (detailsElement.classList.contains('visible')) {
-        detailsElement.classList.remove('visible');
-    } else {
-        detailsElement.classList.add('visible');
-    }
-}
-
-/*function toggleDetails(detailsElement) {
-    if (detailsElement.style.display === 'none' || detailsElement.style.display === '') {
-        detailsElement.style.display = 'block';
-    } else {
-        detailsElement.style.display = 'none';
-    }
-}*/
 
 // Hover to toggle all job details
 const hoverElement = document.querySelector('.show-job-details');
