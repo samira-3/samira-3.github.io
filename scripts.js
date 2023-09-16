@@ -37,3 +37,19 @@ function toggleDetails(detailsElement) {
         detailsElement.style.display = 'none';
     }
 }
+
+// Hover to toggle all job details
+    const hoverElement = document.querySelector('.show-job-details');
+    hoverElement.addEventListener('mouseover', function() {
+        const jobDetails = document.querySelectorAll('.job-header + *');
+        jobDetails.forEach(details => {
+            details.style.display = 'block';
+        });
+    });
+    hoverElement.addEventListener('mouseout', function() {
+        const jobDetails = document.querySelectorAll('.job-header + *');
+        jobDetails.forEach(details => {
+            details.style.display = 'none';
+        });
+    });
+});
