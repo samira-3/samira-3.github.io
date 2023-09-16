@@ -9,26 +9,6 @@ document.querySelectorAll('a').forEach(link => {
 
 document.addEventListener("DOMContentLoaded", function() {
     const schoolHeaders = document.querySelectorAll('.school-header');
-    const popupBox = document.getElementById('popupBox');
-    const popupContent = document.getElementById('popupContent');
-
-    schoolHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const detailsClone = this.nextElementSibling.cloneNode(true);
-            detailsClone.style.display = 'block';
-            popupContent.innerHTML = ''; // Clear out any previous content
-            popupContent.appendChild(detailsClone); 
-            popupBox.style.display = 'block'; 
-        });
-    });
-});
-
-function closePopup() {
-    document.getElementById('popupBox').style.display = 'none';
-}
-
-/*document.addEventListener("DOMContentLoaded", function() {
-    const schoolHeaders = document.querySelectorAll('.school-header');
 
     schoolHeaders.forEach(header => {
         header.addEventListener('click', function() {
@@ -41,7 +21,7 @@ function closePopup() {
             }
         });
     });
-});*/
+});
 
 document.addEventListener("DOMContentLoaded", function() {
     const jobHeaders = document.querySelectorAll('.job-header');
