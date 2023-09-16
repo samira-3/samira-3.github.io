@@ -24,12 +24,12 @@ a {
     text-decoration: none;
 }
 
-.header-container {
+/*.header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-}
+}*/
 
 .header-details {
     display: flex;
