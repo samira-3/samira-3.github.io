@@ -1,7 +1,7 @@
 #profile-pic {
     width: 200px;
     height: 220px;
-    border-radius: 60%;
+    border-radius: 50%;
 }
 
 a {
@@ -10,7 +10,7 @@ a {
 }
 
 h4, h6 {
-    margin: 0.5;
+    margin: 0.25;
 }
 
 .header-container {
