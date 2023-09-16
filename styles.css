@@ -4,6 +4,21 @@
     border-radius: 50%;
 }
 
+.header-container {
+    display: flex; /* Set the container to flex */
+    justify-content: space-between; /* Add space between the two main sections */
+    align-items: flex-start; /* Align items to the start (top) */
+    gap: 20px; /* Add a little gap between sections */
+}
+
+.profile-section {
+    flex: 1; /* Let the profile section take as much space as it can */
+}
+
+#education {
+    flex: 1; /* Let the education section take as much space as it can */
+}
+
 a {
     color: blue;
     text-decoration: none;
