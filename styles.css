@@ -151,6 +151,18 @@ body {
     border-bottom: 1px solid white;
 }
 
+.job-header .logo {
+    display: block;
+    max-width: 100px;  /* Adjust this value according to your preferred logo size */
+    margin: 0 auto;    /* Centers the logo if the job-header has a fixed width */
+    padding-bottom: 10px;  /* Space below the logo */
+}
+
+.job-header h5, .job-header h6 {
+    text-align: center;  /* Centers the text */
+    margin: 5px 0;       /* Adds some vertical spacing between elements */
+}
+
 .job-details {
     display: none;
     padding: 10px;
