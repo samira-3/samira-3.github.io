@@ -9,6 +9,10 @@ a {
     text-decoration: none;
 }
 
+h4, h6 {
+    margin: 0;
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
