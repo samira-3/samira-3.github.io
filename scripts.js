@@ -18,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
+
+    
     // Job header toggling
     const jobHeaders = document.querySelectorAll('.job-header');
     jobHeaders.forEach(header => {
@@ -31,12 +33,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
 // A function to toggle the display of details
 function toggleDetails(detailsElement) {
+    console.log("Toggling details"); // Add this for debugging
     if (detailsElement.style.display === 'none' || detailsElement.style.display === '') {
         detailsElement.style.display = 'block';
     } else {
         detailsElement.style.display = 'none';
     }
 }
+
+/*function toggleDetails(detailsElement) {
+    if (detailsElement.style.display === 'none' || detailsElement.style.display === '') {
+        detailsElement.style.display = 'block';
+    } else {
+        detailsElement.style.display = 'none';
+    }
+}*/
 
 // Hover to toggle all job details
 const hoverElement = document.querySelector('.show-job-details');
