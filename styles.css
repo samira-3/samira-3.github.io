@@ -60,6 +60,7 @@ a {
 }
 
 .school-header {
+    padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     cursor: pointer;
     border-bottom: 1px solid white;
@@ -76,7 +77,6 @@ a {
     opacity: 0;
     overflow: hidden;
     transform: scale(0,0);
-    transform-origin: top left;
     transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
 }
 
