@@ -160,14 +160,14 @@ body {
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
-    position: absolute; 
+    position: fixed; 
     top: 100%; /* right below the job box */
     left: 0;
     width: 100%;
     z-index: 1000; /* ensure it's above other content */
 }
 
-.job-header:hover + .job-details {
+.job-box:hover + .job-details {
     display: block !important;
 }
 
