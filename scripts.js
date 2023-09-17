@@ -9,46 +9,13 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function toggleDisplay(element) {
-        element.style.display = element.style.display === 'block' ? 'none' : 'block';
-    }
+    // Generic function to handle hover display for headers and details
+    function handleEventLogic(headersSelector, detailsSelector) {
+        const headers = document.querySelectorAll(headersSelector);
+        const details = document.querySelectorAll(detailsSelector);
 
-    function toggleJobDetails(index, details) {
-    toggleDisplay(details[index]);
-}
-    function showjobDetails() {
-    const details = document.querySelector('.details');
-    if (details.style.display === "none" || details.style.display === "") {
-        details.style.display = "block";
-    } else {
-        details.style.display = "none";
-    }
-}
-
-   function handleEventLogic(headers, details) {
-    headers.forEach((header, index) => {
-        if (isTouchDevice()) {
-            header.addEventListener('click', function() {
-                toggleJobDetails(index, details);
-            });
-        } else {
-            header.addEventListener('mouseover', function() {
-                details[index].style.display = 'block';
-            });
-            header.addEventListener('mouseout', function() {
-                details[index].style.display = 'none';
-            });
-        }
-    });
-}
-    
-    function isTouchDevice() {
-        return 'ontouchstart' in window || navigator.maxTouchPoints;
-    }
-
-    function handleEventLogic(headers, details) {
         headers.forEach((header, index) => {
-            if (isTouchDevice()) {
+            if (isMobile()) {
                 header.addEventListener('click', function() {
                     toggleDisplay(details[index]);
                 });
@@ -63,6 +30,15 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    handleEventLogic(document.querySelectorAll('.school-header'), document.querySelectorAll('.school-header + .school-details'));
-    handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));
+    handleEventLogic('.school-header', '.school-header + .school-details');
+    handleEventLogic('.job-header', '.job-header + .job-details');
 });
+
+// Function to determine if we're on a mobile device
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+function toggleDisplay(element) {
+    element.style.display = element.style.display === 'block' ? 'none' : 'block';
+}
