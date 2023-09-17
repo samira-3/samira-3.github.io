@@ -178,6 +178,10 @@ body {
     z-index: 1000; /* ensure it's above other content */
 }
 
+.job-header:hover + .job-details {
+    display: block;
+}
+
 .container {
     max-width: 700px;
     width: 100%;
