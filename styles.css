@@ -71,12 +71,6 @@ a {
     border-bottom: 1px solid white;
 }
 
-/*.school-details{
-    display: none;
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-}*/
-
 .school-details{
     display: none;
     position: fixed; /* to make it pop up on a fixed position */
@@ -268,7 +262,12 @@ body {
     .job-box {
         margin: 15px auto;
     }
- /* Mobile styles for school details */
+    @media (max-width: 600px) {
+    .school-header:hover + .school-details {
+        display: block;
+    }
+}
+ /* Mobile styles for school details 
     .school-details {
         position: fixed;
         top: 0;
@@ -276,7 +275,7 @@ body {
         width: 100%;
         height: 100%;
         overflow-y: scroll; /* allows scrolling if the content is too long */
-        background-color: rgba(95, 166, 92, 0.9); /* Slightly more opaque for better readability */
-        z-index: 1000; /* to ensure it's above other content */
-    }   
+        /*background-color: rgba(95, 166, 92, 0.9); /* Slightly more opaque for better readability */
+        /*z-index: 1000; /* to ensure it's above other content */
+    }*/
 }
