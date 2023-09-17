@@ -87,27 +87,6 @@ a {
     display: block;
 }
 
-/* Display details on hover over the school 
-.school:hover .school-details {
-    display: block;
-}*/
-
-/*
-.school-details {
-    background-color: #515451;
-    border: 1px solid #827d7d;
-    opacity: 0;
-    overflow: hidden;
-    transform: scale(0,0);
-    transform-origin: top left;
-    transition: transform 0.5s ease-in-out, opacity 0.3s ease-in-out;
-
-.school-details.show {
-    transform: scale(1,1); /* Returns to normal size */
-    opacity: 1;
-} 
-*/
-
 body {
     font-family: New Times Roman, sans-serif;
     background-image: url('pic.jpg');
@@ -178,9 +157,6 @@ body {
 .job-details {
     display: none;
     padding: 10px;
-    /*position: absolute;
-    top: 100%;  /* positions the details right below the circle */
-    /*left: 0;    /* aligns to the left edge of the circle */
     background-color: rgba(95, 166, 92, 0.67);
     width: 200px; /* adjust as needed */
     position: fixed; /* to make it pop up on a fixed position */
