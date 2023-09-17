@@ -71,10 +71,20 @@ a {
     border-bottom: 1px solid white;
 }
 
-.school-details{
+/*.school-details{
     display: none;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
+}*/
+
+.school-details{
+    display: none;
+    position: fixed; /* to make it pop up on a fixed position */
+    top: 10%; /* adjust these values as needed */
+    left: 70%;
+    padding: 10px;
+    background-color: rgba(95, 166, 92, 0.67);
+    z-index: 10; /* ensure it's above other content */
 }
 
 .school-header:hover + .school-details {
