@@ -9,12 +9,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function closeDetails(buttonElement) {
-    // Navigate up to the parent 'school-details' div and hide it
-    let schoolDetails = buttonElement.closest('.school-details');
-    if (schoolDetails) {
-        schoolDetails.style.display = 'none';
-    }
+    function closeSchoolDetails(element) {
+    const detailsDiv = element.parentElement;
+    detailsDiv.style.display = 'none';
 }
 
     // Generic function to handle hover display for headers and details
