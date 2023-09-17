@@ -262,13 +262,21 @@ body {
     .job-box {
         margin: 15px auto;
     }
-    @media (max-width: 600px) {
+      .school {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh; /* takes up the full viewport height */
+    }
+}
+    
+@media (max-width: 600px) {
     .school-header:hover + .school-details {
         display: block;
         align-items: center;
     }
 }
- /* Mobile styles for school details 
+    /*Mobile styles for school details 
     .school-details {
         position: fixed;
         top: 0;
