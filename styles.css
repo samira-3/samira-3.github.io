@@ -98,7 +98,6 @@ body {
 summary {
     display: flex;
     justify-content: space-between;
-    align-items: center; /* to vertically align the items */
 }
 
 /* Reverse the direction so the arrow appears after the content */
