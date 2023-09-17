@@ -158,23 +158,11 @@ body {
     display: none;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
-    width: 200px;
-    position: absolute;  /* Changed from fixed to absolute */
-    top: 100%;  /* Position it right below the .job-box */
-    left: 50%;  /* Horizontally center it */
-    transform: translateX(-50%);  /* Adjust for the left offset */
-    z-index: 1000;  /* Ensure it's above other content */
-}
-
-/*.job-details {
-    display: none;
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
     width: 200px; /* adjust as needed */
-    /*position: fixed; /* to make it pop up on a fixed position */
+    position: fixed; /* to make it pop up on a fixed position */
     top: 10%; /* adjust these values as needed */
-    /*left: 70%;*/
-    /*z-index: 1000; /* ensure it's above other content */
+    left: 70%;
+    z-index: 1000; /* ensure it's above other content */
 }
 
 .container {
