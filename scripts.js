@@ -14,7 +14,18 @@ document.addEventListener("DOMContentLoaded", function() {
     detailsDiv.style.display = 'none';
 }
 
-    // Generic function to handle hover display for headers and details
+    function handleEventLogic(headersSelector, detailsSelector) {
+    const headers = document.querySelectorAll(headersSelector);
+    const details = document.querySelectorAll(detailsSelector);
+
+    headers.forEach((header, index) => {
+        header.addEventListener('click', function() {
+            toggleDisplay(details[index]);
+        });
+    });
+}
+
+   /* // Generic function to handle hover display for headers and details
     function handleEventLogic(headersSelector, detailsSelector) {
         const headers = document.querySelectorAll(headersSelector);
         const details = document.querySelectorAll(detailsSelector);
@@ -38,6 +49,7 @@ document.addEventListener("DOMContentLoaded", function() {
     handleEventLogic('.school-header', '.school-header + .school-details');
     handleEventLogic('.job-header', '.job-header + .job-details');
 });
+*/
 
 // Function to determine if we're on a mobile device
 function isMobile() {
