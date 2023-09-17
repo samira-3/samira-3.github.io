@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     element.closest('.school-details').style.display = 'none';
 }
 
-    function handleEventLogic(headersSelector, detailsSelector) {
+    /*function handleEventLogic(headersSelector, detailsSelector) {
     const headers = document.querySelectorAll(headersSelector);
     const details = document.querySelectorAll(detailsSelector);
 
@@ -23,8 +23,9 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 }
-
-   /* // Generic function to handle hover display for headers and details
+*/
+    
+    // Generic function to handle hover display for headers and details
     function handleEventLogic(headersSelector, detailsSelector) {
         const headers = document.querySelectorAll(headersSelector);
         const details = document.querySelectorAll(detailsSelector);
@@ -48,7 +49,6 @@ document.addEventListener("DOMContentLoaded", function() {
     handleEventLogic('.school-header', '.school-header + .school-details');
     handleEventLogic('.job-header', '.job-header + .job-details');
 });
-*/
 
 // Function to determine if we're on a mobile device
 function isMobile() {
