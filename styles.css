@@ -156,7 +156,7 @@ body {
     display: none !important;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
-    width: 200px; /* adjust as needed */
+    /*width: 200px; /* adjust as needed */
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
