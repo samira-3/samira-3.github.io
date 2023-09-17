@@ -16,6 +16,14 @@ document.addEventListener("DOMContentLoaded", function() {
     function toggleJobDetails(index, details) {
     toggleDisplay(details[index]);
 }
+    function showjobDetails() {
+    const details = document.querySelector('.details');
+    if (details.style.display === "none" || details.style.display === "") {
+        details.style.display = "block";
+    } else {
+        details.style.display = "none";
+    }
+}
 
    function handleEventLogic(headers, details) {
     headers.forEach((header, index) => {
