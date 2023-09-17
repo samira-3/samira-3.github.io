@@ -77,6 +77,11 @@ a {
     background-color: rgba(95, 166, 92, 0.67);
 }
 
+/* Display details on hover over the school */
+.school:hover .school-details {
+    display: block;
+}
+
 /*
 .school-details {
     background-color: #515451;
