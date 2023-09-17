@@ -10,7 +10,22 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    document.querySelectorAll('.school-header').forEach(header => {
+// Hover to toggle all school details
+const schools = document.querySelectorAll('.school');
+
+schools.forEach(school => {
+    const schoolDetails = school.querySelector('.school-details');
+
+    school.addEventListener('mouseover', function() {
+        schoolDetails.style.display = 'block';
+    });
+
+    school.addEventListener('mouseout', function() {
+        schoolDetails.style.display = 'none';
+    });
+});
+    
+    /*document.querySelectorAll('.school-header').forEach(header => {
     header.addEventListener('click', function() {
         let details = this.nextElementSibling; // .school-details
         if (details.style.display === 'block') {
@@ -19,7 +34,7 @@ document.addEventListener("DOMContentLoaded", function() {
             details.style.display = 'block';
         }
     });
-});
+});*/
 
 
     /*// Hover to toggle all school details
