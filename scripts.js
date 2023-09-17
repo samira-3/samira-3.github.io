@@ -10,7 +10,19 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    // Hover to toggle all school details
+    document.querySelectorAll('.school-header').forEach(header => {
+    header.addEventListener('click', function() {
+        let details = this.nextElementSibling; // .school-details
+        if (details.style.display === 'block') {
+            details.style.display = 'none';
+        } else {
+            details.style.display = 'block';
+        }
+    });
+});
+
+
+    /*// Hover to toggle all school details
     const hoverElementSchool = document.querySelector('.school');
     const schoolDetails = document.querySelectorAll('.school-header + *');
 
@@ -25,7 +37,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 details.style.display = 'none';
             });
         });
-    }
+    }*/
 
     // Hover to toggle all job details
     document.querySelectorAll('.job-box').forEach(jobBox => {
@@ -41,36 +53,3 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 });
-
-   /* // Hide all details on page load
-    document.querySelectorAll('.job-details, .school-details').forEach(detail => {
-        detail.classList.add('hidden');
-    });
-
-    // School header toggling
-    const schoolHeaders = document.querySelectorAll('.school-header');
-    schoolHeaders.forEach(header => {
-        header.addEventListener('click', function() {
-            const details = this.nextElementSibling;
-            toggleDetails(details);
-        });
-    });
-
-    // Job header toggling
-    const jobHeaders = document.querySelectorAll('.job-header');
-    jobHeaders.forEach(header => {
-        console.log('Binding click event listener to job header.');  // Testing the binding
-        header.addEventListener('click', function() {
-            const details = this.nextElementSibling;
-            toggleDetails(details);
-        });
-    });
-});
-
-function toggleDetails(detailsElement) {
-    if (detailsElement.classList.contains('hidden')) {
-        detailsElement.classList.remove('hidden');
-    } else {
-        detailsElement.classList.add('hidden');
-    }
-}*/
