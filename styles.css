@@ -268,7 +268,7 @@ body {
         margin: 15px auto;
     }
     /*Mobile styles for school details */
-    .school-details & .job-details {
+    .school-details, .job-details {
         position: absolute;
         top: 50%;
         left: 50%;
