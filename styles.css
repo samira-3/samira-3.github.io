@@ -87,11 +87,6 @@ a {
     display: block;
 }
 
-.school-details {
-    position: relative;
-    /* your existing styles */
-}
-
 close-button {
     position: absolute;
     right: 10px;
