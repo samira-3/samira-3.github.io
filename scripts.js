@@ -63,30 +63,3 @@ schoolHeaders.forEach((header, index) => {
         });
     }
 });
-
-/*document.addEventListener("DOMContentLoaded", function() {
-
-const schoolHeaders = document.querySelectorAll('.school-header');
-const schoolDetails = document.querySelectorAll('.school-header + .school-details');
-
-schoolHeaders.forEach((header, index) => {
-    header.addEventListener('mouseover', function() {
-        if (window.innerWidth > 400) {  // only apply hover behavior on larger screens
-            schoolDetails[index].style.display = 'block';
-        }
-    });
-    header.addEventListener('mouseout', function() {
-        if (window.innerWidth > 400) {  // only apply hover behavior on larger screens
-            schoolDetails[index].style.display = 'none';
-        }
-    });
-    
-    header.addEventListener('click', function() {
-        if (schoolDetails[index].style.display === 'block') {
-            schoolDetails[index].style.display = 'none';
-        } else {
-            schoolDetails[index].style.display = 'block';
-        }
-    });
-  });
-});*/
