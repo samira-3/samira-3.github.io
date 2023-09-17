@@ -10,7 +10,7 @@ img {
 }
 
 a {
-    color: blue;
+    color: dark-blue;
     text-decoration: none;
 }
 
@@ -92,49 +92,6 @@ body {
     background-image: url('pic.jpg');
     background-size: cover;
     color: white;
-}
-
-/* Make the summary tag a flex container */
-summary {
-    display: flex;
-    justify-content: space-between;
-}
-
-/* Reverse the direction so the arrow appears after the content */
-summary::-webkit-details-marker { 
-    order: 1; 
-    padding: 0 5px; /* Add some spacing between the content and the arrow */
-}
-
-/* In case you're looking for cross-browser compatibility */
-/* This is a general approach where we hide the default arrow and use our own */
-summary {
-    list-style: none; /* remove default styles */
-    position: relative; /* set a context for positioning the custom arrow */
-}
-
-/* Hide default arrow for Firefox */
-summary::-moz-list-bullet {
-    display: none;
-}
-
-/* Hide default arrow for Chrome, Edge, and Safari */
-summary::-webkit-details-marker {
-    display: none;
-}
-
-/* Add a custom arrow to the summary */
-summary:after {
-    content: '▶';
-    position: absolute;
-    right: 0;
-    font-size: 1.5em; /* adjust size as required */
-    transition: transform 0.2s ease-in-out; /* for a smooth rotation */
-}
-
-/* Rotate the custom arrow when details are open */
-details[open] summary:after {
-    transform: rotate(90deg); /* rotate the arrow 90 degrees */
 }
 
 /* Make the job boxes into circles */
