@@ -1,36 +1,4 @@
 document.addEventListener("DOMContentLoaded", function() {
-
-    // Link color change
-    document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('mouseover', function() {
-            this.style.color = 'yellow';
-        });
-        link.addEventListener('mouseout', function() {
-            this.style.color = 'green';
-        });
-    });
-
-    // Function to toggle display of details
-    function toggleDisplay(element) {
-        element.style.display = element.style.display === 'block' ? 'none' : 'block';
-    }
-
-    const jobHeaders = document.querySelectorAll('.job-header');
-    const jobDetails = document.querySelectorAll('.job-details');
-
-    jobHeaders.forEach((header, index) => {
-        header.addEventListener('mouseover', function() {
-            jobDetails[index].style.display = 'block';
-        });
-        header.addEventListener('mouseout', function() {
-            jobDetails[index].style.display = 'none';
-        });
-    });
-
-});
-
-
-/*document.addEventListener("DOMContentLoaded", function() {
     // Link color change
     document.querySelectorAll('a').forEach(link => {
         link.addEventListener('mouseover', function() {
@@ -89,6 +57,4 @@ document.addEventListener("DOMContentLoaded", function() {
 
     handleEventLogic(document.querySelectorAll('.school-header'), document.querySelectorAll('.school-header + .school-details'));
     handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));
-});*/
-
-
+});
