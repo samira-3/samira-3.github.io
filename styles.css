@@ -94,7 +94,6 @@ body {
     color: white;
 }
 
-/*
 .job-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -103,7 +102,7 @@ body {
     margin-bottom: 10px;
     border-radius: 5px;
 }
-*/
+
 
 /* Make the job boxes into circles */
 .job-box {
