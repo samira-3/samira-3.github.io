@@ -183,12 +183,9 @@ body {
     left: 0;    /* aligns to the left edge of the circle */
     background-color: rgba(95, 166, 92, 0.67);
     width: 200px; /* adjust as needed */
-    display: none;
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
     z-index: 10; /* ensure it's above other content */
 }
 
