@@ -13,13 +13,28 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.display = element.style.display === 'block' ? 'none' : 'block';
     }
 
-    // Add the new toggleJobDetails function here
-    function toggleJobDetails(element) {
-        const jobDetails = element.nextElementSibling;
-        toggleDisplay(jobDetails);
-    }
+    function toggleJobDetails(index, details) {
+    toggleDisplay(details[index]);
+}
 
-    function isTouchDevice() {
+   function handleEventLogic(headers, details) {
+    headers.forEach((header, index) => {
+        if (isTouchDevice()) {
+            header.addEventListener('click', function() {
+                toggleJobDetails(index, details);
+            });
+        } else {
+            header.addEventListener('mouseover', function() {
+                details[index].style.display = 'block';
+            });
+            header.addEventListener('mouseout', function() {
+                details[index].style.display = 'none';
+            });
+        }
+    });
+}
+    
+    /*function isTouchDevice() {
         return 'ontouchstart' in window || navigator.maxTouchPoints;
     }
 
@@ -42,6 +57,6 @@ document.addEventListener("DOMContentLoaded", function() {
 
     handleEventLogic(document.querySelectorAll('.school-header'), document.querySelectorAll('.school-header + .school-details'));
     handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));
-});
+});*/
 
 
