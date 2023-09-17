@@ -265,6 +265,7 @@ body {
     @media (max-width: 600px) {
     .school-header:hover + .school-details {
         display: block;
+        align-items: center;
     }
 }
  /* Mobile styles for school details 
