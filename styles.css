@@ -178,12 +178,18 @@ body {
 .job-details {
     display: none;
     padding: 10px;
-    position: absolute;
+    /*position: absolute;
     top: 100%;  /* positions the details right below the circle */
-    left: 0;    /* aligns to the left edge of the circle */
+    /*left: 0;    /* aligns to the left edge of the circle */
     background-color: rgba(95, 166, 92, 0.67);
     width: 200px; /* adjust as needed */
-    z-index: 10;
+    display: none;
+    position: fixed; /* to make it pop up on a fixed position */
+    top: 10%; /* adjust these values as needed */
+    left: 70%;
+    padding: 10px;
+    background-color: rgba(95, 166, 92, 0.67);
+    z-index: 10; /* ensure it's above other content */
 }
 
 .container {
@@ -265,7 +271,7 @@ body {
         margin: 15px auto;
     }
     /*Mobile styles for school details */
-    .school-details {
+    .school-details & .job-details {
         position: absolute;
         top: 50%;
         left: 50%;
@@ -275,12 +281,6 @@ body {
         overflow-y: auto;  /* adds scrolling if content overflows */
         max-height: 80vh;  /* limits height to avoid edge-to-edge content on mobile */
     }
-*/ 
-    /*.school {
-        display: grid;
-        place-items: center;  /* shorthand to center both horizontally and vertically */
-        /*min-height: 100vh;  /* takes up the full viewport height */
-    }*/
 }
     
 @media (max-width: 600px) {
