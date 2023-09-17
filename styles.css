@@ -153,7 +153,7 @@ body {
 }
 
 .job-details {
-    display: none;
+    display: none !important;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     /*width: 200px; /* adjust as needed */
@@ -168,7 +168,7 @@ body {
 }
 
 .job-header:hover + .job-details {
-    display: block;
+    display: block !important;
 }
 
 .container {
