@@ -272,7 +272,7 @@ body {
         position: absolute;
         top: 50%;
         left: 50%;
-        width: 90%;  /* use a percentage to make sure it fits well on mobile, adjust as needed */
+        width: 100%;  /* use a percentage to make sure it fits well on mobile, adjust as needed */
         transform: translate(-50%, -50%);  /* this ensures centering regardless of the exact size of .school-details */
         z-index: 10;  /* raises it above other content */
         overflow-y: auto;  /* adds scrolling if content overflows */
