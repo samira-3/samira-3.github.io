@@ -167,7 +167,7 @@ body {
     z-index: 1000; /* ensure it's above other content */
 }
 
-.job-box:hover + .job-details {
+.job-header:hover + .job-details {
     display: block !important;
 }
 
