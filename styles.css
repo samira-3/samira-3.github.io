@@ -176,7 +176,7 @@ body {
 }
 
 .job-details {
-    display: none;
+    display: block;
     padding: 10px;
     position: absolute;
     top: 100%;  /* positions the details right below the circle */
@@ -186,7 +186,7 @@ body {
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
-    z-index: 10; /* ensure it's above other content */
+    z-index: 1000; /* ensure it's above other content */
 }
 
 .container {
