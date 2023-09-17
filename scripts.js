@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function closeDetails(element) {
-    element.closest('.school-details').style.display = 'none';
+    element.parentElement.style.display = 'none';
 }
 
     /*function handleEventLogic(headersSelector, detailsSelector) {
