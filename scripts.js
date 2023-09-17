@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-function toggleDetails(headerSelector, detailsSelector) {
+function toggleDetails(headersSelector, detailsSelector) {
     const headers = document.querySelectorAll(headerSelector);
     const details = document.querySelectorAll(detailsSelector);
 
