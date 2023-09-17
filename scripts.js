@@ -64,3 +64,31 @@ schoolHeaders.forEach((header, index) => {
     });
 
 });
+
+// Function to determine if we're on a mobile device
+function isMobile() {
+    return window.innerWidth <= 768;
+}
+
+const schoolHeaders = document.querySelectorAll('.school-header');
+const schoolDetails = document.querySelectorAll('.school-header + .school-details');
+
+schoolHeaders.forEach((header, index) => {
+    if (isMobile()) {
+        header.addEventListener('click', function() {
+            if (schoolDetails[index].style.display === 'block') {
+                schoolDetails[index].style.display = 'none';
+            } else {
+                schoolDetails[index].style.display = 'block';
+            }
+        });
+    } else {
+        header.addEventListener('mouseover', function() {
+            schoolDetails[index].style.display = 'block';
+        });
+        header.addEventListener('mouseout', function() {
+            schoolDetails[index].style.display = 'none';
+        });
+    }
+});
+
