@@ -94,16 +94,6 @@ body {
     color: white;
 }
 
-.job-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 10px;
-    /*border: 1px solid white;
-    margin-bottom: 10px;
-    border-radius: 5px;
-}
-
-
 /* Make the job boxes into circles */
 .job-box {
     background-color: rgba(95, 166, 92, 0.67);
@@ -166,10 +156,6 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000; /* ensure it's above other content */
-}
-
-.job-box:hover .job-details {
-    display: block;
 }
 
 .container {
