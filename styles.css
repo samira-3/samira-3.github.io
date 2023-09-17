@@ -80,7 +80,7 @@ a {
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     z-index: 10; /* ensure it's above other content */
-    transition: all 1s ease; // smoothens the display transition
+    /*transition: all 1s ease; // smoothens the display transition*/
 }
 
 .school-header:hover + .school-details {
