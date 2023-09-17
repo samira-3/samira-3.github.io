@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     handleEventLogic('.school-header', '.school-header + .school-details');
-    handleEventLogic('.job-header', '.job-header + .job-details');
+    handleEventLogic('.job-box', '.job-box + .job-details');
 });
 
 // Function to determine if we're on a mobile device
