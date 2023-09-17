@@ -263,10 +263,9 @@ body {
         margin: 15px auto;
     }
       .school {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 100vh; /* takes up the full viewport height */
+        display: grid;
+        place-items: center;  /* shorthand to center both horizontally and vertically */
+        min-height: 100vh;  /* takes up the full viewport height */
     }
 }
     
