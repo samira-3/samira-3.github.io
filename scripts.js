@@ -120,4 +120,4 @@ function handleEventLogic(headers, details) {
 }
 
 handleEventLogic(document.querySelectorAll('.school-header'), document.querySelectorAll('.school-header + .school-details'));
-handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));
+handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));*/
