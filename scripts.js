@@ -10,8 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     function closeDetails(element) {
-    const detailsDiv = element.parentElement;
-    detailsDiv.style.display = 'none';
+    element.closest('.school-details').style.display = 'none';
 }
 
     function handleEventLogic(headersSelector, detailsSelector) {
