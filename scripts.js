@@ -10,15 +10,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function toggleJobDetails(element) {
-        var details = element.nextElementSibling;
-        if(details.style.display === "none" || details.style.display === "") {
-            details.style.display = "block";
-        } else {
-            details.style.display = "none";
-        }
-    }
-
 // Generic function to handle hover display for headers and details
     function handleHoverDisplay(headersSelector, detailsSelector) {
         const headers = document.querySelectorAll(headersSelector);
@@ -35,8 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 
-/*function toggleDetails(headersSelector, detailsSelector) {
-    const headers = document.querySelectorAll(headersSelector);
+function toggleDetails(headerSelector, detailsSelector) {
+    const headers = document.querySelectorAll(headerSelector);
     const details = document.querySelectorAll(detailsSelector);
 
     headers.forEach((header, index) => {
