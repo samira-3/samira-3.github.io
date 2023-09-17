@@ -77,9 +77,13 @@ a {
     background-color: rgba(95, 166, 92, 0.67);
 }
 
-.school-header:hover + .school-details {
+.school:hover .school-details {
     display: block;
 }
+
+/*.school-header:hover + .school-details {
+    display: block;
+}*/
 
 /* Display details on hover over the school 
 .school:hover .school-details {
