@@ -176,7 +176,7 @@ body {
 }
 
 .job-details {
-    display: block;
+    display: none;
     padding: 10px;
     /*position: absolute;
     top: 100%;  /* positions the details right below the circle */
