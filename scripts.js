@@ -13,6 +13,12 @@ document.addEventListener("DOMContentLoaded", function() {
         element.style.display = element.style.display === 'block' ? 'none' : 'block';
     }
 
+    // Add the new toggleJobDetails function here
+    function toggleJobDetails(element) {
+        const jobDetails = element.nextElementSibling;
+        toggleDisplay(jobDetails);
+    }
+
     function isTouchDevice() {
         return 'ontouchstart' in window || navigator.maxTouchPoints;
     }
