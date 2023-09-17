@@ -64,7 +64,7 @@ schoolHeaders.forEach((header, index) => {
 
 });*/
 
-/*// Function to determine if we're on a mobile device
+// Function to determine if we're on a mobile device
 function isMobile() {
     return window.innerWidth <= 768;
 }
@@ -91,9 +91,9 @@ function handleEventLogic(headers, details) {
 }
 
 handleEventLogic(document.querySelectorAll('.school-header'), document.querySelectorAll('.school-header + .school-details'));
-handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));*/
+handleEventLogic(document.querySelectorAll('.job-header'), document.querySelectorAll('.job-header + .job-details'));
 
-// Function to determine if we're on a mobile device
+/*// Function to determine if we're on a mobile device
 function isMobile() {
     return window.innerWidth <= 768;
 }
@@ -120,7 +120,7 @@ schoolHeaders.forEach((header, index) => {
     }
 });
 
-/*const jobHeaders = document.querySelectorAll('.job-header');
+const jobHeaders = document.querySelectorAll('.job-header');
 const jobDetails = document.querySelectorAll('.job-header + .job-details');
 
 jobHeaders.forEach((header, index) => {
