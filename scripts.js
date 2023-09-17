@@ -21,34 +21,6 @@ schoolHeaders.forEach((header, index) => {
         schoolDetails[index].style.display = 'none';
     });
 });
-    
-    /*document.querySelectorAll('.school-header').forEach(header => {
-    header.addEventListener('click', function() {
-        let details = this.nextElementSibling; // .school-details
-        if (details.style.display === 'block') {
-            details.style.display = 'none';
-        } else {
-            details.style.display = 'block';
-        }
-    });
-});*/
-
-    /*// Hover to toggle all school details
-    const hoverElementSchool = document.querySelector('.school');
-    const schoolDetails = document.querySelectorAll('.school-header + *');
-
-    if(hoverElementSchool) {
-        hoverElementSchool.addEventListener('mouseover', function() {
-            schoolDetails.forEach(details => {
-                details.style.display = 'block';
-            });
-        });
-        hoverElementSchool.addEventListener('mouseout', function() {
-            schoolDetails.forEach(details => {
-                details.style.display = 'none';
-            });
-        });
-    }*/
 
     // Hover to toggle all job details
     document.querySelectorAll('.job-box').forEach(jobBox => {
@@ -73,7 +45,7 @@ function isMobile() {
 const schoolHeaders = document.querySelectorAll('.school-header');
 const schoolDetails = document.querySelectorAll('.school-header + .school-details');
 
-schoolHeaders.forEach((header, index) => {
+/*schoolHeaders.forEach((header, index) => {
     if (isMobile()) {
         header.addEventListener('click', function() {
             if (schoolDetails[index].style.display === 'block') {
@@ -90,5 +62,4 @@ schoolHeaders.forEach((header, index) => {
             schoolDetails[index].style.display = 'none';
         });
     }
-});
-
+});*/
