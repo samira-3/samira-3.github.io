@@ -41,7 +41,7 @@ function toggleDetails(headerSelector, detailsSelector) {
 }
 
 toggleDetails('.school-header', '.school-header + .school-details');
-toggleDetails('.job-header', '.job-header + .job-details');*/
+toggleDetails('.job-header', '.job-header + .job-details');
 
 // Function to determine if we're on a mobile device
 function isMobile() {
