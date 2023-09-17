@@ -160,7 +160,7 @@ body {
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
-    position: relative; 
+    position: absolute; 
     top: 100%; /* right below the job box */
     left: 0;
     width: 100%;
