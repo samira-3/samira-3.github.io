@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function closeSchoolDetails(element) {
+    function closeDetails(element) {
     const detailsDiv = element.parentElement;
     detailsDiv.style.display = 'none';
 }
