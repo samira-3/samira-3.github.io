@@ -11,7 +11,12 @@
 
 .navbar a {
     text-decoration: none;
-    margin-left: 10px; /* Add spacing between links*/
+    margin-left: 5px; /* Add spacing between links*/
+}
+
+.navbar ul {
+    display: inline-block; /* Make the ul (unordered list) behave like an inline element */
+    padding: 0; /* Remove any default padding */
 }
 
 nav ul.tabs {
