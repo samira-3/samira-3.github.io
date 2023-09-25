@@ -3,15 +3,27 @@ const tabContent = document.querySelector('.tab-content');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', function (e) {
+        // Check if Ctrl or Cmd key is pressed
+        if (e.ctrlKey || e.metaKey) {
+            return; // Do not prevent the default behavior, let the browser open the link in a new tab
+        }
+
+        // If Ctrl or Cmd key is not pressed, continue with the tab-switching logic
         e.preventDefault();
         tabs.forEach(t => t.classList.remove('active'));
         this.classList.add('active');
-
-        // You can load content dynamically for each tab here
-        // For now, let's just update the content to indicate which tab is active
         tabContent.innerHTML = `<h2>${this.textContent} Content</h2>`;
     });
 });
+        //e.preventDefault();
+        //tabs.forEach(t => t.classList.remove('active'));
+        //this.classList.add('active');
+
+        // You can load content dynamically for each tab here
+        // For now, let's just update the content to indicate which tab is active
+        //tabContent.innerHTML = `<h2>${this.textContent} Content</h2>`;
+    //});
+//});
 
 document.addEventListener("DOMContentLoaded", function() {
     // Link color change
