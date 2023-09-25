@@ -23,7 +23,7 @@ nav ul.tabs {
 }
 
 nav ul.tabs li {
-    flex: 1;
+    flex: 3;
     text-align: center;
 }
 
