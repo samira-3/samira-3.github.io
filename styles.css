@@ -1,4 +1,20 @@
-nav ul.tabs {
+.content-container {
+    position: relative;
+}
+
+.navbar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px; /* Adjust the padding as needed */
+}
+
+.navbar a {
+    text-decoration: none;
+    margin-left: 10px; /* Add spacing between links */
+}
+
+/*nav ul.tabs {
     list-style: none;
     padding: 0;
     margin: 0;
@@ -19,7 +35,7 @@ nav ul.tabs li a {
     transition: background-color 0.3s;
 }
 
-/*nav ul.tabs li a.active {
+nav ul.tabs li a.active {
     background-color: #555;
 }
 
