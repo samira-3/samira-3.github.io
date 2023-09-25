@@ -1,3 +1,18 @@
+const tabs = document.querySelectorAll('.tabs li a');
+const tabContent = document.querySelector('.tab-content');
+
+tabs.forEach(tab => {
+    tab.addEventListener('click', function (e) {
+        e.preventDefault();
+        tabs.forEach(t => t.classList.remove('active'));
+        this.classList.add('active');
+
+        // You can load content dynamically for each tab here
+        // For now, let's just update the content to indicate which tab is active
+        tabContent.innerHTML = `<h2>${this.textContent} Content</h2>`;
+    });
+});
+
 document.addEventListener("DOMContentLoaded", function() {
     // Link color change
     document.querySelectorAll('a').forEach(link => {
