@@ -7,12 +7,12 @@
     top: 0;
     right: 0;
     padding: 10px; /* Adjust the padding as needed */
-}
+}*/
 
-/*.navbar a {
+.navbar a {
     text-decoration: none;
     margin-left: 10px; /* Add spacing between links*/
-/*}*/
+}
 
 nav ul.tabs {
     list-style: none;
@@ -25,14 +25,14 @@ nav ul.tabs {
 nav ul.tabs li {
     flex: 1;
     text-align: center;
-    /* Remove the bullet points and adjust padding for each tab */
+    /*Remove the bullet points and adjust padding for each tab */
     padding: 15px 0;
     margin: 0;
 }
 
 nav ul.tabs li a {
     display: block;
-    /*padding: 10px 15px;*/
+    padding: 10px 15px;
     text-decoration: none;
     color: white;
     transition: background-color 0.3s;
