@@ -4,7 +4,7 @@ const tabContent = document.querySelector('.tab-content');
 tabs.forEach(tab => {
     tab.addEventListener('click', function (e) {
         // Open a new tab/window when a tab link is clicked
-        window.open('https://www.example.com', '_blank');
+        window.open('https://samira-3.github.io/experience.html', '_blank');
 
         // Check if Ctrl or Cmd key is pressed
         if (e.ctrlKey || e.metaKey) {
