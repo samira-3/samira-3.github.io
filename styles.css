@@ -174,7 +174,7 @@ body {
 .job-container {
     display: flex;
     flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
-    position: relative; /* For absolute positioning of the .job-details */
+    position: absolute; /* For absolute positioning of the .job-details */
     justify-content: space-between; /* Distribute the job boxes evenly */
 }
 
@@ -199,7 +199,7 @@ body {
     display: none;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
-    position: relative; /* to make it pop up on a fixed position */
+    position: fixed; /* to make it pop up on a fixed position */
     /* Optional: Add some margin for space between items */
     margin-right: 10px;
     margin-bottom: 10px;
