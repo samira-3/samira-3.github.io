@@ -204,13 +204,20 @@ body {
 
 .job-details{
     display: none;
-    position: fixed; /* to make it pop up on a fixed position */
+    position: absolute; /* to make it pop up on a fixed position */
     top: 10%; /* adjust these values as needed */
     left: 70%;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     z-index: 10; /* ensure it's above other content */
     /*transition: all 1s ease; // smoothens the display transition*/
+}
+
+/* Active state, for example when a button is clicked to show the job details */
+.job-details.active {
+    display: block; /* Display it */
+    opacity: 1; /* Fully visible */
+    transform: scale(1); /* Original size */
 }
 
 /*.job-details {
