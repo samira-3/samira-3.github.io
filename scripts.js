@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
             this.style.color = 'yellow';
         });
         link.addEventListener('mouseout', function() {
-            this.style.color = 'green';
+            this.style.color = 'brown';
         });
     });
 
