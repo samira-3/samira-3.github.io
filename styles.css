@@ -199,7 +199,7 @@ body {
     display: none;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
-    position: absolute; /* to make it pop up on a fixed position */
+    position: relative; /* to make it pop up on a fixed position */
     /* Optional: Add some margin for space between items */
     margin-right: 10px;
     margin-bottom: 10px;
