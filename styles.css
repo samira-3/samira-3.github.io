@@ -163,7 +163,7 @@ body {
     justify-content: center; /* center children horizontally */
     align-items: center; /* center children vertically */
     text-align: center; /* centers the inline content like text */
-    position: relative;  /* to ensure that the absolute positioning of details is relative to the job-box */
+    position: absolute;  /* to ensure that the absolute positioning of details is relative to the job-box */
 }
 /* Hover effect to show there's more details when hovered (optional) */
 .job-box:hover {
