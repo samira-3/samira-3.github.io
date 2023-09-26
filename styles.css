@@ -115,6 +115,7 @@ nav ul.tabs li a.active {
     grid-template-columns: 1fr;
     gap: 10px;
     position: relative;
+    margin: 25px 50px 75px 100px;
 }
 
 .school-header {
