@@ -197,7 +197,7 @@ body {
 }
 
 .job-header .logo {
-    display: block;
+    /*display: block;*/
     max-width: 100px;  /* Adjust this value according to your preferred logo size */
     margin: 0 auto;    /* Centers the logo if the job-header has a fixed width */
     padding-bottom: 10px;  /* Space below the logo */
