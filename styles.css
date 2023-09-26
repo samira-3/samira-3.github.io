@@ -204,7 +204,18 @@ body {
     margin: 10px 0;       /* Adds some vertical spacing between elements */
 }
 
-.job-details {
+.job-details{
+    display: none;
+    position: fixed; /* to make it pop up on a fixed position */
+    top: 10%; /* adjust these values as needed */
+    left: 70%;
+    padding: 10px;
+    background-color: rgba(95, 166, 92, 0.67);
+    z-index: 10; /* ensure it's above other content */
+    /*transition: all 1s ease; // smoothens the display transition*/
+}
+
+/*.job-details {
     display: none !important;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
@@ -212,12 +223,12 @@ body {
     /*position: fixed; /* to make it pop up on a fixed position */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;*/
-    position: relative; 
+    /*position: relative; 
     top: 100%; /* right below the job box */
     left: 0;
-    width: 100%;
+    /*width: 100%;
     z-index: 1000; /* ensure it's above other content */
-}
+}*/
 
 .job-header:hover + .job-details {
     display: block !important;
