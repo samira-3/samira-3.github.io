@@ -1,3 +1,12 @@
+// JS for nav tab
+// dictates navtab collapse and expand functionality
+const toggleButton = document.getElementsByClassName('index-navtab-toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('index-navtab-navlist')[0]
+
+toggleButton.addEventListener('click', () => {
+  navtabLinks.classList.toggle('active')
+})
+
 const tabs = document.querySelectorAll('.tabs li a');
 const tabContent = document.querySelector('.tab-content');
 
