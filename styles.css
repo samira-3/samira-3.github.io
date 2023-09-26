@@ -212,10 +212,10 @@ body {
 
 /* Active state, for example when a button is clicked to show the job details */
 .job-details.active {
-    display: block; /* Display it */
-    opacity: 1; /* Fully visible */
-    transform: scale(1); /* Original size */
-}
+    /*display: block; /* Display it */
+    /*opacity: 1; /* Fully visible */
+    /*transform: scale(1); /* Original size */
+}*/
 
 /*.job-details {
     display: none !important;
