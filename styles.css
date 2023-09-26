@@ -174,7 +174,7 @@ body {
 .job-container {
     display: flex;
     flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
-    position: relative; /* For absolute positioning of the .job-details */
+    position: absolute; /* For absolute positioning of the .job-details */
     justify-content: space-between; /* Distribute the job boxes evenly */
 }
 
