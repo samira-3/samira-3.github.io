@@ -1,3 +1,19 @@
+#profile-pic {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+img {
+   max-width: 100%;
+   height: auto;
+}
+
+a {
+    color: dark-blue;
+    text-decoration: none;
+}
+
 /*
 .navbar {
     position: absolute;
@@ -41,7 +57,7 @@ nav ul.tabs li a {
 }
 
 nav ul.tabs li a.active {
-    background-color: #FFB6C1;
+    background-color: #83f28;
 }
 
 /*.tab-content {
@@ -49,22 +65,6 @@ nav ul.tabs li a.active {
     background-color: #f0f0f0;
     min-height: 300px;
 }*/
-
-#profile-pic {
-    width: 120px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-img {
-   max-width: 100%;
-   height: auto;
-}
-
-a {
-    color: dark-blue;
-    text-decoration: none;
-}
 
 .header-container {
     display: flex;
