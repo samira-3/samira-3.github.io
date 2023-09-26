@@ -3,6 +3,9 @@ const tabContent = document.querySelector('.tab-content');
 
 tabs.forEach(tab => {
     tab.addEventListener('click', function (e) {
+        // Open a new tab/window when a tab link is clicked
+        window.open('https://www.example.com', '_blank');
+
         // Check if Ctrl or Cmd key is pressed
         if (e.ctrlKey || e.metaKey) {
             return; // Do not prevent the default behavior, let the browser open the link in a new tab
@@ -15,6 +18,7 @@ tabs.forEach(tab => {
         tabContent.innerHTML = `<h2>${this.textContent} Content</h2>`;
     });
 });
+
         //e.preventDefault();
         //tabs.forEach(t => t.classList.remove('active'));
         //this.classList.add('active');
