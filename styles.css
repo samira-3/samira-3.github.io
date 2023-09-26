@@ -181,9 +181,14 @@ body {
 /* Make the job boxes three in a row */
 .job-container {
     display: flex;
-    flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
-    justify-content: space-between; /* Distribute the job boxes evenly */
+    /*flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
+    /*justify-content: space-between; /* Distribute the job boxes evenly */
 }
+
+.job-box:first-child{
+    float: left;
+}
+
 .job-header {
     padding: 10px;
     /*background-color: rgba(95, 166, 92, 0.67);*/
