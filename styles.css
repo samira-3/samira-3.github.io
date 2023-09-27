@@ -83,6 +83,8 @@ nav ul.tabs li a.active {
 .left-paragraph{
     flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
     text-align: left;
+    max-width: calc(100% - 300px); /* Subtract the width of the right school content */
+    padding-right: 20px; /* Add spacing between left and right content */
     }
 
 .right-side{
