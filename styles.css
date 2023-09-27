@@ -106,6 +106,11 @@ nav ul.tabs li a.active {
     margin-right: 10px; /* space between logo and text */
 }
 
+ ul {
+    margin: 0;
+    padding: 0;
+}
+
 /*Education*/
 /* style the card container */
 .school {
@@ -116,8 +121,9 @@ nav ul.tabs li a.active {
     background-color: transparent;
     perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
     width: 200px;
-    height: 250px;
+    height: 300px;
     border: 1px solid #f1f1f1
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* A subtle shadow for depth */
 }
 
 .school-logo {
@@ -165,28 +171,6 @@ nav ul.tabs li a.active {
     text-align: left;
     font-size: 11px;
 }
-
-/*.school-header {
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-    cursor: pointer;
-    border-bottom: 1px solid white;
-}
-
-/*.school-details{
-    display: none;
-    position: fixed; /* to make it pop up on a fixed position */
-    top: 10%; /* adjust these values as needed */
-    /*left: 70%;
-    /*padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-    z-index: 10; /* ensure it's above other content */
-    /*transition: all 15s ease; // smoothens the display transition*/
-}*/
-
-/*.school-header:hover + .school-details {
-    display: block;
-}*/
 
 close-button {
     position: absolute;
