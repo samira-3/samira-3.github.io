@@ -146,16 +146,18 @@ nav ul.tabs li a.active {
 }
 
 .school-header-front {
-    background-color: #bbb;
+    background-color: rgba(95, 166, 92, 0.67);
     color: black;
     z-index: 2; /* Positioned above the back card face */
 }
 
 .school-details-back {
-    background-color: #ad2983;
+    background-color: rgba(95, 166, 92, 0.67);
     color: white;
     transform: rotateY(180deg); /* Rotate the back card face by 180 degrees, essentially hiding it out of view initially */
     z-index: 1;
+    text-align: left;
+    font-size: 10px;
 }
 
 /*.school-header {
