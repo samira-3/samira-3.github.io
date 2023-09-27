@@ -113,6 +113,11 @@ nav ul.tabs li a.active {
     position: relative;
 }
 
+.logo-container, .school-name {
+    text-align: center;
+    width: 100%;
+}
+
 /*Cool Flip Animation*/
 /* style the card container */
 .school {
