@@ -76,7 +76,7 @@ nav ul.tabs li a.active {
 }
 
 #contact {
-    margin-left: auto; /* Pushes the contact section to the right */
+    margin-left: 15px; /* Pushes the contact section to the right */
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
@@ -116,7 +116,7 @@ nav ul.tabs li a.active {
     background-color: transparent;
     perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
     width: 200px;
-    height: 300px;
+    height: 350px;
     border: 1px solid #f1f1f1
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* A subtle shadow for depth */
 }
