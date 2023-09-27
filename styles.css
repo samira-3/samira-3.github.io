@@ -85,7 +85,7 @@ nav ul.tabs li a.active {
     }
 
 .right-side{
-    flex: 0 0 300px; /* Set a fixed width for the right school content */
+    flex: 0 0 200px; /* Set a fixed width for the right school content */
 }
 
 #contact {
