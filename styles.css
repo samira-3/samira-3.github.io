@@ -106,11 +106,6 @@ nav ul.tabs li a.active {
     margin-right: 10px; /* space between logo and text */
 }
 
- ul {
-    margin: 0;
-    padding: 0;
-}
-
 /*Education*/
 /* style the card container */
 .school {
@@ -170,6 +165,7 @@ nav ul.tabs li a.active {
     z-index: 1;
     text-align: left;
     font-size: 11px;
+    margin: 10px;
 }
 
 close-button {
