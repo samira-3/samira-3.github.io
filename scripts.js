@@ -50,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    handleEventLogic('.school-header', '.school-header + .school-details');
+    // handleEventLogic('.school-header', '.school-header + .school-details');
     handleEventLogicWithPopout('.job-header', '.job-header + .job-details');
 });
 
