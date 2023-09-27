@@ -130,8 +130,8 @@ nav ul.tabs li a.active {
     width: 200px;
     height: 250px;
     border: 1px solid #f1f1f1;
-    float: left;
-    margin: 16px;
+    /*float: left;
+    margin: 16px;*/
 }
 /* Style the card's inner content. This will perform the rotation */
 .school-inner {
