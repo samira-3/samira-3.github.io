@@ -82,7 +82,6 @@ nav ul.tabs li a.active {
 
 .left-paragraph{
     flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
-    max-width: calc(100% - 300px); /* Subtract the width of the right school content */
     }
 
 .right-side{
