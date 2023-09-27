@@ -340,19 +340,30 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
-    .header-container {
-        flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align elements */
-    }
+  .header-container {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center-align items */
+  }
 
-    .header-details {
-        margin-top: 20px; /* Add some space between header and school section */
-    }
+  .header-details {
+    margin-top: 20px; /* Add some spacing between header and school card */
+  }
 
-    #contact {
-        margin-left: auto; /* Push contact section to the right on mobile */
-        align-self: flex-start; /* Align contact section to the top */
-    }
+  /* You may need to adjust the following styles based on your specific design */
+  .school {
+    width: 100%; /* Make the school card full width */
+    height: auto; /* Let the height adjust based on content */
+  }
+
+  .school:hover .school-inner {
+    transform: none; /* Remove the flip effect on mobile */
+  }
+
+  .school-header-front, .school-details-back {
+    position: static; /* Remove absolute positioning */
+    transform: none; /* Remove flip effect */
+    width: 100%; /* Make them full width */
+  }
     
    /* Add styles for mobile devices here */
     .job-container {
