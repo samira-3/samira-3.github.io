@@ -340,17 +340,6 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
-  .header-container {
-    flex-direction: column; /* Stack items vertically */
-    align-items: center; /* Center-align items */
-    display: flex;
-    flex-wrap: wrap;
-  }
-
-  .header-details {
-    margin-top: 20px; /* Add some spacing between header and school card */
-  }
-    
    /* Add styles for mobile devices here */
     .job-container {
         flex-direction: column;
