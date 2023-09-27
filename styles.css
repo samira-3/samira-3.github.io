@@ -340,14 +340,27 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
-    .header-container {
+    /*.header-container {
         flex-direction: column; /* Stack elements vertically */
-        align-items: center; /* Center align elements */
-    }
+        /*align-items: center; /* Center align elements */
+    /*}*/
+
+    /*.header-details {
+        margin-top: 20px; /* Add some space between header and school section */
+    }*/
 
     .header-details {
-        margin-top: 20px; /* Add some space between header and school section */
+        flex-direction: row; /* Arrange header details horizontally */
+        align-items: center; /* Center header details vertically */
+        margin-top: 10px; /* Add some space between header and school flip card */
     }
+
+    /* You can further adjust styles for mobile screens as needed */
+    #contact {
+        margin-left: auto; /* Push contact section to the right on mobile */
+        align-self: flex-start; /* Align contact section to the top */
+    }
+    
    /* Add styles for mobile devices here */
     .job-container {
         flex-direction: column;
