@@ -208,7 +208,7 @@ body {
 .job-container {
     display: flex;
     flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
-    position: relative; /* For absolute positioning of the .job-details */
+    /*position: relative; /* For absolute positioning of the .job-details */
     justify-content: space-between; /* Distribute the job boxes evenly */
 }
 
@@ -343,11 +343,13 @@ body {
   .header-container {
     flex-direction: column; /* Stack items vertically */
     align-items: center; /* Center-align items */
+    display: flex;
+    flex-wrap: wrap;
   }
 
-  /*.header-details {
+  .header-details {
     margin-top: 20px; /* Add some spacing between header and school card */
-  }*/
+  }
     
    /* Add styles for mobile devices here */
     .job-container {
