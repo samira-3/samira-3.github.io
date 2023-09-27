@@ -340,6 +340,9 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
+    .left-paragraph{
+        flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
+    }
    /* Add styles for mobile devices here */
     .job-container {
         flex-direction: column;
