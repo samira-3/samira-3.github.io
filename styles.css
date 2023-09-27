@@ -128,7 +128,7 @@ nav ul.tabs li a.active {
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     z-index: 10; /* ensure it's above other content */
-    /*transition: all 1s ease; // smoothens the display transition*/
+    transition: all 15s ease; // smoothens the display transition*/
 }
 
 .school-header:hover + .school-details {
@@ -207,7 +207,8 @@ body {
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;
     z-index: 10; /* ensure it's above other content */
-    transition: all 1s ease; // smoothens the display transition*/
+    align-text: left;
+    transition: all 15s ease; // smoothens the display transition*/
 }
 
 /* Active state, for example when a button is clicked to show the job details */
