@@ -169,10 +169,6 @@ nav ul.tabs li a.active {
     padding: 15px;
 }
 
-li {
-    text-indent: 15px; /* Adjust the value as needed */
-}
-
 close-button {
     position: absolute;
     right: 10px;
