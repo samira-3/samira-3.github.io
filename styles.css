@@ -197,25 +197,17 @@ body {
 
 .job-details{
     display: none;
-    position: fixed; /* to make it pop up on a fixed position */
-    top: 10%; /* adjust these values as needed */
-    left: 70%;
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
-    z-index: 10;
-    
-    /*display: none;
-    /*padding: 10px;
-    /*background-color: rgba(95, 166, 92, 0.67);
-    /*position: fixed; /* to make it pop up on a fixed position */
+    position: fixed; /* to make it pop up on a fixed position */
     /* Optional: Add some margin for space between items */
-    /*margin-right: 10px;
+    margin-right: 10px;
     margin-bottom: 10px;
     /* No need for position, top, left, and z-index for flowing left to right */
     /*top: 10%; /* adjust these values as needed */
     /*left: 70%;
     z-index: 10; /* ensure it's above other content */
-    /*transition: all 1s ease; // smoothens the display transition*/
+    transition: all 1s ease; // smoothens the display transition*/
 }
 
 /* Active state, for example when a button is clicked to show the job details */
