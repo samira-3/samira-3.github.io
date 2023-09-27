@@ -345,25 +345,9 @@ body {
     align-items: center; /* Center-align items */
   }
 
-  .header-details {
+  /*.header-details {
     margin-top: 20px; /* Add some spacing between header and school card */
-  }
-
-  /* You may need to adjust the following styles based on your specific design */
-  .school {
-    width: 100%; /* Make the school card full width */
-    height: auto; /* Let the height adjust based on content */
-  }
-
-  .school:hover .school-inner {
-    transform: none; /* Remove the flip effect on mobile */
-  }
-
-  .school-header-front, .school-details-back {
-    position: static; /* Remove absolute positioning */
-    transform: none; /* Remove flip effect */
-    width: 100%; /* Make them full width */
-  }
+  }*/
     
    /* Add styles for mobile devices here */
     .job-container {
