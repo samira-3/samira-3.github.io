@@ -75,11 +75,14 @@ nav ul.tabs li a.active {
     align-items: flex-start; /* Aligns the content to the left */
 }
 
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .left-paragraph{
     flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
-    display: flex; /* Enable Flexbox layout for the left-paragraph container */
-    justify-content: space-between; /* Distribute content evenly, pushing it to both sides */
-    text-align: left; /* Adjust text alignment if needed */
+    text-align: left;
     }
 
 #contact {
