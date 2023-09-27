@@ -76,7 +76,10 @@ nav ul.tabs li a.active {
 }
 
 .left-paragraph{
-        flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
+    flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
+    display: flex; /* Enable Flexbox layout for the left-paragraph container */
+    justify-content: space-between; /* Distribute content evenly, pushing it to both sides */
+    text-align: left; /* Adjust text alignment if needed */
     }
 
 #contact {
