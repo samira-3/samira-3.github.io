@@ -347,7 +347,7 @@ body {
 
     /*.header-details {
         margin-top: 20px; /* Add some space between header and school section */
-    }*/
+    /*}*/
 
     .header-details {
         flex-direction: row; /* Arrange header details horizontally */
