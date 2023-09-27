@@ -113,27 +113,72 @@ nav ul.tabs li a.active {
     position: relative;
 }
 
-.school-header {
+/*Cool Flip Animation*/
+/* style the card container */
+.school {
+    background-color: transparent;
+    perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    float: left;
+    margin: 16px;
+}
+/* Style the card's inner content. This will perform the rotation */
+.school-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s; /* Perform a smooth flip effect */
+    transform-style: preserve-3d; /* This allows the child elements of the container to exist in 3D space */
+}
+/* When the card is hovered, the flip-card-inner should rotate */
+.school:hover .school-inner {
+    transform: rotateY(180deg); /* Rotate the inner content 180 degrees on Y axis */
+}
+/* Style the front and back faces of the card */
+.school-header-front, .school-details-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back of the pane during the swap */
+}
+
+.school-header-front {
+    background-color: #bbb;
+    color: black;
+    z-index: 2; /* Positioned above the back card face */
+}
+
+.school-details-back {
+    background-color: #ad2983;
+    color: white;
+    transform: rotateY(180deg); /* Rotate the back card face by 180 degrees, essentially hiding it out of view initially */
+    z-index: 1;
+}
+
+/*.school-header {
     padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     cursor: pointer;
     border-bottom: 1px solid white;
 }
 
-.school-details{
+/*.school-details{
     display: none;
     position: fixed; /* to make it pop up on a fixed position */
     top: 10%; /* adjust these values as needed */
-    left: 70%;
-    padding: 10px;
+    /*left: 70%;
+    /*padding: 10px;
     background-color: rgba(95, 166, 92, 0.67);
     z-index: 10; /* ensure it's above other content */
-    transition: all 15s ease; // smoothens the display transition*/
-}
+    /*transition: all 15s ease; // smoothens the display transition*/
+}*/
 
-.school-header:hover + .school-details {
+/*.school-header:hover + .school-details {
     display: block;
-}
+}*/
 
 close-button {
     position: absolute;
