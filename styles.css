@@ -179,7 +179,7 @@ nav ul.tabs li a.active {
 /* Graduated badge */
 .graduated-badge {
     background-color: #ffdd00;
-    color: white; /* Choose your desired text color */
+    color: #02075d; /* Choose your desired text color */
     font-size: 14px;
     padding: 5px 10px;
     border-radius: 5px;
