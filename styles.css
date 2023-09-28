@@ -176,15 +176,6 @@ nav ul.tabs li a.active {
     padding: 15px;
 }
 
-close-button {
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-}
-
 body {
     background-image: url('pic.jpg');
     background-size: cover;
