@@ -19,6 +19,7 @@ body {
 .title {
     text-align: center;
     margin-bottom: 20px; /* Add spacing between the title and the timeline */
+    background-color: rgb(255,255,0);
 }
 
 h1 {
@@ -93,7 +94,8 @@ h1 {
     perspective: 1000px;
     padding: 20px;
     margin: 20px; /* This margin may cause the card to be pushed to the left */
-    transform: translateY(-20px); /* Adjust the value to move the card up by desired pixels */
+    opacity: 1; /* Initially fully visible */
+    transition: opacity 0.5s; /* Add a smooth transition effect */
 }
 
 .card-inner {
