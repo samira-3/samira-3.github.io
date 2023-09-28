@@ -35,6 +35,18 @@ window.addEventListener("scroll", () => {
     }
 });
 
+var isGraduated = true; // Change this based on your condition
+
+var badge = document.querySelector('.badge');
+
+if (isGraduated) {
+    badge.classList.add('graduated-badge');
+    badge.querySelector('.badge-text').textContent = 'Graduated';
+} else {
+    badge.classList.add('achieved-badge');
+    badge.querySelector('.badge-text').textContent = 'Achieved';
+}
+
 // Function to determine if we're on a mobile device
 function isMobile() {
     return window.innerWidth <= 768;
