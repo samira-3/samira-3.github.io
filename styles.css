@@ -177,7 +177,7 @@ nav ul.tabs li a.active {
     transform: rotateY(180deg); /* Rotate the back card face by 180 degrees, essentially hiding it out of view initially */
     z-index: 1;
     text-align: left;
-    font-size: 11px;
+    font-size: 12px;
     padding: 15px;
 }
 
@@ -203,17 +203,6 @@ body {
 }
 
 /*Experience*/
-/*body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* Center content vertically on the page */
-/*}*/
-
 .title {
     text-align: center;
     margin-bottom: 20px; /* Add spacing between the title and the timeline */
@@ -255,6 +244,7 @@ h1 {
 
 .date{
     font-size: 14px;
+    color: black;
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
@@ -266,6 +256,7 @@ h1 {
 
 .location{
     display: inline-block; /* Make the date appear on the same line as the dot */
+    color: black;
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
     top: 0%; /* Adjust vertical alignment as needed */
