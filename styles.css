@@ -1,5 +1,5 @@
 #profile-pic {
-    width: 100px;
+    width: 150px;
     height: 150px;
     border-radius: 50%;
 }
@@ -39,7 +39,6 @@ nav ul.tabs {
 nav ul.tabs li {
     flex: 1;
     text-align: center;
-    /*Remove the bullet points and adjust padding for each tab */
     padding: 10px 0;
     margin: 0;
 }
@@ -55,12 +54,6 @@ nav ul.tabs li a {
 nav ul.tabs li a.active {
     background-color: #83f28;
 }
-
-/*.tab-content {
-    padding: 20px;
-    background-color: #f0f0f0;
-    min-height: 300px;
-}*/
 
 .header-container {
     display: flex;
@@ -153,10 +146,12 @@ nav ul.tabs li a.active {
     transition: transform 0.6s; /* Perform a smooth flip effect */
     transform-style: preserve-3d; /* This allows the child elements of the container to exist in 3D space */
 }
+
 /* When the card is hovered, the flip-card-inner should rotate */
 .school:hover .school-inner {
     transform: rotateY(180deg); /* Rotate the inner content 180 degrees on Y axis */
 }
+
 /* Style the front and back faces of the card */
 .school-header-front, .school-details-back {
     position: absolute;
@@ -246,7 +241,6 @@ h1 {
     font-size: 14px;
     color: black;
     display: inline-block; /* Make the date appear on the same line as the dot */
-    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
     top: 0%; /* Adjust vertical alignment as needed */
     left: -15%; /* Adjust horizontal alignment as needed */
@@ -257,7 +251,6 @@ h1 {
 .location{
     display: inline-block; /* Make the date appear on the same line as the dot */
     color: black;
-    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
     top: 0%; /* Adjust vertical alignment as needed */
     left: 0%; /* Adjust horizontal alignment as needed */
@@ -371,49 +364,16 @@ body {
 /* For desktops and large screens */
 @media (min-width: 601px) {
    /* Add styles for desktops and large screens here */
-    .job-box {
-        width: 170px;
-        height: 170px;
-    }
 }
 
 /* For tablets */
 @media (min-width: 401px) and (max-width: 600px) {
-   /* Add styles for tablets here */
-    .job-box {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 /* For smaller screens, you may want to adjust how the job boxes appear */
 @media (max-width: 900px) {
-    .job-box {
-        width: 200px;
-        height: 200px;
-    }
 }
 
 /* For mobile devices */
 @media (max-width: 400px) {
-   /* Add styles for mobile devices here */
-    .job-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .job-box {
-        margin: 15px auto;
-    }
-    /*Mobile styles for school details */
-    .job-details {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        width: 100%;  /* use a percentage to make sure it fits well on mobile, adjust as needed */
-        transform: translate(-50%, -50%);  /* this ensures centering regardless of the exact size of .school-details */
-        z-index: 10;  /* raises it above other content */
-        overflow-y: auto;  /* adds scrolling if content overflows */
-        max-height: 80vh;  /* limits height to avoid edge-to-edge content on mobile */
-    }
 }
