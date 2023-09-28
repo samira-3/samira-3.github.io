@@ -13,45 +13,26 @@ document.addEventListener("DOMContentLoaded", function() {
         element.parentElement.style.display = 'none';
     }
 
-    function handleEventLogic(headersSelector, detailsSelector) {
-        const headers = document.querySelectorAll(headersSelector);
-        const details = document.querySelectorAll(detailsSelector);
+const jobs = document.querySelectorAll(".job");
 
-        headers.forEach((header, index) => {
-            header.addEventListener('click', function() {
-                toggleDisplay(details[index]);
-            });
+jobs.forEach((job) => {
+    job.addEventListener("click", () => {
+        job.classList.toggle("flipped");
+    });
+});
+
+window.addEventListener("scroll", () => {
+    const timeline = document.querySelector(".timeline");
+    const timelineTop = timeline.getBoundingClientRect().top;
+    if (timelineTop < window.innerHeight) {
+        jobs.forEach((job) => {
+            job.style.opacity = 1;
+        });
+    } else {
+        jobs.forEach((job) => {
+            job.style.opacity = 0;
         });
     }
-
-    function handleEventLogicWithPopout(headersSelector, detailsSelector) {
-        const headers = document.querySelectorAll(headersSelector);
-        const details = document.querySelectorAll(detailsSelector);
-
-        headers.forEach((header, index) => {
-            if (isMobile()) {
-                header.addEventListener('click', function() {
-                    toggleDisplayWithPopout(details[index]);
-                });
-            } else {
-                header.addEventListener('mouseover', function() {
-                    details[index].style.display = 'block';
-                    setTimeout(() => {
-                        details[index].classList.add('active');
-                    }, 10);
-                });
-                header.addEventListener('mouseout', function() {
-                    details[index].classList.remove('active');
-                    setTimeout(() => {
-                        details[index].style.display = 'none';
-                    }, 500); // Delay for transition to finish before hiding
-                });
-            }
-        });
-    }
-
-    // handleEventLogic('.school-header', '.school-header + .school-details');
-    handleEventLogicWithPopout('.job-header', '.job-header + .job-details');
 });
 
 // Function to determine if we're on a mobile device
