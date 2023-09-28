@@ -367,7 +367,7 @@ body {
 @media (max-width: 400px) {
    /* Add styles for mobile devices here */
     .right-side{
-        transform: translateY(-400px); /* Adjust the value to move up by desired pixels*/
+        transform: translateY(-350px); /* Adjust the value to move up by desired pixels*/
         margin-left: 10px;
     }
     left-paragrapgh{
