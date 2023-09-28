@@ -123,7 +123,7 @@ nav ul.tabs li a.active {
     perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
     width: 200px;
     height: 400px;
-    border: 1px solid #f1f1f1
+    border: 1px solid #f1f1f1;
     box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* A subtle shadow for depth */
 }
 
