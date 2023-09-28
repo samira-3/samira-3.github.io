@@ -36,12 +36,6 @@ h1 {
     padding-top: 10px;
 }
 
-/*.event {
-    display: flex;
-    align-items: flex-start; /* Align events at the top */
-    /*margin-bottom: 20px; /* Add spacing between events */
-/*}*/
-
 .dot {
     /*flex: 0 0 auto; /* Prevent the dot from stretching */
     width: 20px;
