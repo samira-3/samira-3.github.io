@@ -58,6 +58,7 @@ h1 {
 .date{
     font-size: 20px;
     color: white;
+    background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
@@ -70,6 +71,7 @@ h1 {
 .location{
     font-size: 20px;
     color: white;
+    background-color: rgba(95, 166, 92, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
