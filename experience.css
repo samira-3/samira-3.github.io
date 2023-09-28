@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center content vertically on the page */
+}
+
+.title {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between the title and the timeline */
+}
+
+h1 {
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.timeline {
+    position: relative;
+    width: 2px;
+    background-color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+}
+
+/*.event {
+    display: flex;
+    align-items: flex-start; /* Align events at the top */
+    /*margin-bottom: 20px; /* Add spacing between events */
+/*}*/
+
+.dot {
+    /*flex: 0 0 auto; /* Prevent the dot from stretching */
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    color: #fff;
+    position: relative; /* Make sure the dot container is a positioned element */
+}
+
+.date{
+    font-size: 14px;
+    color: red;
+    display: inline-block; /* Make the date appear on the same line as the dot */
+    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
+    position: absolute; /* Position the date element within the dot container */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: -15%; /* Adjust horizontal alignment as needed */
+    transform: translate(-100%, 0%); /* Center the date element within the dot container */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.location{
+    color: red;
+    display: inline-block; /* Make the date appear on the same line as the dot */
+    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
+    position: absolute; /* Position the date element within the dot container */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: 0%; /* Adjust horizontal alignment as needed */
+    transform: translate(10%, 0%); /* Center the date element within the dot container */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.job {
+    position: relative;
+    width: 100%;
+    /*flex: 1; /* Allow the job content to expand and fill available space */
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    padding: 20px;
+    margin: 20px; /* This margin may cause the card to be pushed to the left */
+    transform: translateY(-20px); /* Adjust the value to move the card up by desired pixels */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+/*@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
