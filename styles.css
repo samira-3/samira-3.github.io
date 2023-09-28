@@ -1,6 +1,6 @@
 #profile-pic {
-    width: 170px;
-    height: 200px;
+    width: 70px;
+    height: 100px;
     border-radius: 50%;
 }
 
@@ -255,7 +255,6 @@ h1 {
 
 .date{
     font-size: 14px;
-    color: red;
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
@@ -266,7 +265,6 @@ h1 {
 }
 
 .location{
-    color: red;
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
@@ -316,6 +314,7 @@ h1 {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    background-color: rgba(95, 166, 92, 0.67);
 }
 
 .back {
