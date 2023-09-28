@@ -47,6 +47,22 @@ if (isGraduated) {
     badge.querySelector('.badge-text').textContent = 'Achieved';
 }
 
+window.addEventListener('scroll', function () {
+    const cards = document.querySelectorAll('.card'); // Select all cards
+
+    cards.forEach(function (card) {
+        // Calculate the distance between the card and the top of the viewport
+        const distanceToTop = card.getBoundingClientRect().top;
+
+        // Set the card's opacity based on its position
+        card.style.opacity = 1 - distanceToTop / window.innerHeight;
+
+        // Clamp the opacity between 0 and 1 to prevent negative values or values greater than 1
+        card.style.opacity = Math.max(0, card.style.opacity);
+        card.style.opacity = Math.min(1, card.style.opacity);
+    });
+});
+
 // Function to determine if we're on a mobile device
 function isMobile() {
     return window.innerWidth <= 768;
