@@ -125,6 +125,10 @@ h1 {
     padding: 10px;
 }
 
+li {
+    margin-bottom: 5px; /* Adjust the margin to control the space between list items */
+}
+
 .card p {
     margin: 0;
 }
