@@ -91,7 +91,6 @@ h1 {
     perspective: 1000px;
     padding: 20px;
     margin: 20px; /* This margin may cause the card to be pushed to the left */
-    background-color: rgba(95, 166, 92, 0.67);
     transform: translateY(-20px); /* Adjust the value to move the card up by desired pixels */
 }
 
@@ -117,7 +116,7 @@ h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    background-color: #fff;
+    background-color: rgba(95, 166, 92, 0.67);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
