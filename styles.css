@@ -196,94 +196,139 @@ body {
 }
 
 /*Experience*/
-/* Make the job boxes into circles */
-.job-box {
-    background-color: rgba(95, 166, 92, 0.67);
-    border-radius: 50%;     /* Makes the div circular */
-    overflow: hidden;       /* Ensures content inside doesn't spill out of the circle */
-    width: 200px;           /* Set the diameter of the circle, you can adjust as needed */
-    height: 200px;          /* Should be equal to the width for a perfect circle */
-    margin: 15px;           /* Give it some spacing */
-    transition: all 0.3s;   /* Optional: smooth transition for hover effects */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
     display: flex;
-    flex-direction: column; /* stacks children vertically */
-    justify-content: center; /* center children horizontally */
-    align-items: center; /* center children vertically */
-    text-align: center; /* centers the inline content like text */
-    position: relative;  /* to ensure that the absolute positioning of details is relative to the job-box */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center content vertically on the page */
 }
-/* Hover effect to show there's more details when hovered (optional) */
-.job-box:hover {
-    transform: scale(1.05); /* Slightly increase the size when hovered */
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* A subtle shadow for depth */
+
+.title {
+    text-align: center;
+    margin-bottom: 20px; /* Add spacing between the title and the timeline */
 }
-/* Make the job boxes three in a row */
-.job-container {
+
+h1 {
+    font-size: 24px; /* Adjust font size as needed */
+}
+
+.timeline {
+    position: relative;
+    width: 2px;
+    background-color: #333;
     display: flex;
-    flex-wrap: wrap;      /* Allow wrapping to the next row if more than 3 */
-    /*position: relative; /* For absolute positioning of the .job-details */
-    justify-content: space-between; /* Distribute the job boxes evenly */
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
 }
 
-.job-header {
-    padding: 10px;
-    /*background-color: rgba(95, 166, 92, 0.67);*/
-    cursor: pointer;
-    /*border-bottom: 1px solid white;*/
-}
-.job-header .logo {
-    display: block;
-    max-width: 100px;  /* Adjust this value according to your preferred logo size */
-    margin: 0 auto;    /* Centers the logo if the job-header has a fixed width */
-    padding-bottom: 10px;  /* Space below the logo */
-}
-.job-header h5, .job-header h6 {
-    text-align: center;  /* Centers the text */
-    margin: 10px 0;       /* Adds some vertical spacing between elements */
-}
-
-.job-details{
-    display: none;
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-    position: fixed; /* to make it pop up on a fixed position */
-    /* Optional: Add some margin for space between items */
-    margin-right: 10px;
-    margin-bottom: 10px;
-    /* No need for position, top, left, and z-index for flowing left to right */
-    /*top: 10%; /* adjust these values as needed */
-    /*left: 70%;
-    z-index: 10; /* ensure it's above other content */
-    align-text: left;
-    transition: all 15s ease; // smoothens the display transition*/
-}
-
-/* Active state, for example when a button is clicked to show the job details */
-.job-details.active {
-    /*display: block; /* Display it */
-    /*opacity: 1; /* Fully visible */
-    /*transform: scale(1); /* Original size */
-}*/
-
-/*.job-details {
-    display: none !important;
-    padding: 10px;
-    background-color: rgba(95, 166, 92, 0.67);
-    /*width: 200px; /* adjust as needed */
-    /*position: fixed; /* to make it pop up on a fixed position */
-    /*top: 10%; /* adjust these values as needed */
-    /*left: 70%;*/
-    /*position: relative; 
-    top: 100%; /* right below the job box */
-    /*left: 0;*/
-    /*width: 100%;
-    /*z-index: 1000; /* ensure it's above other content */
+/*.event {
+    display: flex;
+    align-items: flex-start; /* Align events at the top */
+    /*margin-bottom: 20px; /* Add spacing between events */
 /*}*/
 
-.job-header:hover + .job-details {
-    display: block !important;
+.dot {
+    /*flex: 0 0 auto; /* Prevent the dot from stretching */
+    width: 20px;
+    height: 20px;
+    background-color: #000;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0px;
+    color: #fff;
+    position: relative; /* Make sure the dot container is a positioned element */
 }
 
+.date{
+    font-size: 14px;
+    color: red;
+    display: inline-block; /* Make the date appear on the same line as the dot */
+    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
+    position: absolute; /* Position the date element within the dot container */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: -15%; /* Adjust horizontal alignment as needed */
+    transform: translate(-100%, 0%); /* Center the date element within the dot container */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.location{
+    color: red;
+    display: inline-block; /* Make the date appear on the same line as the dot */
+    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
+    position: absolute; /* Position the date element within the dot container */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: 0%; /* Adjust horizontal alignment as needed */
+    transform: translate(10%, 0%); /* Center the date element within the dot container */
+    white-space: nowrap; /* Prevent the text from wrapping */
+}
+
+.job {
+    position: relative;
+    width: 100%;
+    /*flex: 1; /* Allow the job content to expand and fill available space */
+}
+
+.card {
+    width: 400px;
+    height: 400px;
+    perspective: 1000px;
+    padding: 20px;
+    margin: 20px; /* This margin may cause the card to be pushed to the left */
+    transform: translateY(-20px); /* Adjust the value to move the card up by desired pixels */
+}
+
+.card-inner {
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+}
+
+.card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.back {
+    transform: rotateY(180deg);
+    text-align: left;
+    padding: 10px;
+}
+
+.card p {
+    margin: 0;
+}
+
+/*@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
 .container {
     max-width: 700px;
     width: 100%;
