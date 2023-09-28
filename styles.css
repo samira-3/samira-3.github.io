@@ -74,12 +74,12 @@ nav ul.tabs li a.active {
 }
 
 .left-paragraph{
-    flex-grow: 1; /*Allows the left paragrapghto grow and take up available space */
+    flex-grow: wrap; /*Allows the left paragrapghto grow and take up available space */
     }
 
-.right-side{
+/*.right-side{*/
     flex: 0 0 200px; /* Set a fixed width for the right school content */
-}
+/*}*/
 
 #contact {
     margin-left: 15px; /* Pushes the contact section to the right */
