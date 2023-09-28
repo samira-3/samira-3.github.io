@@ -16,6 +16,16 @@ body {
     overflow-x: hidden;
 }
 
+.container {
+    max-width: 700px;
+    width: 500%;
+    margin: 0 auto;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: rgba(95, 166, 92, 0.67);
+    border-radius: 5px;
+}
+
 .title {
     text-align: center;
     margin-bottom: 20px; /* Add spacing between the title and the timeline */
@@ -57,7 +67,7 @@ h1 {
 
 .date{
     font-size: 14px;
-    color: red;
+    color: white;
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
@@ -68,7 +78,7 @@ h1 {
 }
 
 .location{
-    color: red;
+    color: white;
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
