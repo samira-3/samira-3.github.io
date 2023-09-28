@@ -123,6 +123,8 @@ h1 {
     transform: rotateY(180deg);
     text-align: left;
     padding: 10px;
+    max-height: 300px; /* Adjust the max height to control card size */
+    overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
 li {
@@ -133,11 +135,29 @@ li {
     margin: 0;
 }
 
-/*@keyframes fadeOut {
+@keyframes fadeOut {
     0% {
         opacity: 1;
     }
     100% {
         opacity: 0;
     }
+}
+
+/* CSS for mobile devices (adjust styles as needed) */
+@media (max-width: 768px) {
+    /* Add your mobile-specific styles here */
+    .timeline {
+        /* Adjust layout for smaller screens */
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .school-details-back {
+        /* Adjust card size and scrolling for smaller screens */
+        max-height: 200px; 
+        overflow-y: auto; 
+    }
+
+    /* Add any other mobile-specific styles */
 }
