@@ -193,6 +193,13 @@ close-button {
 body {
     background-image: url('pic.jpg');
     background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Center content vertically on the page */
 }
 
 /*Experience*/
