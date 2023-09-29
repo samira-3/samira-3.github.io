@@ -127,7 +127,7 @@ h1 {
 }
 
 .front{
-    max-height: 200px; /* Adjust the max height to control card size */
+    max-height: 300px; /* Adjust the max height to control card size */
 }
 
 .back {
