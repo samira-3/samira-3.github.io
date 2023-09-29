@@ -123,7 +123,7 @@ h1 {
     transform: rotateY(180deg);
     text-align: left;
     padding: 10px;
-    max-height: 300px; /* Adjust the max height to control card size */
+    max-height: 400px; /* Adjust the max height to control card size */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
