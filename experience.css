@@ -146,6 +146,34 @@ li {
     margin: 0;
 }
 
+/* CSS for the "Back to Home" button */
+.back-button {
+    position: fixed;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.back-button:hover {
+    background-color: #0056b3;
+}
+
+/* Position the button in the top-left corner */
+.top-left {
+    top: 20px;
+    left: 20px;
+}
+
+/* Position the button in the bottom-left corner */
+.bottom-left {
+    bottom: 20px;
+    left: 20px;
+}
+
 @keyframes fadeOut {
     0% {
         opacity: 1;
