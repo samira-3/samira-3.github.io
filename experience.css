@@ -142,9 +142,9 @@ li {
     margin-bottom: 5px; /* Adjust the margin to control the space between list items */
 }
 
-/*.card p {
-    margin: 0;
-}*/
+.card p {
+    margin: 10;
+}
 
 /* CSS for the "Back to Home" button */
 .back-button {
