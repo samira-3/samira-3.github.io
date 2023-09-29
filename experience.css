@@ -142,9 +142,9 @@ li {
     margin-bottom: 5px; /* Adjust the margin to control the space between list items */
 }
 
-.card p {
+/*.card p {
     margin: 0;
-}
+}*/
 
 /* CSS for the "Back to Home" button */
 .back-button {
@@ -160,7 +160,7 @@ li {
 
 .back-button:hover {
     background-color: #ffda08;
-    font-color: black;
+    font-color: #000000;
 }
 
 /* Position the button in the top-left corner */
@@ -170,12 +170,7 @@ li {
 }
 
 /* Position the button in the bottom-left corner */
-/*.bottom-left {
-    bottom: 20px;
-    left: 20px;
-}
-
-@keyframes fadeOut {
+/*@keyframes fadeOut {
     0% {
         opacity: 1;
     }
