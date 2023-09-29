@@ -93,7 +93,7 @@ h1 {
     height: 400px;
     perspective: 1000px;
     padding: 20px;
-    margin: 20px; /* This margin may cause the card to be pushed to the left */
+    margin: 20px 0; /* Adjust or remove this margin */ /* This margin may cause the card to be pushed to the left */
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
 }
@@ -133,7 +133,7 @@ h1 {
     transform: rotateY(180deg);
     text-align: left;
     padding: 20px;
-    margin: -20px; /* This margin may cause the card to be pushed to the left */
+    margin: 0px;
     max-height: 400px; /* Adjust the max height to control card size */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
