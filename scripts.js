@@ -10,30 +10,30 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 // JavaScript to load the Experience page
-document.addEventListener("DOMContentLoaded", function () {
-    var experienceLink = document.getElementById("experience-link");
-    var experienceContainer = document.getElementById("experience-container");
+//document.addEventListener("DOMContentLoaded", function () {
+//    var experienceLink = document.getElementById("experience-link");
+//    var experienceContainer = document.getElementById("experience-container");
 
-    experienceLink.addEventListener("click", function (event) {
-        event.preventDefault(); // Prevent the default link behavior
+//    experienceLink.addEventListener("click", function (event) {
+//        event.preventDefault(); // Prevent the default link behavior
 
-        fetch("experience.html")
-        .then(function (response) {
-            if (response.status === 200) {
-                return response.text();
-            } else {
-                throw new Error("Failed to load the Experience page.");
-                }
-            })
-            .then(function (data) {
-                experienceContainer.innerHTML = data;
-            })
-            .catch(function (error) {
-                console.error(error);
-                    experienceContainer.innerHTML = "Failed to load the Experience page.";
-                });
-        });
-    });
+//        fetch("experience.html")
+//        .then(function (response) {
+//             if (response.status === 200) {
+//                return response.text();
+//            } else {
+//                throw new Error("Failed to load the Experience page.");
+//                }
+//            })
+//            .then(function (data) {
+//                experienceContainer.innerHTML = data;
+//            })
+//            .catch(function (error) {
+//                console.error(error);
+//                    experienceContainer.innerHTML = "Failed to load the Experience page.";
+//                });
+//        });
+//   });
 
 window.addEventListener("scroll", () => {
     const timeline = document.querySelector(".timeline");
