@@ -159,6 +159,11 @@ nav ul.tabs li a.active {
     backface-visibility: hidden; /* Hide the back of the pane during the swap */
 }
 
+.school-details-back {
+    padding: 20px;
+    margin: 20px; /* This margin may cause the card to be pushed to the left */
+}
+
 .school-header-front {
     background-color: rgba(95, 166, 92, 0.67);
     color: white;
