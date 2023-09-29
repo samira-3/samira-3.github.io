@@ -89,14 +89,24 @@ h1 {
 }
 
 .card {
+    gap: 10px;
+    position: relative;
+    background-color: transparent;
+    perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
+    width: 200px;
+    height: 400px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.2); /* A subtle shadow for depth */
+}
+
+/*.card {
     width: 400px;
     height: 500px;
     perspective: 1000px;
     padding: 20px;
     margin: 20px 0; /* This margin may cause the card to be pushed to the right */
     opacity: 1; /* Initially fully visible */
-    transition: opacity 0.5s; /* Add a smooth transition effect */
-}
+    /*transition: opacity 0.5s; /* Add a smooth transition effect */
+}*/
 
 .card-inner {
     width: 100%;
@@ -129,18 +139,23 @@ h1 {
     max-height: 300px; /* Adjust the max height to control card size */
 }
 
-.back {
+.back{
+    padding: 20px;
+    margin: -20px; /* This margin may cause the card to be pushed to the right */
+}
+
+/*.back {
     transform: rotateY(180deg);
     text-align: left;
     padding: 20px;
     margin: -20px;
     max-height: 500px; /* Adjust the max height to control card size */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    /*overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
-li {
+/*li {
     margin-bottom: 5px; /* Adjust the margin to control the space between list items */
-}
+}*/
 
 .card p {
     margin: 0;
