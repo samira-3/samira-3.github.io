@@ -77,8 +77,8 @@ h1 {
 }
 
 .logo {
-    width: 30px; /* or the width you want */
-    height: 30px; /* or the height you want */
+    width: 90px; /* or the width you want */
+    height: 90px; /* or the height you want */
     vertical-align: middle;
     margin-right: 10px; /* space between logo and text */
 }
