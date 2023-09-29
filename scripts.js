@@ -9,17 +9,25 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-    function closeDetails(element) {
-        element.parentElement.style.display = 'none';
-    }
+function loadExperiencePage() {
+    var container = document.getElementById("experience-container");
 
-const jobs = document.querySelectorAll(".job");
-
-jobs.forEach((job) => {
-    job.addEventListener("click", () => {
-        job.classList.toggle("flipped");
-    });
-});
+    fetch("experience.html")
+        .then(function (response) {
+            if (response.status === 200) {
+                return response.text();
+            } else {
+            throw new Error("Failed to load the Experience page.");
+            }
+        })
+        .then(function (data) {
+            container.innerHTML = data;
+            })
+            .catch(function (error) {
+                console.error(error);
+                container.innerHTML = "Failed to load the Experience page.";
+            });
+        }
 
 window.addEventListener("scroll", () => {
     const timeline = document.querySelector(".timeline");
