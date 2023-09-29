@@ -126,6 +126,10 @@ h1 {
     border-radius: 5px;
 }
 
+.front{
+    max-height: 200px; /* Adjust the max height to control card size */
+}
+
 .back {
     transform: rotateY(180deg);
     text-align: left;
