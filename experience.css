@@ -89,7 +89,7 @@ h1 {
 }
 
 .card {
-    width: 400px;
+    width: 350px;
     height: 450px;
     perspective: 1000px;
     padding: 20px;
@@ -144,7 +144,7 @@ h1 {
 }
 
 li {
-    margin-bottom: 10px; /* Adjust the margin to control the space between list items */
+    margin-bottom: 2px; /* Adjust the margin to control the space between list items */
 }
 
 .card p {
