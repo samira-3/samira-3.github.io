@@ -161,7 +161,7 @@ nav ul.tabs li a.active {
 
 .school-details-back {
     padding: 20px;
-    margin: 20px; /* This margin may cause the card to be pushed to the left */
+    margin: -20px; /* This margin may cause the card to be pushed to the right */
 }
 
 .school-header-front {
