@@ -93,7 +93,7 @@ h1 {
     height: 500px;
     perspective: 1000px;
     padding: 20px;
-    margin: -20px; /* Adjust or remove this margin */ /* This margin may cause the card to be pushed to the right */
+    margin: 20px 0; /* This margin may cause the card to be pushed to the right */
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
 }
@@ -143,7 +143,7 @@ li {
 }
 
 .card p {
-    margin: 10;
+    margin: 0;
 }
 
 /* CSS for the "Back to Home" button */
