@@ -160,6 +160,7 @@ li {
 
 .back-button:hover {
     background-color: #ffda08;
+    font-color: black;
 }
 
 /* Position the button in the top-left corner */
