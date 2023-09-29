@@ -48,6 +48,10 @@ h1 {
     margin-right: 0px;
     color: #fff;
     position: relative; /* Make sure the dot container is a positioned element */
+    display: flex;
+    flex-direction: column; /* Align cards vertically */
+    align-items: center; /* Center cards horizontally */
+}
 }
 
 .date{
