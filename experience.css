@@ -90,10 +90,10 @@ h1 {
 
 .card {
     width: 400px;
-    height: 400px;
+    height: 500px;
     perspective: 1000px;
     padding: 20px;
-    margin: 20px 0; /* Adjust or remove this margin */ /* This margin may cause the card to be pushed to the left */
+    margin: -20px; /* Adjust or remove this margin */ /* This margin may cause the card to be pushed to the right */
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
 }
@@ -119,13 +119,13 @@ h1 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color: rgba(95, 166, 92, 0.67);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
 }
 
 .front{
+    text-align: center;
     max-height: 300px; /* Adjust the max height to control card size */
 }
 
@@ -134,7 +134,7 @@ h1 {
     text-align: left;
     padding: 20px;
     margin: -20px;
-    max-height: 400px; /* Adjust the max height to control card size */
+    max-height: 500px; /* Adjust the max height to control card size */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
 }
 
