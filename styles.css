@@ -93,7 +93,7 @@ nav ul.tabs li a.active {
     margin-right: 10px; /* space between logo and text */
     width: 20px; /* width of the logo */
     height: 20px; /* height of the logo */
-    background-size: contain;
+    background: contain;
     background-repeat: no-repeat;
 }
 
@@ -174,7 +174,7 @@ nav ul.tabs li a.active {
 .graduated-badge {
     background-color: #ffdd00;
     color: #02075d; /* Choose your desired text color */
-    -size: 14px;
+    font-size: 14px;
     text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
@@ -189,7 +189,7 @@ nav ul.tabs li a.active {
     transform: rotateY(180deg); /* Rotate the back card face by 180 degrees, essentially hiding it out of view initially */
     z-index: 1;
     text-align: left;
-    -size: 12px;
+    font-size: 12px;
     padding: 15px;
 }
 
@@ -218,7 +218,7 @@ body {
 }
 
 body {
-    font-family: Quicksand;
+    font-family: 'Quicksand';
     background-color: #f6bfbc; 
     background-image: url('space-cyber.jpg'); 
     background-size: cover;
