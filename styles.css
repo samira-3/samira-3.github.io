@@ -93,7 +93,7 @@ nav ul.tabs li a.active {
     margin-right: 10px; /* space between logo and text */
     width: 20px; /* width of the logo */
     height: 20px; /* height of the logo */
-    background: contain;
+    background-size: contain;
     background-repeat: no-repeat;
 }
 
