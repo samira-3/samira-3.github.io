@@ -100,7 +100,7 @@ h5 {
     height: 300px;
     perspective: 1000px;
     padding: 20px;
-    margin: 25px 0;
+    margin: 30px 0;
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.6s; /* Add a smooth transition effect */
     position: relative;
@@ -196,7 +196,7 @@ li {
         position: absolute;
         top: 20px;
         left: auto;
-        right: 20px;
+        right: 75px;
     }
     
     .date{
