@@ -93,15 +93,14 @@ span {
 .job {
     position: relative;
     width: 100%;
-    /*flex: 1; /* Allow the job content to expand and fill available space */
 }
 
 .card {
     width: 350px;
     height: 300px;
     perspective: 1000px;
-    padding: 20px;
-    margin: 0; /* This margin may cause the card to be pushed to the right */
+    padding: 0;
+    margin: 0;
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
     position: relative;
@@ -132,6 +131,8 @@ span {
     background-color: rgba(95, 166, 92, 0.67);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
+    margin: 0;
+    padding: 20px;
 }
 
 .front{
