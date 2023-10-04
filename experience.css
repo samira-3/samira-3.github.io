@@ -147,8 +147,8 @@ h1 {
 
 li {
     position: relative;
-    left: -25px;
-    margin-bottom: 2px;
+    left: 0px;
+    margin-bottom: 5px;
 }
 
 .card p {
