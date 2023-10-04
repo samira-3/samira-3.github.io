@@ -101,7 +101,7 @@ span {
     height: 300px;
     perspective: 1000px;
     padding: 20px;
-    margin: 20px 0; /* This margin may cause the card to be pushed to the right */
+    margin: 0; /* This margin may cause the card to be pushed to the right */
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
     position: relative;
@@ -143,7 +143,7 @@ span {
     transform: rotateY(180deg);
     text-align: left;
     padding: 20px;
-    /*margin-left: 15px; /* This margin may cause the card to be pushed to the right */
+    /*margin: -20px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
     overflow: hidden; /* Enable vertical scrolling if content overflows */
     z-index: 1;
@@ -193,22 +193,22 @@ li {
     100% {
         opacity: 0;
     }
-}*/
+}
 
-/* CSS for mobile devices (adjust styles as needed) */
-@media (max-width: 768px) {
+/* CSS for mobile devices (adjust styles as needed)*/
+/*@media (max-width: 768px) {
     /* Add your mobile-specific styles here */
     .timeline {
         /* Adjust layout for smaller screens */
-        flex-direction: column; 
+        /*flex-direction: column; 
         align-items: center;
     }
 
     .back {
         /* Adjust card size and scrolling for smaller screens */
-        max-height: 200px; 
+        /*max-height: 200px; 
         overflow-y: auto; 
     }
 
     /* Add any other mobile-specific styles */
-}
+}*/
