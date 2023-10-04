@@ -44,10 +44,9 @@ span {
 }
 
 .dot {
-    /*flex: 0 0 auto; /* Prevent the dot from stretching */
     width: 20px;
     height: 20px;
-    background-color: #0a0000;
+    background-color: #f7cf07;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -138,8 +137,8 @@ span {
 .back {
     transform: rotateY(180deg);
     text-align: left;
-    /*padding: 15px;
-    /*margin: -20px; /* This margin may cause the card to be pushed to the right */
+    /*padding: 15px;*/
+    margin: 20px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
     overflow: hidden; /* Enable vertical scrolling if content overflows */
     z-index: 1;
@@ -193,6 +192,6 @@ li {
     /* Adjust the position of the dates to make them more visible */
     .date {
         left: 0%; /* Adjust horizontal alignment as needed */
-        transform: translate(0%, 0%); /* Center the date element within the dot container */
+        
     }
 }
