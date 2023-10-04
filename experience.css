@@ -184,7 +184,7 @@ li {
 /* CSS for mobile devices (adjust styles as needed) */
 @media (max-width: 400px) {
     body {
-        background-size: contain;
+        background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
