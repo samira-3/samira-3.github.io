@@ -1,5 +1,5 @@
 body {
-    font-family: 'Quicksand';
+    font-family: Quicksand;
     color: white;
     background-image: url('experience.jpg'); 
     background-size: cover;
@@ -19,7 +19,6 @@ body {
 .title {
     text-align: center;
     margin-bottom: 15px; /* Add spacing between the title and the timeline */
-    /*color: #000000;*/
 }
 
 h1 {
@@ -62,7 +61,6 @@ span {
     color: white;
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
-    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
     top: 0%; /* Adjust vertical alignment as needed */
     left: -15%; /* Adjust horizontal alignment as needed */
@@ -75,7 +73,6 @@ span {
     color: white;
     background-color: rgba(95, 166, 92, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
-    /*margin-left: 10px; /* Adjust the spacing between the dot and the date as needed */
     position: absolute; /* Position the date element within the dot container */
     top: 0%; /* Adjust vertical alignment as needed */
     left: 0%; /* Adjust horizontal alignment as needed */
@@ -131,8 +128,6 @@ span {
     background-color: rgba(95, 166, 92, 0.67);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    margin: 0;
-    padding: 20px;
 }
 
 .front{
@@ -143,7 +138,7 @@ span {
 .back {
     transform: rotateY(180deg);
     text-align: left;
-    padding: 20px;
+    padding: 15px;
     /*margin: -20px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
     overflow: hidden; /* Enable vertical scrolling if content overflows */
@@ -187,29 +182,19 @@ li {
     left: 20px;
 }
 
-/*@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
-}
-
-/* CSS for mobile devices (adjust styles as needed)*/
-/*@media (max-width: 768px) {
+/* CSS for mobile devices (adjust styles as needed) */
+@media (max-width: 768px) {
     /* Add your mobile-specific styles here */
-    /*.timeline {
+    .timeline {
         /* Adjust layout for smaller screens */
-        /*flex-direction: column; 
+        flex-direction: column; 
         align-items: center;
     }
 
     .back {
         /* Adjust card size and scrolling for smaller screens */
-        /*max-height: 200px; 
+        max-height: 200px; 
         overflow-y: auto; 
     }
 
-    /* Add any other mobile-specific styles */
-/*}*/
+}
