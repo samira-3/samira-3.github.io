@@ -18,7 +18,7 @@ body {
 
 .title {
     text-align: center;
-    margin-bottom: 15px; /* Add spacing between the title and the timeline */
+    margin-bottom: 5px; /* Add spacing between the title and the timeline */
 }
 
 h1 {
@@ -100,9 +100,9 @@ h5 {
     height: 300px;
     perspective: 1000px;
     padding: 20px;
-    margin: 20px 0;
+    margin: 25px 0;
     opacity: 1; /* Initially fully visible */
-    transition: opacity 0.5s; /* Add a smooth transition effect */
+    transition: opacity 0.6s; /* Add a smooth transition effect */
     position: relative;
     border-radius: 5px; /* Add rounded corners to the box */
 }
@@ -189,21 +189,6 @@ li {
 /* CSS for mobile devices (adjust styles as needed) */
 @media (max-width: 400px) {
     body {
-    font-family: Quicksand;
-    color: white;
-    background-image: url('experience.jpg'); 
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;  /*Ensure the background image is centered*/
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;  /* Ensure the body always takes up at least the full height of the viewport*/
-    overflow-x: hidden;
     transform: translateX(42px);
     }
     /* Position the button in the top-left corner */
@@ -223,7 +208,7 @@ li {
     top: 0%; /* Adjust vertical alignment as needed */
     left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
-    white-space: pre-line;
+    white-space: pre-wrap;
     padding: 10px 20px; /* Increase the padding to make the box larger */
     border-radius: 5px; /* Add rounded corners to the box */
     }
