@@ -198,7 +198,7 @@ li {
 /* CSS for mobile devices (adjust styles as needed)*/
 /*@media (max-width: 768px) {
     /* Add your mobile-specific styles here */
-    .timeline {
+    /*.timeline {
         /* Adjust layout for smaller screens */
         /*flex-direction: column; 
         align-items: center;
