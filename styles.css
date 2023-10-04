@@ -188,7 +188,7 @@ nav ul.tabs li a.active {
     transform: rotateY(180deg); /* Rotate the back card face by 180 degrees, essentially hiding it out of view initially */
     z-index: 1;
     text-align: left;
-    font-size: 14px;
+    font-size: 13px;
     padding: 20px;
     margin: -20px; /* This margin may cause the card to be pushed to the right */
 }
