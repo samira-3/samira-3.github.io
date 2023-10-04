@@ -61,17 +61,10 @@ h5 {
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
-    /*top: 0%; /* Adjust vertical alignment as needed */
-    /*left: -15%; /* Adjust horizontal alignment as needed */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
-}
-
-.date {
-    top: 50%; /* Adjust vertical alignment to center */
-    left: 50%; /* Adjust horizontal alignment to center */
-    padding: 5px 10px; /* Add padding to create a box around the date */
-    border-radius: 5px; /* Add rounded corners to the box */
 }
 
 .role{
@@ -191,7 +184,7 @@ li {
 /* CSS for mobile devices (adjust styles as needed) */
 @media (max-width: 400px) {
     body {
-        background-size: cover;
+        background-size: contain;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
