@@ -187,7 +187,7 @@ li {
     font-family: Quicksand;
     color: white;
     background-image: url('experience.jpg'); 
-    background-size: cover;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;  /*Ensure the background image is centered*/
@@ -200,5 +200,21 @@ li {
     min-height: 100vh;  /* Ensure the body always takes up at least the full height of the viewport*/
     overflow-x: hidden;
     transform: translateX(42px);
+    }
+    /* Position the button in the top-left corner */
+    .top-right {
+        top: 20px;
+        right: 20px;
+    }
+    .date{
+    font-size: 20px;
+    color: white;
+    background-color: rgba(202, 112, 125, 0.67);
+    display: inline-block; /* Make the date appear on the same line as the dot */
+    position: absolute; /* Position the date element within the dot container */
+    top: 0%; /* Adjust vertical alignment as needed */
+    left: -20%; /* Adjust horizontal alignment as needed */
+    transform: translate(-100%, 0%); /* Center the date element within the dot container */
+    white-space: normal; /* Prevent the text from wrapping */
     }
 }
