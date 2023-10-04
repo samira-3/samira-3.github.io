@@ -137,8 +137,8 @@ span {
 .back {
     transform: rotateY(180deg);
     text-align: left;
-    /*padding: 15px;*/
-    margin: 20px; /* This margin may cause the card to be pushed to the right */
+    padding: 15px;
+    margin: 15px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
     overflow: hidden; /* Enable vertical scrolling if content overflows */
     z-index: 1;
