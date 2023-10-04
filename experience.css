@@ -137,7 +137,7 @@ h1 {
     padding: 20px;
     margin: -20px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
-    overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    /*overflow-y: auto; /* Enable vertical scrolling if content overflows */
     z-index: 1;
 }
 
