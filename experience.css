@@ -61,7 +61,7 @@ h5 {
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
-    top: 0%; /* Adjust vertical alignment as needed */
+    top: -5%; /* Adjust vertical alignment as needed */
     left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
@@ -75,7 +75,7 @@ h5 {
     background-color: rgba(95, 166, 92, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
-    top: 0%; /* Adjust vertical alignment as needed */
+    top: -5%; /* Adjust vertical alignment as needed */
     left: 0%; /* Adjust horizontal alignment as needed */
     transform: translate(10%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
@@ -100,7 +100,7 @@ h5 {
     height: 300px;
     perspective: 1000px;
     padding: 20px;
-    margin: 30px 0;
+    margin: 30px 5px;
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.6s; /* Add a smooth transition effect */
     position: relative;
