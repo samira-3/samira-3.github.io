@@ -135,15 +135,20 @@ h1 {
     transform: rotateY(180deg);
     text-align: left;
     padding: 20px;
-    margin: -20px; /* This margin may cause the card to be pushed to the right */
+    margin: -40px; /* This margin may cause the card to be pushed to the right */
     max-height: 300px; /* Adjust the max height to control card size */
-    overflow: auto; /* Enable vertical scrolling if content overflows */
+    overflow: hidden; /* Enable vertical scrolling if content overflows */
     z-index: 1;
+}
+
+.back .scroll-container {
+    overflow-y: auto; /* Enable vertical scrolling for the inner container */
 }
 
 li {
     position: relative;
-    left: -15px;
+    left: -25px;
+    margin-bottom: 2px;
 }
 
 .card p {
@@ -195,7 +200,7 @@ li {
         align-items: center;
     }
 
-    .school-details-back {
+    .back {
         /* Adjust card size and scrolling for smaller screens */
         max-height: 200px; 
         overflow-y: auto; 
