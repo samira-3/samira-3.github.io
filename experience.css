@@ -47,7 +47,7 @@ span {
     /*flex: 0 0 auto; /* Prevent the dot from stretching */
     width: 20px;
     height: 20px;
-    background-color: #FFFFFF;
+    background-color: #0a0000;
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -96,8 +96,8 @@ span {
     width: 350px;
     height: 300px;
     perspective: 1000px;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    margin: 20px 0;
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
     position: relative;
