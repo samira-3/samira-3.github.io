@@ -173,14 +173,18 @@ li {
     left: 20px;
 }
 
-/*@keyframes fadeOut {
+@keyframes fadeOut {
     0% {
         opacity: 1;
     }
     100% {
         opacity: 0;
     }
-}*/
+}
+
+.card .back {
+    animation: fadeOut 1s ease-in-out;
+}
 
 /* CSS for mobile devices (adjust styles as needed) */
 @media (max-width: 768px) {
