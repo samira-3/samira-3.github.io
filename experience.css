@@ -90,7 +90,7 @@ h1 {
 
 .card {
     width: 350px;
-    height: 450px;
+    height: 300px;
     perspective: 1000px;
     padding: 20px;
     margin: 20px 0; /* This margin may cause the card to be pushed to the right */
@@ -129,21 +129,18 @@ h1 {
     max-height: 300px; /* Adjust the max height to control card size */
 }
 
-.back{
-    padding: 20px;
-    margin: -20px; /* This margin may cause the card to be pushed to the right */
-}
-
 .back {
     transform: rotateY(180deg);
     text-align: left;
     padding: 20px;
     max-height: 300px; /* Adjust the max height to control card size */
     overflow-y: auto; /* Enable vertical scrolling if content overflows */
+    z-index: 1;
 }
 
 li {
-    margin-bottom: 2px; /* Adjust the margin to control the space between list items */
+    position: relative;
+    left: -5px;
 }
 
 .card p {
