@@ -65,6 +65,8 @@ h5 {
     left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
+    padding: 10px 20px; /* Increase the padding to make the box larger */
+    border-radius: 5px; /* Add rounded corners to the box */
 }
 
 .role{
@@ -77,6 +79,8 @@ h5 {
     left: 0%; /* Adjust horizontal alignment as needed */
     transform: translate(10%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
+    padding: 10px 20px; /* Increase the padding to make the box larger */
+    border-radius: 5px; /* Add rounded corners to the box */
 }
 
 .logo {
@@ -100,6 +104,7 @@ h5 {
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
     position: relative;
+    border-radius: 5px; /* Add rounded corners to the box */
 }
 
 .card-inner {
@@ -205,6 +210,7 @@ li {
     .top-left {
         position: absolute;
         top: 20px;
+        left: auto;
         right: 20px;
     }
     
@@ -217,7 +223,7 @@ li {
     top: 0%; /* Adjust vertical alignment as needed */
     left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
-    white-space: normal; /* Prevent the text from wrapping */
+    white-space: pre-line;
     padding: 10px 20px; /* Increase the padding to make the box larger */
     border-radius: 5px; /* Add rounded corners to the box */
     }
