@@ -18,8 +18,8 @@ body {
 
 .title {
     text-align: center;
-    margin-bottom: 20px; /* Add spacing between the title and the timeline */
-    color: #000000;
+    margin-bottom: 15px; /* Add spacing between the title and the timeline */
+    /*color: #000000;*/
 }
 
 h1 {
