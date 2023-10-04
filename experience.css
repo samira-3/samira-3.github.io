@@ -96,6 +96,7 @@ h1 {
     margin: 20px 0; /* This margin may cause the card to be pushed to the right */
     opacity: 1; /* Initially fully visible */
     transition: opacity 0.5s; /* Add a smooth transition effect */
+    position: relative;
 }
 
 .card-inner {
@@ -103,6 +104,7 @@ h1 {
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 0.5s;
+    position: relative;
 }
 
 .card:hover .card-inner {
@@ -140,7 +142,7 @@ h1 {
 
 li {
     position: relative;
-    left: -5px;
+    left: 5px;
 }
 
 .card p {
