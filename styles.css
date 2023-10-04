@@ -18,10 +18,13 @@ a {
     text-decoration: none;
 }
 
+.navbar {
+    border-radius: 5px; /* Add rounded corners to the navigation bar */
+}
+
 .navbar a {
     text-decoration: none;
     margin-left: 5px; /* Add spacing between links*/
-    border-radius: 5px; /* Add rounded corners to the box */
 }
 
 .navbar ul {
@@ -124,7 +127,7 @@ nav ul.tabs li a.active {
     perspective: 1000px; /* This gives a 3D space meaning to the container, allowing 3D-transformed children to appear in 3D space */
     width: 200px;
     height: 400px;
-    border-radius: 5px; /* Add rounded corners to the box */
+    border-radius: 10px; /* Add rounded corners to the box */
 }
 
 .school-logo {
