@@ -64,7 +64,7 @@ h5 {
     position: relative; /* Make sure the dot container is a positioned element */
 }
 
-.date-left,.role-right{
+.date-left,.role-left{
     font-size: 20px;
     text-align: center;
     color: white;
@@ -79,7 +79,7 @@ h5 {
     border-radius: 5px; /* Add rounded corners to the box */
 }
 
-.date-right, .role-left{
+.date-right, .role-right{
     font-size: 20px;
     color: white;
     background-color: rgba(95, 166, 92, 0.67);
