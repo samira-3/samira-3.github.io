@@ -202,23 +202,28 @@ li {
     left: 20px;
 }
 
-/* CSS for mobile devices (adjust styles as needed)
+/*CSS for mobile devices (adjust styles as needed)*/
 @media (max-width: 400px) {
     body {
     transform: translateX(42px);
     }
     /* Position the button in the top-left corner */
-    /*.top-left {
-        /*position: absolute;
+    .top-left {
+        position: absolute;
         top: 20px;
         left: auto;
         right: 350px;
         white-space: normal;
         text-align: center;
-    }*/
+    }
+
+     .card {
+        width: 100%; /* Adjust the width for smaller screens */
+        max-height: none; /* Reset the max height */
+    }
     
     /*.date{
-    /*font-size: 20px;
+    font-size: 20px;
     color: white;
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
@@ -231,4 +236,4 @@ li {
     padding: 10px 20px; /* Increase the padding to make the box larger */
     /*border-radius: 5px; /* Add rounded corners to the box */
     /*}*/
-/*}*/
+}
