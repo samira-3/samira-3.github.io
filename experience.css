@@ -13,7 +13,7 @@ body {
     align-items: center;
     justify-content: center;
     min-height: 100vh;  /* Ensure the body always takes up at least the full height of the viewport*/
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 
 .title {
@@ -68,7 +68,6 @@ h5 {
     font-size: 20px;
     text-align: center;
     color: white;
-    background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
     top: -50%; /* Adjust vertical alignment as needed */
@@ -82,7 +81,6 @@ h5 {
 .date-right, .role-right{
     font-size: 20px;
     color: white;
-    background-color: rgba(95, 166, 92, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
     top: -50%; /* Adjust vertical alignment as needed */
@@ -91,6 +89,14 @@ h5 {
     white-space: nowrap; /* Prevent the text from wrapping */
     padding: 10px 20px; /* Increase the padding to make the box larger */
     border-radius: 5px; /* Add rounded corners to the box */
+}
+
+.date-left,.date-right{
+    background-color: rgba(202, 112, 125, 0.67);
+}
+
+.role-left, .role-right{
+    background-color: rgba(95, 166, 92, 0.67);
 }
 
 .logo {
@@ -217,12 +223,12 @@ li {
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
     /*position: absolute; /* Position the date element within the dot container */
-    top: 0%; /* Adjust vertical alignment as needed */
+    /*top: 0%; /* Adjust vertical alignment as needed */
     /*left: -20%; /* Adjust horizontal alignment as needed */
     /*transform: translate(-100%, 0%); /* Center the date element within the dot container */
     /*white-space: pre-wrap;
     text-align: center;
     padding: 10px 20px; /* Increase the padding to make the box larger */
     /*border-radius: 5px; /* Add rounded corners to the box */
-    }*/
-}*/
+    /*}*/
+/*}*/
