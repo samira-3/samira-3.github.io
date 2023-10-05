@@ -32,27 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-function handleIntersection(entries, observer) {
-  entries.forEach((entry) => {
-    if (entry.isIntersecting) {
-      entry.target.classList.remove('left', 'right');
-    } else {
-      entry.target.classList.add('left', 'right');
-    }
-  });
-}
-
-const options = {
-  root: null,
-  threshold: 0.5,
-};
-
-const observer = new IntersectionObserver(handleIntersection, options);
-
-document.querySelectorAll('.timeline-card').forEach((card) => {
-  observer.observe(card);
-});
-
 //window.addEventListener("scroll", () => {
     //const timeline = document.querySelector(".timeline");
     //const timelineTop = timeline.getBoundingClientRect().top;
