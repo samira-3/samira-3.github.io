@@ -199,6 +199,7 @@ li {
         left: auto;
         right: 375px;
         white-space: normal;
+        margin: 15px;
     }
     
     .date{
