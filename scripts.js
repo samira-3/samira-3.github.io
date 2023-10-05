@@ -9,31 +9,28 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     });
 
-// JavaScript to load the Experience page
-//document.addEventListener("DOMContentLoaded", function () {
-//    var experienceLink = document.getElementById("experience-link");
-//    var experienceContainer = document.getElementById("experience-container");
+// Function to load content from experience.html
+    function loadExperience() {
+        var container = document.getElementById("experience-container");
+        var xhr = new XMLHttpRequest();
 
-//    experienceLink.addEventListener("click", function (event) {
-//        event.preventDefault(); // Prevent the default link behavior
+        // Replace 'experience.html' with the correct URL if it's in a different location
+        xhr.open("GET", "experience.html", true);
 
-//        fetch("experience.html")
-//        .then(function (response) {
-//             if (response.status === 200) {
-//                return response.text();
-//            } else {
-//                throw new Error("Failed to load the Experience page.");
-//                }
-//            })
-//            .then(function (data) {
-//                experienceContainer.innerHTML = data;
-//            })
-//            .catch(function (error) {
-//                console.error(error);
-//                    experienceContainer.innerHTML = "Failed to load the Experience page.";
-//                });
-//        });
-//   });
+        xhr.onreadystatechange = function () {
+            if (xhr.readyState === 4 && xhr.status === 200) {
+                container.innerHTML = xhr.responseText;
+            }
+        };
+
+        xhr.send();
+    }
+
+    // Add an event listener to the "Experience" link
+    document.querySelector(".tabs a").addEventListener("click", function (e) {
+        e.preventDefault(); // Prevent the default link behavior
+        loadExperience();
+    });
 
 window.addEventListener("scroll", () => {
     const timeline = document.querySelector(".timeline");
