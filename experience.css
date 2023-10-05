@@ -216,8 +216,4 @@ li {
         white-space: normal;
         text-align: center;
     }
-    
-    .date-left,.role-left, .date-right,.role-right{
-        white-space: pre-wrap;
-    }
 }
