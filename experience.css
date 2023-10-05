@@ -219,7 +219,7 @@ li {
 
      .card {
         width: 100%; /* Adjust the width for smaller screens */
-        max-height: none; /* Reset the max height */
+        max-height: 100%;
     }
     
     /*.date{
