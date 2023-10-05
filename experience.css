@@ -211,5 +211,6 @@ li {
     .top-left {
         left: auto;
         right: 500px;
+        white-space: nowrap;
     }
 }
