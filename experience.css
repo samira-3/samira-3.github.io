@@ -196,7 +196,7 @@ li {
     .top-left {
         position: absolute;
         top: 20px;
-        left: auto;
+        left: 20px;
         white-space: normal;
     }
     
