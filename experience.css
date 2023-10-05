@@ -205,7 +205,7 @@ li {
 /*CSS for mobile devices (adjust styles as needed)*/
 @media (max-width: 400px) {
     body {
-    transform: translateX(50px);
+    transform: translateX(80px);
     }
     /* Position the button in the top-left corner */
     .top-left {
@@ -217,18 +217,7 @@ li {
         text-align: center;
     }
     
-    /*.date{
-    font-size: 20px;
-    color: white;
-    background-color: rgba(202, 112, 125, 0.67);
-    display: inline-block; /* Make the date appear on the same line as the dot */
-    /*position: absolute; /* Position the date element within the dot container */
-    /*top: 0%; /* Adjust vertical alignment as needed */
-    /*left: -20%; /* Adjust horizontal alignment as needed */
-    /*transform: translate(-100%, 0%); /* Center the date element within the dot container */
-    /*white-space: pre-wrap;
-    text-align: center;
-    padding: 10px 20px; /* Increase the padding to make the box larger */
-    /*border-radius: 5px; /* Add rounded corners to the box */
-    /*}*/
+    .date-left,.role-left, .date-right,.role-right{
+        white-space: pre-wrap;
+    }
 }
