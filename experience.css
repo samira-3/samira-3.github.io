@@ -57,6 +57,7 @@ h5 {
 
 .date{
     font-size: 20px;
+    text-align: center;
     color: white;
     background-color: rgba(202, 112, 125, 0.67);
     display: inline-block; /* Make the date appear on the same line as the dot */
@@ -208,6 +209,7 @@ li {
     left: -20%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
     white-space: pre-wrap;
+    text-align: center;
     padding: 10px 20px; /* Increase the padding to make the box larger */
     border-radius: 5px; /* Add rounded corners to the box */
     }
