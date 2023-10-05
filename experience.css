@@ -205,7 +205,7 @@ li {
 /*CSS for mobile devices (adjust styles as needed)*/
 @media (max-width: 400px) {
     body {
-    transform: translateX(80px);
+    transform: translateX(120px);
     }
     /* Position the button in the top-left corner */
     .top-left {
