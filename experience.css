@@ -43,6 +43,15 @@ h5 {
     padding-top: 10px;
 }
 
+/* Add the following CSS to adjust the positioning of left and right cards */
+.left {
+    align-self: flex-start; /* Align left cards to the left */
+}
+
+.right {
+    align-self: flex-end; /* Align right cards to the right */
+}
+
 .dot {
     width: 20px;
     height: 20px;
