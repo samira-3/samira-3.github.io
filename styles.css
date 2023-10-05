@@ -97,6 +97,10 @@ nav ul.tabs li a.active {
     background-repeat: no-repeat;
 }
 
+.certifcations{
+    background-color: rgba(95, 166, 92, 0.67);
+}
+
 .google::before {
     background-image: url('google_cert.png');
 }
