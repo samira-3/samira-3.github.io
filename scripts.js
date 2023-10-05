@@ -32,19 +32,40 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-window.addEventListener("scroll", () => {
-    const timeline = document.querySelector(".timeline");
-    const timelineTop = timeline.getBoundingClientRect().top;
-    if (timelineTop < window.innerHeight) {
-        jobs.forEach((job) => {
-            job.style.opacity = 1;
-        });
+function handleIntersection(entries, observer) {
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.remove('left', 'right');
     } else {
-        jobs.forEach((job) => {
-            job.style.opacity = 0;
-        });
+      entry.target.classList.add('left', 'right');
     }
+  });
+}
+
+const options = {
+  root: null,
+  threshold: 0.5,
+};
+
+const observer = new IntersectionObserver(handleIntersection, options);
+
+document.querySelectorAll('.timeline-card').forEach((card) => {
+  observer.observe(card);
 });
+
+//window.addEventListener("scroll", () => {
+    //const timeline = document.querySelector(".timeline");
+    //const timelineTop = timeline.getBoundingClientRect().top;
+    //if (timelineTop < window.innerHeight) {
+    //    jobs.forEach((job) => {
+    //        job.style.opacity = 1;
+    //    });
+    //} else {
+    //    jobs.forEach((job) => {
+    //        job.style.opacity = 0;
+    //    });
+    //}
+//});
 
 var isGraduated = true; // Change this based on your condition
 
