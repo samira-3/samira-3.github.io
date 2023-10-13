@@ -244,7 +244,7 @@ body {
 /* For mobile devices */
 @media (max-width: 400px) {
     body {
-    transform: translateX(50px);
+    transform: translateX(20px);
     }
     .right-side{
         transform: translateY(-150px); /* Adjust the value to move up by desired pixels*/
