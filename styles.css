@@ -245,7 +245,7 @@ body {
 @media (max-width: 400px) {
    /* Add styles for mobile devices here */
     .right-side{
-        /*transform: translateY(-250px); /* Adjust the value to move up by desired pixels*/
+        transform: translateY(-200px); /* Adjust the value to move up by desired pixels*/
         margin-left: 10px;
         flex: 1; /* Allow the right side to take available space */
     }
