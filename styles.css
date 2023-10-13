@@ -244,11 +244,13 @@ body {
 /* For mobile devices */
 @media (max-width: 400px) {
     .right-side{
-        flex: 0 0 200px;
-        margin-left: 2px;
+        transform: translateY(-250px); /* Adjust the value to move up by desired pixels*/
+        margin-left: 10px;
+        flex: 1; /* Allow the right side to take available space */
     }
     .left-paragraph{
         flex-grow: 1; /* Allow the left paragraph to take available space */
+        /*flex-grow: wrap; /*Allows the left paragrapghto grow and take up available space */
         text-align: justify;
     }
 }
