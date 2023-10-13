@@ -243,11 +243,11 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
-    body {
+    /*body {
     transform: translateX(10px);
-    }
+    }*/
     .right-side{
-        transform: translateY(-150px); /* Adjust the value to move up by desired pixels*/
+        /*transform: translateY(-150px); /* Adjust the value to move up by desired pixels*/
         /*margin-left: 2px;*/
         flex: 1; /* Allow the right side to take available space */
     }
