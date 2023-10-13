@@ -247,7 +247,7 @@ body {
         flex: 0 0 200px;
         margin-left: 2px;
     }
-    left-paragrapgh{
+    .left-paragrapgh{
         flex-grow: 1; /* Allow the left paragraph to take available space */
         text-align: justify;
     }
