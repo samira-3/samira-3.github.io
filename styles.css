@@ -243,7 +243,9 @@ body {
 
 /* For mobile devices */
 @media (max-width: 400px) {
-   /* Add styles for mobile devices here */
+    body {
+    transform: translateX(50px);
+    }
     .right-side{
         transform: translateY(-150px); /* Adjust the value to move up by desired pixels*/
         /*margin-left: 2px;*/
