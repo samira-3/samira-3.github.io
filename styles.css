@@ -242,18 +242,27 @@ body {
 }
 
 @media (max-width: 400px) {
-     .header-container {
+    body {
+        padding: 0 10px; /* Add space on the left and right sides of the body */
+        text-align: center; /* Center-align all content */
+    }
+
+    .container {
+        margin: 0 auto; /* Center the container horizontally */
+        padding: 20px; /* Add space within the container */
+    }
+
+    .header-container {
         flex-direction: column; /* Stack header elements vertically for mobile */
-        text-align: center; /* Center-align header content for mobile */
+        align-items: center; /* Center-align header content vertically */
+        text-align: center; /* Center-align header content horizontally */
     }
 
     .left-paragraph {
-        order: 2; /* Change the order of left-paragraph to appear below */
-        margin-top: 10px; /* Add some spacing between left and right content */
+        margin-top: 20px; /* Add space between the header and the left-paragraph */
     }
 
     .right-side {
-        flex: 1; /* Allow the right-side content to take up available space */
-        margin-top: 10px; /* Add some spacing between left and right content */
+        margin-top: 20px; /* Add space between the header and the right-side content */
     }
 }
