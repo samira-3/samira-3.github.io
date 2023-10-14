@@ -243,17 +243,16 @@ body {
 
 @media (max-width: 400px) {
     body {
-        padding: 10px 10px; /* Add space on the left and right sides of the body */
+        padding: 0 10px; /* Add space on the left and right sides of the body */
         text-align: center; /* Center-align all content */
     }
 
     .container {
         margin: 0 auto; /* Center the container horizontally */
-        padding: 20px; /* Add space within the container */
+        padding: 20px 20px; /* Add space within the container */
     }
 
     .header-container {
-        flex-direction: column; /* Stack header elements vertically for mobile */
         align-items: center; /* Center-align header content vertically */
         text-align: center; /* Center-align header content horizontally */
     }
