@@ -249,7 +249,7 @@ body {
 
     .container {
         margin: 0 auto; /* Center the container horizontally */
-        padding: 20px 20px; /* Add space within the container */
+        padding: 20px; /* Add space within the container */
     }
 
     .header-container {
@@ -258,13 +258,10 @@ body {
     }
 
     .left-paragraph {
-        align-items: center; /* Center-align header content vertically */
-        order: 2; /* Change the order of left-paragraph to appear below */
         margin-top: 20px; /* Add space between the header and the left-paragraph */
     }
 
     .right-side {
-        flex: 1; /* Allow the right-side content to take up available space */
         margin-top: 20px; /* Add space between the header and the right-side content */
     }
 }
