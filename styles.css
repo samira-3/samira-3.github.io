@@ -243,7 +243,7 @@ body {
 
 @media (max-width: 400px) {
     body {
-        padding: 0 10px; /* Add space on the left and right sides of the body */
+        padding: 10 10px; /* Add space on the left and right sides of the body */
         text-align: center; /* Center-align all content */
     }
 
@@ -259,6 +259,8 @@ body {
     }
 
     .left-paragraph {
+        flex-direction: column; /* Stack header elements vertically for mobile */
+        align-items: center; /* Center-align header content vertically */
         margin-top: 20px; /* Add space between the header and the left-paragraph */
     }
 
