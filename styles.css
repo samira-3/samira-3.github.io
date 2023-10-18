@@ -67,7 +67,12 @@ nav ul.tabs li a.active {
 
 /* Style the dropdown menu items */
 .tabs .dropdown li {
-    padding: 5px 5px;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+    text-decoration: none;
+    display: block;
+}
+
     text-decoration: none;
     display: block;
 }
