@@ -55,6 +55,38 @@ nav ul.tabs li a.active {
     background-color: #83f28;
 }
 
+/* Add this CSS to your styles.css file or within a <style> tag in the <head> of your HTML document */
+.dropdown {
+    display: none;
+    position: absolute;
+    background-color: #fff; /* Background color of the dropdown */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for dropdown */
+    z-index: 1; /* Ensure dropdown appears above other elements */
+}
+
+/* Style the dropdown items */
+.dropdown li {
+    padding: 10px;
+    text-align: left;
+}
+
+/* Show the dropdown when hovering over the parent item */
+.tabs li:hover .dropdown {
+    display: block;
+}
+
+/* Style the dropdown links */
+.dropdown a {
+    color: #333; /* Link color */
+    text-decoration: none;
+    display: block;
+}
+
+/* Style the dropdown links on hover */
+.dropdown a:hover {
+    background-color: #f2f2f2; /* Background color on hover */
+}
+
 .header-container {
     display: flex;
     justify-content: space-between;
