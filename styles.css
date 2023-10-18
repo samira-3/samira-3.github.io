@@ -73,10 +73,6 @@ nav ul.tabs li a.active {
     display: block;
 }
 
-    text-decoration: none;
-    display: block;
-}
-
 /* Show the dropdown menu when hovering over the parent menu item */
 .tabs li:hover .dropdown {
     display: block;
