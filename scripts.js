@@ -32,19 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-//window.addEventListener("scroll", () => {
-    //const timeline = document.querySelector(".timeline");
-    //const timelineTop = timeline.getBoundingClientRect().top;
-    //if (timelineTop < window.innerHeight) {
-    //    jobs.forEach((job) => {
-    //        job.style.opacity = 1;
-    //    });
-    //} else {
-    //    jobs.forEach((job) => {
-    //        job.style.opacity = 0;
-    //    });
-    //}
-//});
+// Get the select element
+  const roleSelect = document.getElementById('role-select');
+
+  // Add an event listener to the select element
+  roleSelect.addEventListener('change', function() {
+    // Get the selected option's value
+    const selectedOption = roleSelect.value;
+
+    // Check if the selected option has a valid URL (not "#")
+    if (selectedOption !== '#') {
+      // Redirect to the selected URL
+      window.location.href = selectedOption;
+    }
+  });
 
 var isGraduated = true; // Change this based on your condition
 
