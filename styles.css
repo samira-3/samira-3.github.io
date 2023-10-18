@@ -59,15 +59,17 @@ nav ul.tabs li a.active {
 .dropdown {
     display: none;
     position: absolute;
-    background-color: #fff; /* Background color of the dropdown */
+    background-color: rgba(95, 166, 92, 0.67); /* Background color of the dropdown */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Add shadow for dropdown */
     z-index: 1; /* Ensure dropdown appears above other elements */
 }
 
 /* Style the dropdown items */
 .dropdown li {
-    padding: 10px;
     text-align: left;
+    list-style: none; /* Remove bullet points */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
 }
 
 /* Show the dropdown when hovering over the parent item */
@@ -80,11 +82,12 @@ nav ul.tabs li a.active {
     color: #333; /* Link color */
     text-decoration: none;
     display: block;
+    padding: 10px; /* Add padding to separate links */
 }
 
 /* Style the dropdown links on hover */
 .dropdown a:hover {
-    background-color: #f2f2f2; /* Background color on hover */
+    background-color: #eedd82; /* Background color on hover */
 }
 
 .header-container {
