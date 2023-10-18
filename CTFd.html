@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="experience.css">
     <style>
         h2{
             font-size: 24px;
@@ -13,6 +12,7 @@
         }
         body, p, li {
             font-size: 16px;
+            background-image: url('experience.jpg'); 
         }
         span{
             font-size: 12px;
@@ -32,6 +32,27 @@
             vertical-align: middle;
             text-align: center;
             margin-right: 10px; /* space between logo and text */
+        }
+        .back-button {
+            position: fixed;
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ffda08;
+            font-color: #000000;
+        }
+
+        /* Position the button in the top-left corner */
+        .top-left {
+            top: 20px;
+            left: 20px;
         }
     </style>
     <title>Samira's CTFd Experience</title>
