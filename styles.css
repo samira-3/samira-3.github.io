@@ -168,8 +168,8 @@ nav ul.tabs li a.active {
 #certifications p {
     font-size: 12px;
     text-align: center;
-    margin: 10;
-    padding: 10;
+    margin: 0;
+    padding: 0;
 }
 
 .logo {
