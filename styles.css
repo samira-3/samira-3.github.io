@@ -114,7 +114,7 @@ nav ul.tabs li a.active {
 }
 
 .certification-card {
-    width: calc(50% - 20px); /* 50% width with some gap in between */
+    width: calc(50% - 40px); /* 50% width with some gap in between */
     margin-bottom: 20px;
 }
 
@@ -149,7 +149,7 @@ nav ul.tabs li a.active {
 }
 
 .flip-card-back {
-    margin: 10px;
+    margin: 20px;
     text-align: center;
     flex-direction: column;
     transform: rotateY(180deg); /* Initially, show the back of the card */
@@ -178,7 +178,7 @@ nav ul.tabs li a.active {
     width: 45px; /* or the width you want */
     height: 45px; /* or the height you want */
     vertical-align: middle;
-    margin-left: 150px; /* space between logo and text */
+    margin-left: 125px; /* space between logo and text */
 }
 
 .logo {
