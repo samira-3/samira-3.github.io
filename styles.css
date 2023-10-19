@@ -109,10 +109,10 @@ nav ul.tabs li a.active {
 }
 
 #certifications {
-    display: flex;
-    flex-direction: column;  /* Stack child elements vertically */
-    align-items: center;     /* Center child elements horizontally */
-    gap: 15px; 
+    display: grid;
+    grid-template-columns: 2fr;
+    gap: 10px;
+    position: relative; 
 }
 
 .certification-card {
@@ -127,8 +127,6 @@ nav ul.tabs li a.active {
 }
 
 .flip-card-inner {
-    display: flex;
-    flex-direction: row;  /* Stack child elements horizontally */
     background-color: transparent;
     position: relative;
     width: 100%;
