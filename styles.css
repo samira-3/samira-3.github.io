@@ -108,12 +108,6 @@ nav ul.tabs li a.active {
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
-.cert{
-    width: 100%;
-    height: 200px;
-    perspective: 1000px; /* Add perspective for 3D effect */
-}
-
 #certifications {
     display: flex;
     justify-content: space-between; /* To create a gap between the cards */
