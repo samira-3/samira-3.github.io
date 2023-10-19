@@ -32,14 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-    // JavaScript to handle navigation based on selected option
-    document.getElementById('role-select').addEventListener('change', function() {
-        var selectedOption = this.value;
-        if (selectedOption) {
-            // Redirect to the selected page
-            window.location.href = selectedOption;
-        }
-    });
+    // Get a reference to the select element
+  const roleSelect = document.getElementById("role-select");
+
+  // Add an event listener to the select element
+  roleSelect.addEventListener("change", function () {
+    // Get the selected option's value
+    const selectedOption = roleSelect.value;
+
+    // Check if the selected option has a valid URL (not empty)
+    if (selectedOption) {
+      // Redirect to the selected page
+      window.location.href = selectedOption;
+    }
+  });
     
 var isGraduated = true; // Change this based on your condition
 
