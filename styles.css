@@ -110,16 +110,14 @@ nav ul.tabs li a.active {
 
 #certifications {
     display: flex;
-    flex-direction: column;  /* Stack child elements vertically */
+    flex-direction: row;  /* Stack child elements horizontally */
     align-items: center;     /* Center child elements horizontally */
     gap: 15px; 
 }
 
 .certification-card {
-    width: calc(48% - 20px); /* Adjust width as needed */
+    width: 50%;
     margin-bottom: 20px;
-    margin-right: 20px; /* Add some margin to the right for separation */
-    box-sizing: border-box; /* Ensure padding and border are included in total width/height */
 }
 
 .flip-card {
