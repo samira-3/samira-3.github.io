@@ -121,7 +121,7 @@ nav ul.tabs li a.active {
 .flip-card {
     background-color: transparent;
     width: 100%;
-    height: 100%;
+    height: 200px;
     perspective: 1000px; /* Add perspective for 3D effect */
 }
 
@@ -139,26 +139,17 @@ nav ul.tabs li a.active {
 
 .flip-card-front,
 .flip-card-back {
+    display: flex;
     position: absolute;
     width: 100%;
     height: 100%;
     backface-visibility: hidden; /* Hide the back face when not flipped */
 }
 
-.flip-card-front {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
-}
-
 .flip-card-back {
-    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     transform: rotateY(180deg); /* Initially, show the back of the card */
-    background-color: #f1f1f1;
+    background-color: rgba(95, 166, 92, 0.67);
 }
 
 .certificate-image {
