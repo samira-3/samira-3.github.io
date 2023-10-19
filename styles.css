@@ -108,51 +108,47 @@ nav ul.tabs li a.active {
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
-/*#certifications p::before {*/
-    /*content: ""; /* default value; we'll override it per class */
-    /*display: inline-block;
-    vertical-align: middle;
-    margin-right: 10px; /* space between logo and text */
-    /*width: 20px; /* width of the logo */
-    /*height: 20px; /* height of the logo */
-    /*background-size: contain;
-    background-repeat: no-repeat;
-}
-
-.certifcations{
-    background-color: rgba(95, 166, 92, 0.67);
-}*/
-
-/* Style for certifications section */
 #certifications {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
-    grid-gap: 20px; /* Adjust the gap between certifications */
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-/* Style for each certification */
 .certification {
-    border: 1px solid #ccc;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  perspective: 1000px;
 }
 
-/* Style for certificate title */
-.certificate-title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 0;
+.cert {
+  width: 100%;
+  height: 300px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
 
-/* Style for skills */
-.skills {
-    margin-top: 10px;
+.cert-inner {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Style for badge images (inside .skills div) */
-.skills .badge-image {
-    /* Add your badge image styling here */
+.cert-inner.front {
+  background-color: #f9f9f9;
+}
+
+.cert-inner.back {
+  transform: rotateY(180deg);
+  background-color: #fff;
+}
+
+.cert:hover {
+  transform: rotateY(180deg);
 }
 
 .google::before {
