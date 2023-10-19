@@ -110,9 +110,9 @@ nav ul.tabs li a.active {
 
 #certifications {
     display: flex;
-    flex-direction: row;  /* Stack child elements horizontally */
-    justify-content: space-between; /* To create a gap between the cards */
-    gap: 20px; 
+    flex-direction: column;  /* Stack child elements vertically */
+    align-items: center;     /* Center child elements horizontally */
+    gap: 5px; 
 }
 
 .certification-card {
