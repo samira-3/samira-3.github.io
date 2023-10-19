@@ -110,7 +110,7 @@ nav ul.tabs li a.active {
 
 #certifications {
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 2fr;
     gap: 10px;
     position: relative; 
 }
