@@ -32,6 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
+    // JavaScript to handle navigation based on selected option
+    document.getElementById('role-select').addEventListener('change', function() {
+        var selectedOption = this.value;
+        if (selectedOption) {
+            // Redirect to the selected page
+            window.location.href = selectedOption;
+        }
+    });
+    
 var isGraduated = true; // Change this based on your condition
 
 var badge = document.querySelector('.badge');
