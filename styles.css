@@ -172,10 +172,10 @@ nav ul.tabs li a.active {
 }
 
 .logo {
-    width: 30px; /* or the width you want */
-    height: 30px; /* or the height you want */
+    width: 60px; /* or the width you want */
+    height: 60px; /* or the height you want */
     vertical-align: middle;
-    margin-left: 300px; /* space between logo and text */
+    margin-left: 50px; /* space between logo and text */
 }
 
 /*Education*/
