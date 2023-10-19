@@ -32,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
+document.addEventListener("DOMContentLoaded", function() {
     // Get the select element by its id
     var select = document.getElementById("role-select");
 
