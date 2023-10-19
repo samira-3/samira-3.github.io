@@ -46,7 +46,8 @@ document.addEventListener("DOMContentLoaded", function() {
             // Redirect to the selected page
             window.location.href = selectedOption;
         }
-    });
+    }
+});
     
 var isGraduated = true; // Change this based on your condition
 
