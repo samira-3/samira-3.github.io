@@ -108,19 +108,34 @@ nav ul.tabs li a.active {
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
-#certifications p::before {
-    content: ""; /* default value; we'll override it per class */
-    display: inline-block;
+/*#certifications p::before {*/
+    /*content: ""; /* default value; we'll override it per class */
+    /*display: inline-block;
     vertical-align: middle;
     margin-right: 10px; /* space between logo and text */
-    width: 20px; /* width of the logo */
-    height: 20px; /* height of the logo */
-    background-size: contain;
+    /*width: 20px; /* width of the logo */
+    /*height: 20px; /* height of the logo */
+    /*background-size: contain;
     background-repeat: no-repeat;
 }
 
 .certifcations{
     background-color: rgba(95, 166, 92, 0.67);
+}*/
+
+#certifications {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 20px; /* Adjust the gap between certifications */
+}
+
+.certification {
+    border: 1px solid #ccc; /* Optional: Add a border around each certification */
+    padding: 20px; /* Optional: Add padding to each certification */
+}
+
+.certification p {
+    margin: 0; /* Remove default margin on <p> elements */
 }
 
 .google::before {
