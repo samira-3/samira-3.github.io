@@ -109,13 +109,15 @@ nav ul.tabs li a.active {
 }
 
 #certifications {
+    display: flex;
+    flex: wrap;
+}
+
+.certification-card {
     display: grid;
     grid-template-columns: 2fr;
     gap: 10px;
     position: relative; 
-}
-
-.certification-card {
     width: 50%;
     margin-bottom: 20px;
 }
