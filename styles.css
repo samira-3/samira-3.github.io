@@ -171,19 +171,11 @@ nav ul.tabs li a.active {
     padding: 0;
 }
 
-.google::before {
-    background-image: url('google_cert.png');
-}
-
-.codepath::before {
-    background-image: url('codepath_logo.png');
-}
-
 .logo {
     width: 30px; /* or the width you want */
     height: 30px; /* or the height you want */
     vertical-align: middle;
-    margin-right: 10px; /* space between logo and text */
+    margin-left: 300px; /* space between logo and text */
 }
 
 /*Education*/
