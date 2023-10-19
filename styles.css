@@ -149,7 +149,6 @@ nav ul.tabs li a.active {
 }
 
 .flip-card-back {
-    margin: 20px;
     text-align: center;
     flex-direction: column;
     transform: rotateY(180deg); /* Initially, show the back of the card */
