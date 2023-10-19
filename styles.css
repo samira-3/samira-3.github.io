@@ -123,19 +123,36 @@ nav ul.tabs li a.active {
     background-color: rgba(95, 166, 92, 0.67);
 }*/
 
+/* Style for certifications section */
 #certifications {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns */
-    gap: 20px; /* Adjust the gap between certifications */
+    grid-template-columns: repeat(2, 1fr); /* Adjust the number of columns as needed */
+    grid-gap: 20px; /* Adjust the gap between certifications */
 }
 
+/* Style for each certification */
 .certification {
-    border: 1px solid #ccc; /* Optional: Add a border around each certification */
-    padding: 20px; /* Optional: Add padding to each certification */
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-.certification p {
-    margin: 0; /* Remove default margin on <p> elements */
+/* Style for certificate title */
+.certificate-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Style for skills */
+.skills {
+    margin-top: 10px;
+}
+
+/* Style for badge images (inside .skills div) */
+.skills .badge-image {
+    /* Add your badge image styling here */
 }
 
 .google::before {
