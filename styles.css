@@ -110,7 +110,7 @@ nav ul.tabs li a.active {
 
 #certifications {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(100px, 2fr));
+  grid-template-columns: repeat(auto-fill, minmax(300px, 2fr));
   gap: 20px;
 }
 
@@ -144,7 +144,7 @@ nav ul.tabs li a.active {
 
 .cert-inner.back {
   transform: rotateY(180deg);
-  background-color: #fff;
+  background-color: rgba(95, 166, 92, 0.67);
 }
 
 .cert:hover {
