@@ -32,20 +32,20 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-    // Get a reference to the select element
-  const roleSelect = document.getElementById("role-select");
+    // Get the select element by its id
+    var select = document.getElementById("role-select");
 
-  // Add an event listener to the select element
-  roleSelect.addEventListener("change", function () {
-    // Get the selected option's value
-    const selectedOption = roleSelect.value;
+    // Add an event listener to listen for changes in the selected option
+    select.addEventListener("change", function () {
+        // Get the selected option's value
+        var selectedOption = select.options[select.selectedIndex].value;
 
-    // Check if the selected option has a valid URL (not empty)
-    if (selectedOption) {
-      // Redirect to the selected page
-      window.location.href = selectedOption;
-    }
-  });
+        // Check if the selected option is not empty
+        if (selectedOption !== "") {
+            // Redirect to the selected page
+            window.location.href = selectedOption;
+        }
+    });
     
 var isGraduated = true; // Change this based on your condition
 
