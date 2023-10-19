@@ -112,10 +112,11 @@ nav ul.tabs li a.active {
     display: flex;
     flex-direction: column;  /* Stack child elements vertically */
     align-items: center;     /* Center child elements horizontally */
-    gap: 5px; 
+    gap: 15px; 
 }
 
 .certification-card {
+    width: 50%;
     margin-bottom: 20px;
 }
 
