@@ -116,8 +116,10 @@ nav ul.tabs li a.active {
 }
 
 .certification-card {
-    width: 50%;
+    width: calc(48% - 20px); /* Adjust width as needed */
     margin-bottom: 20px;
+    margin-right: 20px; /* Add some margin to the right for separation */
+    box-sizing: border-box; /* Ensure padding and border are included in total width/height */
 }
 
 .flip-card {
@@ -169,7 +171,7 @@ nav ul.tabs li a.active {
 }
 
 #certifications p {
-    font-size: 10px;
+    font-size: 12px;
     text-align: center;
     margin: 0;
     padding: 0;
