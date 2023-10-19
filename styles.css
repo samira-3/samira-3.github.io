@@ -149,6 +149,7 @@ nav ul.tabs li a.active {
 }
 
 .flip-card-back {
+    text-align: center;
     flex-direction: column;
     transform: rotateY(180deg); /* Initially, show the back of the card */
     background-color: rgba(95, 166, 92, 0.67);
@@ -173,8 +174,8 @@ nav ul.tabs li a.active {
 }
 
 .logo {
-    width: 60px; /* or the width you want */
-    height: 60px; /* or the height you want */
+    width: 45px; /* or the width you want */
+    height: 45px; /* or the height you want */
     vertical-align: middle;
     margin-right: 10px; /* space between logo and text */
 }
