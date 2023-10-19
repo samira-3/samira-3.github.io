@@ -116,8 +116,6 @@ nav ul.tabs li a.active {
 }
 
 .certification-card {
-    display: flex;
-    flex-direction: row;  /* Stack child elements horizontally */
     width: 50%;
     margin-bottom: 20px;
 }
@@ -129,6 +127,8 @@ nav ul.tabs li a.active {
 }
 
 .flip-card-inner {
+    display: flex;
+    flex-direction: row;  /* Stack child elements horizontally */
     background-color: transparent;
     position: relative;
     width: 100%;
@@ -181,7 +181,7 @@ nav ul.tabs li a.active {
     width: 45px; /* or the width you want */
     height: 45px; /* or the height you want */
     vertical-align: middle;
-    margin-left: 100px; /* space between logo and text */
+    margin-left: 125px; /* space between logo and text */
 }
 
 .logo {
