@@ -27,9 +27,27 @@ label {
   padding-right: 10px;
 }
 
+/* Style the select element */
 select {
   font-size: 0.9rem;
   padding: 2px 5px;
+  border: 1px solid #ccc; /* Add a border */
+  border-radius: 3px; /* Add rounded corners */
+  background-color: #fff; /* Background color for the dropdown */
+  color: #333; /* Text color */
+}
+
+/* Style the options within the dropdown */
+select option {
+  font-size: 0.9rem;
+  background-color: #fff; /* Background color for options */
+  color: #333; /* Text color for options */
+}
+
+/* Style the hover effect for options */
+select option:hover {
+  background-color: #e0e0e0; /* Background color on hover */
+  color: #333; /* Text color on hover */
 }
 
 h1 {
