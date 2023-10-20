@@ -33,32 +33,12 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // This function redirects to the selected page based on role
-    function navigateToPage() {
-        var selectBox = document.getElementById("roles");
-        console.log("Select box element:", selectBox); // logging the select element
-
-        var selectedValue = selectBox.options[selectBox.selectedIndex].value;
-        console.log("Selected value:", selectedValue); // logging the selected value
-
-        if (selectedValue) { // Check if a value is selected
-          console.log("Redirecting to:", selectedValue); // logging the target URL
-          window.location.href = selectedValue; // Redirects the browser to the selected page
-        } else {
-          console.log("No page selected for redirection."); // logging if no selection
+    function navigateToPage(selectElement) {
+        const selectedURL = selectElement.value;
+        if (selectedURL) { // check if a valid option is selected
+            window.location.href = selectedURL;
         }
     }
-
-    // Attach the navigateToPage function to the select element's change event
-    var selectElement = document.getElementById('roles');
-    if (selectElement) {
-        selectElement.addEventListener('change', navigateToPage);
-        console.log("Event listener added to the select box."); // confirming the event listener is added
-    } else {
-        console.error("Select element not found!"); // logging if the select element is missing
-    }
-
-    // Attach the navigateToPage function to the select element's change event
-    document.getElementById('roles').addEventListener('change', navigateToPage);
     
     var isGraduated = true; // Change this based on your condition
     
