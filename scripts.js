@@ -33,13 +33,14 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Add the dropdown functionality
-    var select = document.getElementById("role-select");
-    select.addEventListener("change", function () {
-        var selectedOption = select.options[select.selectedIndex].value;
-        if (selectedOption !== "") {
-            window.location.href = selectedOption;
-        }
-    });
+    function navigateToPage() {
+    var selectBox = document.getElementById("roles");
+    var selectedValue = selectBox.options[selectBox.selectedIndex].value;
+
+    if (selectedValue) { // Check if a value is selected
+      window.location.href = selectedValue; // This will redirect the browser to the selected page
+    }
+  }
     
     var isGraduated = true; // Change this based on your condition
     
