@@ -13,8 +13,10 @@
     <div class="title">
         <h1>Experiences</h1> <!-- Add your title here -->
 
-        <label for="roles">Choose a role:</label>
-        <select id="roles" onchange="navigateToPage(this)">
+        <label for="option-select">Choose a role:</label>
+        <!-- <label for="roles">Choose a role:</label>-->
+        <select id="option-select">
+        <!--<select id="roles" onchange="navigateToPage(this)"> -->
           <option value="">--Please choose an option--</option>
           <option value="CTFd.html">CyberSecurity Content Developer Intern</option>
           <option value="CKC.html">Web Developer | Volunteer</option>
@@ -23,6 +25,9 @@
           <option value="NYC311.html">311 operator | RFCUNY Student Call Takers</option>
           <option value="Manager.html">Social Media Manager | College Assistant</option>
         </select>
+
+        <button onclick="redirectToPage()">Go</button>
+        
     </div>
     <div class="timeline">
         <!-- CTFd -->
