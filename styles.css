@@ -335,4 +335,8 @@ body {
         vertical-align: middle;
         margin-left: 75px; /* space between logo and text */
     }
+    .flip-card-back {
+        overflow: hidden; /* Enable vertical scrolling if content overflows */
+        z-index: 1;
+    }
 }
