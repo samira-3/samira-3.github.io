@@ -340,9 +340,10 @@ body {
         z-index: 1;
     }
     .flip-card-back .scroll-container {
-        overflow-y: auto; /* Enable vertical scrolling for the inner container */
+        overflow-y: auto; /* Enable vertical scrolling */
     }
-    .certification-card {
-        max-height: 50px;
+    img {
+       max-width: 100%;
+       height: 70%;
     }
 }
