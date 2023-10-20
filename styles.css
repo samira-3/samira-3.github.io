@@ -339,4 +339,10 @@ body {
         overflow: hidden; /* Enable vertical scrolling if content overflows */
         z-index: 1;
     }
+    .flip-card-back .scroll-container {
+        overflow-y: auto; /* Enable vertical scrolling for the inner container */
+    }
+    .certification-card {
+        height: 50%;
+    }
 }
