@@ -350,7 +350,7 @@ body {
         overflow-y: scroll; /* Enable vertical scrolling */
         white-space: normal;
         width: 200px;
-        height: 70%;
+        height: 150%;
     }
     
     .flip-card-inner{
