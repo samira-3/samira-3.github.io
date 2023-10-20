@@ -108,14 +108,7 @@ nav ul.tabs li a.active {
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
-#certifications {
-    display: flex;
-    flex: wrap;
-}
-
 .certification-card {
-    display: grid;
-    grid-template-columns: 2fr;
     gap: 10px;
     position: relative; 
     width: 50%;
