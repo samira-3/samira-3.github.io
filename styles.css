@@ -119,7 +119,6 @@ nav ul.tabs li a.active {
     gap: 10px;
     position: relative; 
     width: 50%;
-    margin-bottom: 20px;
 }
 
 .flip-card {
