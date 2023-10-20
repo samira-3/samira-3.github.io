@@ -324,21 +324,35 @@ body {
         order: 2; /* Change the order of left-paragraph to appear below */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
-
+    
     .right-side {
         flex: 1; /* Allow the right-side content to take up available space */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
+    
+    #tools, #platform  {
+        text-align: center; /* Center-align header content for mobile */
+    }
+
+    #certifications{
+        text-align: center; /* Center-align header content for mobile */
+        height: 220px;
+    }
+    
     .cert {
         width: 45px; /* or the width you want */
         height: 45px; /* or the height you want */
         vertical-align: middle;
         margin-left: 75px; /* space between logo and text */
     }
+    
     .flip-card-back {
         overflow-y: scroll; /* Enable vertical scrolling */
+        white-space: normal;
+        width: 200px;
         height: 70%;
     }
+    
     .flip-card-inner{
         height: 70%;
     }
