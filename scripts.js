@@ -32,20 +32,6 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
     
-    //function navigateToPage(selectElement) {
-    //    const selectedURL = selectElement.value;
-    //    if (selectedURL) {
-    //        window.location.href = selectedURL;
-    //    }
-    //}
-
-    //document.getElementById("roles").addEventListener("change", function() {
-    //    const selectedURL = this.value;
-    //    if (selectedURL) {
-    //        window.location.href = selectedURL;
-    //    }
-    //});
-    
     var isGraduated = true; // Change this based on your condition
     
     var badge = document.querySelector('.badge');
