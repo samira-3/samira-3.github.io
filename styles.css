@@ -338,4 +338,7 @@ body {
     .certicate-image{
         height: auto;
     }
+    .flip-card-back {
+    whitespace: normal;
+}
 }
