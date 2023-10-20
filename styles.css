@@ -336,11 +336,8 @@ body {
         margin-left: 75px; /* space between logo and text */
     }
     .flip-card-back {
-        overflow: hidden; /* Enable vertical scrolling if content overflows */
-        z-index: 1;
-    }
-    .flip-card-back .scroll-container {
-        overflow-y: auto; /* Enable vertical scrolling */
+        overflow-y: scroll; /* Enable vertical scrolling */
+        height: 70%;
     }
     img {
        max-width: 100%;
