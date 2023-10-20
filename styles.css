@@ -329,4 +329,13 @@ body {
         flex: 1; /* Allow the right-side content to take up available space */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
+    .cert {
+        width: 45px; /* or the width you want */
+        height: 45px; /* or the height you want */
+        vertical-align: middle;
+        margin-left: 50px; /* space between logo and text */
+}
+    .certicate-image{
+        height: auto;
+    }
 }
