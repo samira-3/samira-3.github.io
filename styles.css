@@ -52,7 +52,7 @@ nav ul.tabs li a {
 }
 
 nav ul.tabs li a.active {
-    background-color: #83f28;
+    background-color: #83F28F;
 }
 
 /* Style the dropdown menu */
@@ -308,7 +308,6 @@ body {
 /* For desktops and large screens */
 @media (min-width: 601px) {
    /* Add styles for desktops and large screens here */
-    }
 }
 
 /* For tablets */
