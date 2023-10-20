@@ -343,6 +343,6 @@ body {
         overflow-y: auto; /* Enable vertical scrolling for the inner container */
     }
     .certification-card {
-        height: 50%;
+        max-height: 50px;
     }
 }
