@@ -31,22 +31,6 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault(); // Prevent the default link behavior
         loadExperience();
     });
-
-    // This function redirects to the selected page based on role
-    function redirectToPage() {
-        // Getting the dropdown element
-        var selector = document.getElementById('option-select');
-        // Getting the selected value
-        var url = selector.value;
-        
-        // Checking if a valid URL is selected
-        if(url) {
-          // Redirecting to the selected page
-          window.location = url;
-        } else {
-          alert("Please select an option.");
-        }
-      }
     
     //function navigateToPage(selectElement) {
     //    const selectedURL = selectElement.value;
