@@ -339,8 +339,7 @@ body {
         overflow-y: scroll; /* Enable vertical scrolling */
         height: 70%;
     }
-    img {
-       max-width: 100%;
-       height: 70%;
+    .flip-card-inner{
+        height: 70%;
     }
 }
