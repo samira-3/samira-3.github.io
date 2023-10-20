@@ -33,19 +33,34 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // This function redirects to the selected page based on role
-    function navigateToPage(selectElement) {
-        const selectedURL = selectElement.value;
-        if (selectedURL) {
-            window.location.href = selectedURL;
+    function redirectToPage() {
+        // Getting the dropdown element
+        var selector = document.getElementById('option-select');
+        // Getting the selected value
+        var url = selector.value;
+        
+        // Checking if a valid URL is selected
+        if(url) {
+          // Redirecting to the selected page
+          window.location = url;
+        } else {
+          alert("Please select an option.");
         }
-    }
+      }
+    
+    //function navigateToPage(selectElement) {
+    //    const selectedURL = selectElement.value;
+    //    if (selectedURL) {
+    //        window.location.href = selectedURL;
+    //    }
+    //}
 
-    document.getElementById("roles").addEventListener("change", function() {
-        const selectedURL = this.value;
-        if (selectedURL) {
-            window.location.href = selectedURL;
-        }
-    });
+    //document.getElementById("roles").addEventListener("change", function() {
+    //    const selectedURL = this.value;
+    //    if (selectedURL) {
+    //        window.location.href = selectedURL;
+    //    }
+    //});
     
     var isGraduated = true; // Change this based on your condition
     
