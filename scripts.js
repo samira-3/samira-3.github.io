@@ -32,17 +32,11 @@ document.addEventListener("DOMContentLoaded", function() {
         loadExperience();
     });
 
-    // Get the select element by its id
+    // Add the dropdown functionality
     var select = document.getElementById("role-select");
-
-    // Add an event listener to listen for changes in the selected option
     select.addEventListener("change", function () {
-        // Get the selected option's value
         var selectedOption = select.options[select.selectedIndex].value;
-
-        // Check if the selected option is not empty
         if (selectedOption !== "") {
-            // Redirect to the selected page
             window.location.href = selectedOption;
         }
     });
