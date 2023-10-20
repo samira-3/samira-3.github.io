@@ -108,7 +108,14 @@ nav ul.tabs li a.active {
     align-self: flex-start; /* Aligns the contact section to the top */
 }
 
+.certificates-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjusts spacing between the certificate cards */
+}
+
 .certification-card {
+    flex: 0 0 48%; /* This means the cards won't grow, won't shrink, and will have an initial width of 48% */
     gap: 10px;
     position: relative; 
     width: 50%;
