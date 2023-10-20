@@ -333,12 +333,12 @@ body {
         width: 45px; /* or the width you want */
         height: 45px; /* or the height you want */
         vertical-align: middle;
-        margin-left: 50px; /* space between logo and text */
+        margin-left: 80px; /* space between logo and text */
     }
     .certicate-image{
-        height: auto;
+        height: 50%;
     }
     .flip-card-back {
-        whitespace: normal;
+        white-space: normal;
     }
 }
