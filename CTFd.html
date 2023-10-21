@@ -70,7 +70,6 @@
         }
         /* Add this style information to your website's CSS file */
         .showcase-wrapper {
-          font-color: white;
           border: 2px solid #910101; /* Adds border around the showcase */
           padding: 10px; /* Adds some space inside the border */
           margin-bottom: 20px; /* Adds space below the showcase */
@@ -85,6 +84,16 @@
         .showcase-wrapper .showcase-info {
           margin-top: 10px; /* Adds space between image and text */
         }
+        /* For unvisited links */
+        a:link {
+          color: #ffffff; /* Black, for example, but can be any color */
+        }
+        
+        /* For visited links */
+        a:visited {
+          color: #1c03fc; /* Black, keeps the link the same color even after being visited */
+        }
+
     </style>
     <title>Samira's CTFd Experience</title>
 </head>
@@ -119,7 +128,6 @@
         <div class="showcase-wrapper">
           <a href="https://edc.nyc/get-know-cyber-nyc-intern-samira-akram" target="_blank">
             <div class="showcase-info">
-              <h2>Showcase</h2>
               <h2>Get to Know Cyber NYC Intern: Samira Akram</h2>
               <p>Click here to read more about Samira Akram's journey and achievements.</p>
             </div>
