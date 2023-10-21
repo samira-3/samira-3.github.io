@@ -291,7 +291,7 @@ body {
 }
 
 body {
-    font-family: 'Quicksand';
+    font-family: 'Quicksand', sans-serif;
     background-color: #f6bfbc; 
     background-image: url('space-cyber.jpg'); 
     background-size: cover;
