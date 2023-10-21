@@ -21,13 +21,14 @@
             background-repeat: no-repeat;
             background-size: cover;
             background-attachment: fixed;
+            background-position: center;  /*Ensure the background image is centered*/
+            justify-content: center;
             color: white;
         }
         .container {
             max-width: 700px;
             width: 100%;
             margin: 0 auto;
-            margin: 2rem auto;
             padding: 2rem;
             background-color: rgba(95, 166, 92, 0.67);
             border-radius: 5px;
@@ -63,6 +64,11 @@
         hr {
             border: 1px solid #333; /* Border style and color */
             margin: 20px 0; /* Add space above and below the line */
+        }
+        @media (max-width: 400px) {
+            .container {
+                margin-right: 2rem;
+            }
         }
     </style>
     <title>Samira's MTA Experience</title>
