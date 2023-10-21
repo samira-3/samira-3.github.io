@@ -1,7 +1,8 @@
 body {
-    font-family: Quicksand;
+    font-family: 'Quicksand', sans-serif;
     color: white;
     background-image: url('experience.jpg'); 
+    background-color: rgba(95, 166, 92, 0.67);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
