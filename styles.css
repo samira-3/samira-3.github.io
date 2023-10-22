@@ -314,7 +314,7 @@ body {
    /* Add styles for tablets here */
 }
 
-@media (max-width: 400px) and (max-width: 600px) {
+@media (min-width: 400px) and (max-width: 600px) {
      .header-container {
         flex-direction: column; /* Stack header elements vertically for mobile */
         text-align: center; /* Center-align header content for mobile */
