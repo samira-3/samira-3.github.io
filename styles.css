@@ -314,7 +314,7 @@ body {
    /* Add styles for tablets here */
 }
 
-@media (max-width: 400px) {
+@media (max-width: 400px) and (max-width: 600px) {
      .header-container {
         flex-direction: column; /* Stack header elements vertically for mobile */
         text-align: center; /* Center-align header content for mobile */
@@ -340,8 +340,8 @@ body {
     }
     
     .cert {
-        width: 45px; /* or the width you want */
-        height: 45px; /* or the height you want */
+        width: 40px; /* or the width you want */
+        height: 40px; /* or the height you want */
         vertical-align: middle;
         margin-left: 75px; /* space between logo and text */
     }
