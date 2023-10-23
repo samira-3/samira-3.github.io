@@ -306,6 +306,7 @@ body {
 
 @media (min-width: 400px) and (max-width: 600px) {
     .header-container {
+        display: flex;
         flex-direction: column; /* Stack header elements vertically for mobile */
         text-align: center; /* Center-align header content for mobile */
     }
@@ -316,7 +317,6 @@ body {
     }
         
     .right-side {
-        flex-direction: column;
         flex: 1; /* Allow the right-side content to take up available space */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
