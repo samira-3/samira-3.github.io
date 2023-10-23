@@ -304,55 +304,45 @@ body {
     margin: 0;
 }
 
-/* For desktops and large screens */
-@media (min-width: 601px) {
-   /* Add styles for desktops and large screens here */
-}
-
-/* For tablets */
-@media (min-width: 401px) and (max-width: 600px) {
-   /* Add styles for tablets here */
-}
-
 @media (min-width: 400px) and (max-width: 600px) {
-     .header-container {
+    .header-container {
         flex-direction: column; /* Stack header elements vertically for mobile */
         text-align: center; /* Center-align header content for mobile */
     }
-
+    
     .left-paragraph {
         order: 2; /* Change the order of left-paragraph to appear below */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
-    
+        
     .right-side {
         flex: 1; /* Allow the right-side content to take up available space */
         margin-top: 10px; /* Add some spacing between left and right content */
     }
-    
+        
     #tools, #platform  {
         text-align: center; /* Center-align header content for mobile */
     }
-
+    
     #certifications{
         text-align: center; /* Center-align header content for mobile */
         height: 220px;
     }
-    
+        
     .cert {
         width: 40px; /* or the width you want */
         height: 40px; /* or the height you want */
         vertical-align: middle;
         margin-left: 75px; /* space between logo and text */
     }
-    
+        
     .flip-card-back {
         overflow-y: scroll; /* Enable vertical scrolling */
         white-space: normal;
-        width: 350px;
+        width: 150px;
         height: 150%;
     }
-    
+        
     .flip-card-inner{
         height: 70%;
     }
