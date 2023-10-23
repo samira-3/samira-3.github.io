@@ -232,15 +232,15 @@ li {
     left: 20px;
 }
 
-/*CSS for mobile devices (adjust styles as needed)*/
+/*CSS for mobile devices (adjust styles as needed)
 @media (min-width: 400px) and (max-width: 600px) {
     body {
     transform: translateX(250px);
     }
     /* Position the button in the top-left corner */
     .top-left {
-        left: auto;
-        right: 500px;
-        white-space: nowrap;
+        /*left: auto;
+        /*right: 500px;
+        /*white-space: nowrap;*/
     }
-}
+}*/
