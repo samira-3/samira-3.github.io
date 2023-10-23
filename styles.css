@@ -349,7 +349,7 @@ body {
     .flip-card-back {
         overflow-y: scroll; /* Enable vertical scrolling */
         white-space: normal;
-        width: 250px;
+        width: 350px;
         height: 150%;
     }
     
