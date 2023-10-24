@@ -299,7 +299,7 @@ body {
     margin: 0;
 }
 
-@media (min-width: 400px) and (max-width: 600px) {
+@media (min-width: 200px) and (max-width: 600px) {
     .header-container {
         display: flex;
         flex-direction: column; /* Stack header elements vertically for mobile */
