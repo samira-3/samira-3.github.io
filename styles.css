@@ -310,6 +310,10 @@ body {
         flex-direction: column; /* Stack header elements vertically for mobile */
         text-align: center; /* Center-align header content for mobile */
     }
+
+        .content-container {
+        flex-direction: column;
+    }
     
     .left-paragraph {
         order: 2; /* Change the order of left-paragraph to appear below */
