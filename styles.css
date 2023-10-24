@@ -317,7 +317,7 @@ body {
         
     .right-side {
         flex: 1; /* Allow the right-side content to take up available space */
-        margin-top: 20px; /* Add some spacing between left and right content */
+        margin-top: 35px; /* Add some spacing between left and right content */
     }
         
     #tools, #platform  {
