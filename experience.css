@@ -30,7 +30,8 @@ label {
 
 /* Style the select element */
 select {
-  font-size: 0.9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
   padding: 2px 5px;
   border: 1px solid #ccc; /* Add a border */
   border-radius: 3px; /* Add rounded corners */
@@ -40,7 +41,8 @@ select {
 
 /* Style the options within the dropdown */
 select option {
-  font-size: 0.9rem;
+  font-family: 'Quicksand', sans-serif;
+  font-size: 1rem;
   background-color: #fff; /* Background color for options */
   color: #333; /* Text color for options */
 }
