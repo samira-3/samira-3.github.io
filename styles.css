@@ -306,7 +306,7 @@ body {
         text-align: center; /* Center-align header content for mobile */
     }
 
-        .content-container {
+    .content-container {
         flex-direction: column;
     }
     
@@ -317,7 +317,7 @@ body {
         
     .right-side {
         flex: 1; /* Allow the right-side content to take up available space */
-        margin-top: 10px; /* Add some spacing between left and right content */
+        margin-top: 15px; /* Add some spacing between left and right content */
     }
         
     #tools, #platform  {
