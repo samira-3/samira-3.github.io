@@ -317,7 +317,7 @@ body {
         
     .right-side {
         flex: 1; /* Allow the right-side content to take up available space */
-        margin-top: 15px; /* Add some spacing between left and right content */
+        margin-top: 20px; /* Add some spacing between left and right content */
     }
         
     #tools, #platform  {
@@ -339,7 +339,7 @@ body {
     .flip-card-back {
         overflow-y: scroll; /* Enable vertical scrolling */
         white-space: normal;
-        width: 150px;
+        width: 200px;
         height: 150%;
     }
         
