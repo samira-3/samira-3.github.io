@@ -233,7 +233,7 @@ li {
 }
 
 /*CSS for mobile devices (adjust styles as needed)*/
-@media (min-width: 400px) and (max-width: 600px) {
+@media (max-width: 600px) {
     body {
     transform: translateX(250px);
     }
