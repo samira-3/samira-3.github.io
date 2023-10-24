@@ -23,14 +23,13 @@ body {
 }
 
 label {
-  font-family: Times New Roman;
+  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   padding-right: 10px;
 }
 
 /* Style the select element */
 select {
-  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   padding: 2px 5px;
   border: 1px solid #ccc; /* Add a border */
@@ -41,7 +40,6 @@ select {
 
 /* Style the options within the dropdown */
 select option {
-  font-family: 'Quicksand', sans-serif;
   font-size: 1rem;
   background-color: #fff; /* Background color for options */
   color: #333; /* Text color for options */
@@ -103,7 +101,7 @@ h5 {
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
     top: -50%; /* Adjust vertical alignment as needed */
-    left: -20%; /* Adjust horizontal alignment as needed */
+    left: -50%; /* Adjust horizontal alignment as needed */
     transform: translate(-100%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
     padding: 10px 20px; /* Increase the padding to make the box larger */
@@ -116,7 +114,7 @@ h5 {
     display: inline-block; /* Make the date appear on the same line as the dot */
     position: absolute; /* Position the date element within the dot container */
     top: -50%; /* Adjust vertical alignment as needed */
-    left: 0%; /* Adjust horizontal alignment as needed */
+    left: 20%; /* Adjust horizontal alignment as needed */
     transform: translate(10%, 0%); /* Center the date element within the dot container */
     white-space: nowrap; /* Prevent the text from wrapping */
     padding: 10px 20px; /* Increase the padding to make the box larger */
