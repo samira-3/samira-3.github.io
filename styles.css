@@ -90,11 +90,6 @@ nav ul.tabs li a.active {
     align-items: flex-start; /* Aligns the content to the left */
 }
 
-.content-container {
-    display: flex;
-    flex-wrap: wrap;
-}
-
 .left-paragraph{
     flex-grow: wrap; /*Allows the left paragrapghto grow and take up available space */
     }
