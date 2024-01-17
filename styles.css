@@ -208,9 +208,10 @@ nav ul.tabs li a.active {
     top: 10px; /* Adjust as needed */
     right: 10px; /* Adjust as needed */
     cursor: pointer; /* Change cursor to indicate it's clickable */
-    font-size: 24px; /* Adjust size as needed */
-    /* Add more styling as per your design needs */
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
 }
+
 /* style the card container */
 .school {
     display: grid;
