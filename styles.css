@@ -101,7 +101,7 @@ nav ul.tabs li a.active {
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px 0;
+    margin: 10px 15px;
     background-color: rgba(95, 166, 92, 0.67); /* Green background */
     color: white; /* White text */
     text-align: center;
@@ -323,19 +323,23 @@ body {
 
 #feedback form {
     display: inline-block;
-    text-align: left;
+    text-align: center;
 }
 
 #feedback textarea {
-    width: 300px;
+    width: 455px;
     height: 50px;
     margin-bottom: 10px;
+    display: block; /* Ensure the textarea is a block element */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #feedback button {
-    display: block;
+    display: block; /* Make the button a block element */
+    width: 100px; /* Set a fixed width for the button */
+    margin: 0 auto; /* Auto margin on both sides will center the button */
     border-radius: 5px;
-    width: 60%;
     background-color: rgba(95, 166, 92, 0.67); /* Green background */
 }
 
