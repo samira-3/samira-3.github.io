@@ -15,7 +15,7 @@
             <img src="pic.jpg" alt="Samira's Profile Picture" id="profile-pic">
             <div style="text-align: left; margin-right: 20px;">
                 <h3> 🧕 Samira Akram 💻 </h3>
-                <p> 🔐 Cyber Security 🛡️ | 🌐 Web developer </p>
+                <p> 🔐 Cyber Security 🛡️ | Developer </p>
                 <div class="left-paragraph">
                     <p>Endeavoring to enter the IT field primarily with programming relationship building abilities and learning languages such as 
                         <!--C++, Python, HTML, CSS, Javascript, Bootstrap, Django, React, DAX, SQL-->
@@ -47,7 +47,10 @@
             </nav>
         </div>
 
-        <div class="right-side"
+        <div class="right-side">
+            <!-- Resume Button -->
+            <a href="resume.pdf" class="resume-button" target="_blank">Download Resume</a>
+
             <!-- ... Contact Info. ... -->
             <section id="contact">
                 <h2>Contact Info.</h2>
@@ -58,7 +61,13 @@
                 <a href="https://github.com/samira-3" target="_blank">
                     <img src="https://img.shields.io/badge/GitHub-%23121011.svg?style=plastic&logo=github&logoColor=white" alt="GitHub">
                 </a>
-    
+                <!-- Feedback -->
+                <form action="feedback.php" method="POST">
+                    <label for="feedback">Your Feedback:</label><br>
+                    <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br>
+                    <input type="submit" value="Submit">
+                </form>
+
             <!-- Education Section -->
             <section id="education">
                 <h2>Education</h2>
