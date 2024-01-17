@@ -98,6 +98,23 @@ nav ul.tabs li a.active {
     flex: 0 0 200px; /* Set a fixed width for the right school content */
 }
 
+.resume-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.resume-button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
 #contact {
     margin-left: 15px; /* Pushes the contact section to the right */
     align-self: flex-start; /* Aligns the contact section to the top */
