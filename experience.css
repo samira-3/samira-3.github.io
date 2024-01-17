@@ -184,10 +184,12 @@ h5 {
 
 .click-sign {
     position: absolute;
-    margin: -15px 155px; /* Adjust as needed */
-    width: 20px; /* Adjust size as needed */
+    margin: -15px 200px;
+    width: 30px;
     background-color: antiquewhite;
     border-radius: 9px;
+    top: 28px;
+    right: -185px;
 }
 
 .front{
