@@ -182,7 +182,16 @@ h5 {
     border-radius: 5px;
 }
 
+.click-sign {
+    position: absolute;
+    margin: -15px 155px; /* Adjust as needed */
+    width: 20px; /* Adjust size as needed */
+    background-color: antiquewhite;
+    border-radius: 9px;
+}
+
 .front{
+    display: relative;
     text-align: center;
     max-height: 300px; /* Adjust the max height to control card size */
 }
