@@ -101,7 +101,7 @@ nav ul.tabs li a.active {
 .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    margin: 10px 15px;
+    margin: 10px 150px;
     background-color: rgba(95, 166, 92, 0.67); /* Green background */
     color: white; /* White text */
     text-align: center;
@@ -335,7 +335,7 @@ body {
 
 #FAQs button {
     display: center;
-    margin: 0px 80px;
+    margin: 0px 180px;
     border-radius: 5px;
     background-color: rgba(95, 166, 92, 0.67); /* Green background */
 }
