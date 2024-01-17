@@ -205,11 +205,15 @@
         </section>
         
         <!-- Feedback -->
-        <form action="feedback.php" method="POST">
-            <label for="feedback">Feedback</label><br>
-            <textarea id="feedback" name="feedback" rows="4" cols="50" placeholder="Enter your feedback here..."></textarea><br>
-            <input type="submit" value="Submit">
-        </form>
+        <!-- Feedback Section -->
+        <section id="feedback">
+            <h2>Feedback</h2>
+            <form action="feedback_handler.php" method="POST">
+                <label for="feedback">Feedback</label><br>
+                <textarea name="feedback" placeholder="Your feedback here..." required></textarea>
+                <button type="submit">Submit Feedback</button>
+            </form>
+        </section>
     </div>
     <script src="scripts.js"></script>
 </body>
