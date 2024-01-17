@@ -322,14 +322,14 @@ body {
 }
 
 #feedback form {
-    display: center;
+    display: inline-block;
     text-align: left;
 }
 
 #feedback textarea {
-    margin-bottom: 10px;
     width: 455px;
     height: 50px;
+    margin-bottom: 10px;
 }
 
 #feedback button {
