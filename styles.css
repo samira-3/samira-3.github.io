@@ -327,14 +327,15 @@ body {
 }
 
 #FAQs textarea {
-    width: 455px;
-    height: 50px;
+    width: 400px;
+    height: 63px;
     margin-bottom: 10px;
+    border-radius: 5px;
 }
 
 #FAQs button {
     display: center;
-    width: 50%;
+    margin: 0px 80px;
     border-radius: 5px;
     background-color: rgba(95, 166, 92, 0.67); /* Green background */
 }
