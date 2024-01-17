@@ -56,7 +56,7 @@ nav ul.tabs li a.active {
 }
 
 .in-progress {
-        font-size: 0.8em;
+        font-size: 0.5em;
         margin-left: 5px;
         color: red;
         font-style: italic;
