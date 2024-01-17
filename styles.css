@@ -322,7 +322,7 @@ body {
 }
 
 #feedback form {
-    display: inline-block;
+    display: center;
     text-align: left;
 }
 
