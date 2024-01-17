@@ -102,7 +102,7 @@ nav ul.tabs li a.active {
     display: inline-block;
     padding: 10px 20px;
     margin: 10px 0;
-    background-color: #4CAF50; /* Green background */
+    background-color: rgba(95, 166, 92, 0.67); /* Green background */
     color: white; /* White text */
     text-align: center;
     text-decoration: none;
@@ -328,13 +328,15 @@ body {
 
 #feedback textarea {
     width: 300px;
-    height: 150px;
+    height: 50px;
     margin-bottom: 10px;
 }
 
 #feedback button {
     display: block;
-    width: 100%;
+    border-radius: 5px;
+    width: 60%;
+    background-color: rgba(95, 166, 92, 0.67); /* Green background */
 }
 
 @media (max-width: 600px) {
