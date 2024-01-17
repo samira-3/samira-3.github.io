@@ -316,6 +316,27 @@ body {
     margin: 0;
 }
 
+#feedback {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#feedback form {
+    display: inline-block;
+    text-align: left;
+}
+
+#feedback textarea {
+    width: 300px;
+    height: 150px;
+    margin-bottom: 10px;
+}
+
+#feedback button {
+    display: block;
+    width: 100%;
+}
+
 @media (max-width: 600px) {
     .header-container {
         display: flex;
