@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <style>
+        body, p, li {
+            font-size: 16px;
+        }
+        h2{
+            font-size: 24px;
+        }
+        h3{
+            font-size: 20px;
+        }
+        span{
+            font-size: 12px;
+        }
+        body {
+            background-image: url('experience.jpg');
+            background-color: rgba(95, 166, 92, 0.67);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;  /*Ensure the background image is centered*/
+            justify-content: center;
+            font-family: 'Quicksand', sans-serif;
+            color: white;
+        }
+        .container {
+            max-width: 700px;
+            width: 100%;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(95, 166, 92, 0.67);
+            border-radius: 5px;
+        }
+        .logo {
+            width: 150px; /* or the width you want */
+            height: 150px; /* or the height you want */
+            margin-left: 300px; /* space between logo and text */
+            border-radius: 50%;
+        }
+        .back-button {
+            position: fixed;
+            background-color: #b30000;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 16px;
+            transition: background-color 0.3s;
+        }
+
+        .back-button:hover {
+            background-color: #ffda08;
+            font-color: #000000;
+        }
+
+        /* Position the button in the top-left corner */
+        .top-left {
+            top: 20px;
+            left: 20px;
+        }
+        /* Style the horizontal line */
+        hr {
+            border: 1px solid #333; /* Border style and color */
+            margin: 20px 0; /* Add space above and below the line */
+        }
+        @media (max-width: 600px) {
+            .logo{
+                margin-left: 240px; /* space between logo and text */
+            }
+            .container {
+                margin-right: 2rem;
+            }
+        }
+    </style>
+    <title>Samira's CKC Experience</title>
+</head>
+    
+<body>
+    <a href="experience.html" class="back-button top-left">Back to Home</a> <!-- Top-left corner -->
+    <div class="container">
+        <img src="codenation_logo.png" alt="Code Nation Logo" class="logo">
+        <h2>Code Nation</h2>
+        <p>Science Skills Center High School</p>
+        <p>Brooklyn, New York, United States</p>
+        <span>December 2023 - Present</span>
+        <br>
+        <hr>
+        <p>Code Nation mobilize the tech community to help more young people access careers in tech.
+            With a volunteer teaching corps of 300 technology professionals and a powerful network of school and company partners, we bring coding courses and work-based learning programs to students who attend under-resourced high schools. 
+            That means students leave Code Nation programs career-ready, with a holistic set of skills, competencies, and resources that set them up for success.</p>
+        <br>
+            <li>To get students excited about coding and introduce them to the field of Computer Science.</li>
+            <li>Equip students with foundational technical skills in web development, focusing on HTML, CSS, jQuery, and JavaScript.</li>
+            <li>Spark an interest in tech careers through creative coding projects and field trips.</li>
+            <li>The structure contains 7 instructional units, each centered around a project.</li>
+            <li>In one semester classes focus on Units 1-4, with a minimum of 23 hours of instruction. Totaling around 30 lessons.</li>
+        <br>
+        <p><b>Skills<b></p> <!-- Node.js · HTML5 · JavaScript · JQuery · Web Development · CSS -->
+        <img class="badge-image" src="https://img.shields.io/badge/Node.js-%23339933.svg?style=plastic" alt="Node.js">
+        <img class="badge-image" src="https://img.shields.io/badge/HTML5-%23E34F26.svg?style=plastic" alt="HTML5">
+        <img class="badge-image" src="https://img.shields.io/badge/JavaScript-%23F7DF1E.svg?style=plastic" alt="JavaScript">
+        <img class="badge-image" src="https://img.shields.io/badge/jQuery-%230769AD.svg?style=plastic" alt="jQuery">
+        <img class="badge-image" src="https://img.shields.io/badge/Web%20Development-%23648FFF.svg?style=plastic" alt="Web Development">
+        <img class="badge-image" src="https://img.shields.io/badge/CSS-%231572B6.svg?style=plastic" alt="CSS">
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
