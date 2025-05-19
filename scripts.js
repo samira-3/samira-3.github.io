@@ -10,36 +10,26 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     // Function to load content from experience.html
-    function loadExperience() {
-        var container = document.getElementById("tabs");
-        var xhr = new XMLHttpRequest();
-
-        // Replace 'experience.html' with the correct URL if it's in a different location
-        xhr.open("GET", "experience.html", true);
-
-        xhr.onreadystatechange = function () {
-            if (xhr.readyState === 4 && xhr.status === 200) {
-                container.innerHTML = xhr.responseText;
-            }
-        };
-
-        xhr.send();
-    }
-
-    // Add an event listener to the "Experience" link
-   // document.querySelector(".tabs a").addEventListener("click", function (e) {
-   //     e.preventDefault(); // Prevent the default link behavior
-   //     loadExperience();
-   // });
-
     const experienceLink = document.querySelector(".experience-tab");
+
     if (experienceLink) {
         experienceLink.addEventListener("click", function(e) {
-            e.preventDefault();
-            loadExperience();
+            e.preventDefault(); // Prevents default link navigation
+    
+            fetch("experience.html")
+                .then(response => response.text())
+                .then(html => {
+                    // Replace the entire page content with experience.html
+                    document.open();
+                    document.write(html);
+                    document.close();
+                })
+                .catch(err => {
+                    alert("Failed to load experience page.");
+                    console.error(err);
+                });
         });
     }
-
     
     var isGraduated = true; // Change this based on your condition
     
