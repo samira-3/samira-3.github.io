@@ -82,3 +82,8 @@ document.addEventListener("DOMContentLoaded", function() {
             }, 500); // Delay for transition to finish before hiding
         }
     }
+
+    function toggleForm() {
+      const form = document.getElementById("googleForm");
+      form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
+    }
