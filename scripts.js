@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Function to load content from experience.html
     function loadExperience() {
-        var container = document.getElementById("experience-container");
+        var container = document.getElementById("tabs");
         var xhr = new XMLHttpRequest();
 
         // Replace 'experience.html' with the correct URL if it's in a different location
