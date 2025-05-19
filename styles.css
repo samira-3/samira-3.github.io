@@ -273,15 +273,15 @@ nav ul.tabs li a.active {
 /* Graduated badge */
 .graduated-badge {
     background-color: #ffdd00;
-    color: #02075d; /* Choose your desired text color */
+    color: #02075d;
     font-size: 12px;
-    text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
-    display: ruby;
+    display: flex;
     justify-content: center;
-    align-content: center;
-    flex-wrap: wrap;
+    align-items: center;
+    margin: 0 auto; /* This helps center the badge if width is limited */
+    width: fit-content; /* Ensures it wraps tightly around the content */
 }
 
 .school-details-back {
