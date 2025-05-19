@@ -83,15 +83,9 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     }
 
-    // Define globally
-    function toggleForm() {
-      const form = document.getElementById("googleForm");
-      form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
-    }
-    
-    document.addEventListener("DOMContentLoaded", function() {
-      function toggleForm() {
-          const form = document.getElementById("googleForm");
-          form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
-        }
-    });
+    // GoggleForm
+    window.toggleForm = function () {
+        const form = document.getElementById("googleForm");
+        form.style.display = (form.style.display === "none" || form.style.display === "") ? "block" : "none";
+    };
+});
