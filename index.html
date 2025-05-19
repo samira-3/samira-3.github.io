@@ -212,10 +212,13 @@
         <!-- FAQs Section -->
         <section id="FAQs">
             <h2>FAQs</h2>
-            <form action="feedback_handler.php" method="POST">
+            <form action="https://formsubmit.co/samira.akram@yahoo.com" method="POST">
                 <textarea name="FAQs" placeholder="Your FAQs here..." required></textarea>
                 <button type="submit">Submit</button>
-            </form>
+
+            <!-- Optional: redirect after submit -->
+            <input type="hidden" name="_next" value="https://yourdomain.github.io/thank-you.html">
+        </form>
         </section>
     </div>
     <script src="scripts.js"></script>
