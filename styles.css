@@ -360,12 +360,11 @@ h2 {
   background-color: #4a148c;
 }
 
-/* Embedded Google Form */
 .google-form {
   display: none;
-  border-radius: 8px;
-  overflow: hidden;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 10px;
 }
 
 .google-form iframe {
