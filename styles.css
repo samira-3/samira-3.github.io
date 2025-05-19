@@ -339,13 +339,13 @@ body {
 }
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.0rem;
   margin-bottom: 20px;
 }
 
 /* Toggle button */
 .toggle-btn {
-  background-color: #6a1b9a;
+  background-color: rgb(211 41 105);
   color: white;
   padding: 10px 24px;
   border: none;
