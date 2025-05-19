@@ -278,7 +278,7 @@ nav ul.tabs li a.active {
     text-align: center;
     padding: 5px 10px;
     border-radius: 5px;
-    display: ruby;
+    display: math;
     justify-content: center;
     align-content: center;
     flex-wrap: wrap;
