@@ -31,6 +31,15 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault(); // Prevent the default link behavior
         loadExperience();
     });
+
+    const experienceLink = document.querySelector(".experience-tab");
+    if (experienceLink) {
+        experienceLink.addEventListener("click", function(e) {
+            e.preventDefault();
+            loadExperience();
+        });
+    }
+
     
     var isGraduated = true; // Change this based on your condition
     
