@@ -39,8 +39,8 @@ nav ul.tabs {
 nav ul.tabs li {
     flex: 1;
     text-align: center; 
-    padding: 10px 5px; 
-    margin-bottom: -15px;
+    padding: 10px 0px; 
+    margin-bottom: 0px;
 }
 
 nav ul.tabs li a {
