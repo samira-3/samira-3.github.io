@@ -282,6 +282,7 @@ nav ul.tabs li a.active {
     align-items: center;
     margin: 0 auto; /* This helps center the badge if width is limited */
     width: fit-content; /* Ensures it wraps tightly around the content */
+    font-family: system-ui, -apple-system, "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji", sans-serif;
 }
 
 .school-details-back {
