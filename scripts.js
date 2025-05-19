@@ -27,10 +27,10 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Add an event listener to the "Experience" link
-    document.querySelector(".tabs a").addEventListener("click", function (e) {
-        e.preventDefault(); // Prevent the default link behavior
-        loadExperience();
-    });
+   // document.querySelector(".tabs a").addEventListener("click", function (e) {
+   //     e.preventDefault(); // Prevent the default link behavior
+   //     loadExperience();
+   // });
 
     const experienceLink = document.querySelector(".experience-tab");
     if (experienceLink) {
