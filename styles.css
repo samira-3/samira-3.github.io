@@ -426,4 +426,10 @@ h2 {
     .flip-card-inner{
         height: 70%;
     }
+    .school-header-front {
+    position: absolute;
+    width: 100%;
+    height: 110%;
+    backface-visibility: hidden; /* Hide the back of the pane during the swap */
+    }
 }
