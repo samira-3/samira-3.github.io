@@ -318,7 +318,6 @@ nav ul.tabs li a.active {
 body {
     transform: scale(1.0);
     transform-origin: top left;
-    width: 125%; /* Compensate for scaling */
     height: 125%;
     background-image: url('pic.jpg');
     background-size: cover;
