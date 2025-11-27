@@ -1,4 +1,8 @@
 body {
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 125%; /* Compensate for scaling */
+    height: 125%;
     font-family: 'Quicksand', sans-serif;
     color: white;
     background-image: url('experience.jpg'); 
